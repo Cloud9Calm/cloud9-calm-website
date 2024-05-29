@@ -1,0 +1,21 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    font-family: 'comfortaa', sans-serif;
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__main-title {
+        font-size: 1.5rem;
+        color: $c9c-main-color;
+    }
+}
