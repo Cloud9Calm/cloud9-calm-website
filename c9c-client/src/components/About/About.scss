@@ -1,0 +1,50 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.about {
+    @include flex-column-center;
+    font-family: $c9c-main-font;
+
+    &__title {
+        font-size: 1.5rem;
+        color: $c9c-secondary-color;
+        text-transform: uppercase;
+        margin: .5rem;
+    }
+
+    &__description {
+        font-size: 1rem;
+        color: $c9c-secondary-color;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    &__c9c-logo {
+        height: 75px;
+        background-color: rgb(194, 217, 243);
+        border-radius: 50%;
+        padding: 10px;
+        border: 1px solid $c9c-main-color;
+    }
+
+    &__cards-title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.25rem;
+        color: $c9c-secondary-color;
+    }
+
+    &__cards-description {
+        text-align: center;
+        color: $c9c-main-color;
+    }
+
+}
+
+.cards {
+    @include flex-column-center;
+    border: 1px solid $c9c-main-color;
+    padding: 1rem;
+    margin: .5rem;
+}
