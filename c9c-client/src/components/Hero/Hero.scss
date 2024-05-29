@@ -1,0 +1,27 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.hero {
+    @include borders;
+    @include flex-column-center;
+    background: radial-gradient(circle,#4489c8 20%,#fff 80%, #fff 100%);
+    padding: 2rem;
+    margin: 0;
+
+    &__logo {
+        width: 70vw;
+    }
+
+    &__title {
+        font-family: $c9c-main-font;
+        color: $c9c-main-color;
+        font-size: 1rem;
+        text-align: center;
+        margin: 2rem;
+        width: 80vw;
+            @include tablet {
+                font-size: 2rem;
+            }
+    }
+}

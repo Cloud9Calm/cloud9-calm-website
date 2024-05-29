@@ -18,3 +18,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+@mixin borders {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

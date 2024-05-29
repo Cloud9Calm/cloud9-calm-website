@@ -5,12 +5,13 @@
 .about {
     @include flex-column-center;
     font-family: $c9c-main-font;
-
+    margin: 1rem;
+    
     &__title {
         font-size: 1.5rem;
         color: $c9c-secondary-color;
         text-transform: uppercase;
-        margin: .5rem;
+        margin: 1rem;
     }
 
     &__description {
@@ -18,6 +19,13 @@
         color: $c9c-secondary-color;
         text-align: center;
         margin: 1rem;
+    }
+
+    &__cards-container {
+        @include tablet {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 
     &__c9c-logo {
@@ -38,6 +46,7 @@
     &__cards-description {
         text-align: center;
         color: $c9c-main-color;
+        font-family: $c9c-secondary-fonts;
     }
 
 }
@@ -46,5 +55,10 @@
     @include flex-column-center;
     border: 1px solid $c9c-main-color;
     padding: 1rem;
-    margin: .5rem;
+    margin: 1rem .5rem;
+    width: 15rem;
+        @include tablet {
+            width: 18rem;
+            margin: 1rem 2rem;
+        }
 }
