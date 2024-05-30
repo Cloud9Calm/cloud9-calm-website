@@ -19,7 +19,27 @@
   align-items: center;
 }
 
-@mixin borders {
+@mixin outer-borders {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+@mixin color-borders {
+  border: 2px solid; 
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to top right, $analogous-color-2, $analogous-color-1);
+  box-shadow: 0 0 10px 5px rgba(68, 137, 200, 0.1);
+  padding: 20px;
+  background-color: transparent;
+}
+
+@mixin cards {
+  @include flex-column-center;
+        padding: 1rem;
+        margin: 1rem 0.5rem;
+        width: 250px;
+          @include tablet {
+              width: 300px;
+              margin: 1rem 2rem;
+              }
 }

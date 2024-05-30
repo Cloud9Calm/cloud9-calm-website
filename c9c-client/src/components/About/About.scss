@@ -5,7 +5,8 @@
 .about {
     @include flex-column-center;
     font-family: $c9c-main-font;
-    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
     
     &__title {
         font-size: 1.5rem;
@@ -22,16 +23,28 @@
     }
 
     &__cards-container {
+        flex-wrap: wrap;
         @include tablet {
             display: flex;
             justify-content: space-around;
         }
     }
 
+    &__card-1,
+    &__card-2,  
+    &__card-3 {
+        @include color-borders;
+        @include cards;
+        transition: transform 0.3s ease-in-out;   
+        &:hover {
+        transform: scale(1.05);
+        } 
+    }
+
     &__c9c-logo {
         height: 75px;
         background-color: rgb(194, 217, 243);
-        border-radius: 50%;
+        border-radius: 25px;
         padding: 10px;
         border: 1px solid $c9c-main-color;
     }
@@ -51,14 +64,3 @@
 
 }
 
-.cards {
-    @include flex-column-center;
-    border: 1px solid $c9c-main-color;
-    padding: 1rem;
-    margin: 1rem .5rem;
-    width: 15rem;
-        @include tablet {
-            width: 18rem;
-            margin: 1rem 2rem;
-        }
-}
