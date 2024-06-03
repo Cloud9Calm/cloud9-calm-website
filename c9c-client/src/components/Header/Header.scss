@@ -3,15 +3,22 @@
 @import '../../styles/partials/variables.scss';
 
 .header {
-    display: flex;
-    flex-direction: column;
+    @include flex-column-center;
     justify-content: space-between;
-    align-items: center;
     background-color: #fff;
     font-family: 'comfortaa', sans-serif;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
         @include tablet {
-            flex-direction: row;
+        flex-direction: row;
         }
+            &.header--scrolled {
+            background-color: rgba(255, 255, 255, 0.4); 
+            transition: background-color 0.3s ease;
+            }
 
     &__title {
         font-size: 1.5rem;

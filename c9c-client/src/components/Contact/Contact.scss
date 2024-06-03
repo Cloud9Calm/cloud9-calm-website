@@ -8,11 +8,11 @@
     @include outer-borders;
 
     &__title {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: $c9c-main-font;
         color: $c9c-secondary-color;
         text-transform: uppercase;
-        margin: 1rem;
+        margin: 3rem;
     }
 
     &__sub-title,

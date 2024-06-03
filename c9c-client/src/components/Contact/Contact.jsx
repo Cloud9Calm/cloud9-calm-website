@@ -3,7 +3,7 @@ import erinCronie from '../../assets/images/erin-cronie-developer.jpg';
 
 const Contact = () => { 
     const handleEmailClick = () => {
-        window.location.href = "mailto:erin@example.com?subject=Booking%20inquiry%20from%20cloud9calm.com%20to%20Erin%20Cronie";
+        window.location.href = "mailto:erin@cloud9calm.com?subject=Booking%20inquiry%20from%20cloud9calm.com%20to%20Erin%20Cronie";
       };
 
 
