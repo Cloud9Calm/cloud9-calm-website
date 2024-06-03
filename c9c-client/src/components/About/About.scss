@@ -35,10 +35,7 @@
     &__card-3 {
         @include color-borders;
         @include cards;
-        transition: transform 0.3s ease-in-out;   
-        &:hover {
-        transform: scale(1.05);
-        } 
+        @include hover;
     }
 
     &__c9c-logo {

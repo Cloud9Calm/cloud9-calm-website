@@ -1,4 +1,4 @@
-import '../Services/Services.scss';
+import './Services.scss';
 import website from '../../assets/images/website-design-graphic.png';
 import ecommerce from '../../assets/images/ecommerce-support-graphic.png';
 

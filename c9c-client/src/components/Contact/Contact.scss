@@ -1,0 +1,46 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.contact {
+    @include flex-column-center;
+    background-color: white;
+    @include outer-borders;
+
+    &__title {
+        font-size: 1.5rem;
+        font-family: $c9c-main-font;
+        color: $c9c-secondary-color;
+        text-transform: uppercase;
+        margin: 1rem;
+    }
+
+    &__sub-title,
+    &__sub-title-2 {
+        font-family: $c9c-secondary-fonts;
+        color: $c9c-secondary-color;
+        margin: 0
+    }
+
+    &__profile {
+        @include color-borders;
+        padding: 0;
+        margin: 1rem;
+        height: 400px;
+        
+    }
+
+    &__description {
+        font-family: $c9c-main-font;
+        line-height: 2rem;
+        color: $c9c-secondary-color;
+        width: 80%;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    &__booking {
+        @include buttons;
+        color: $c9c-main-color;
+    }
+}

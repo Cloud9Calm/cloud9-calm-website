@@ -4,7 +4,7 @@ import Logo from '../../assets/images/cloud9-calm-logo.png';
 const About = () => {
   return (
       <section className='about'>
-        <h2 className='about__title'>What I Offer</h2>
+        <h2 className='about__title'>What I Can Offer, Plus More!</h2>
             <h3 className='about__description'>Crafting web solutions, enhancing eCommerce success</h3>
         
         <section className='about__cards-container'>
