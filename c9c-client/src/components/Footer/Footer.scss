@@ -1,0 +1,63 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.footer {
+    background-color: $c9c-main-color;
+    @include flex-column-center;
+    justify-content: space-between;
+        @include tablet {
+            flex-direction: row;
+        }
+
+    &__info {
+        margin: 1rem;
+        width: 80%;
+            @include tablet {
+                width: 20%;
+            }
+    }
+
+    &__title {
+        font-family: $c9c-main-font;
+        font-size: 1rem
+    }
+
+    &__sub-title,
+    &__copywrite {
+        font-family: $c9c-secondary-fonts;  
+        font-size: .75rem;
+
+    }
+
+    &__socials {
+        width: 100%;
+            @include tablet {
+                width: 40%;
+            }
+    }
+
+  &__Linkedin,
+  &__Instagram,
+  &__Facebook,
+  &__GitHub,
+  &__Shopify {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+  } 
+
+    &__social-icons {
+        width: 25px;
+    }
+
+    &__social-titles {
+        font-family: $c9c-main-font;
+        font-size: .5rem;
+        margin: 0 1rem;
+        @include hover;
+    }
+}

@@ -7,23 +7,33 @@
     font-family: $c9c-main-font;
     padding: 1rem;
     background-color: white;
+    padding: 2rem;
     
     &__title {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: $c9c-secondary-color;
         text-transform: uppercase;
-        margin: 1rem;
+        margin: 2rem;
+    }
+
+    &__profile-img {
+        width: 60%;
+        margin: 2rem;
+        border-radius: 50%;
     }
 
     &__description {
         font-size: 1rem;
+        line-height: 2rem;
         color: $c9c-secondary-color;
         text-align: center;
-        margin: 1rem;
+        width: 70%;
+        
     }
 
     &__cards-container {
         flex-wrap: wrap;
+        margin: 2rem;
         @include tablet {
             display: flex;
             justify-content: space-around;

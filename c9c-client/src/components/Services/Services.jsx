@@ -4,7 +4,7 @@ import ecommerce from '../../assets/images/ecommerce-support-graphic.png';
 
 const Services = () => {
     return (
-    <section className='services'>
+    <section className='services' id='services'>
         <h2 className='services__title'>More information on my services</h2>
             <h3 className='services__sub-title'>I provide expert web development services to create custom, user-friendly websites tailored to your business needs. Additionally, I offer comprehensive e-commerce support, helping you build and maintain secure, optimized online stores to enhance your sales and customer experience.</h3>
 

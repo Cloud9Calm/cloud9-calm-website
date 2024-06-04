@@ -6,20 +6,18 @@
     @include flex-column-center;
     background-color: $c9c-main-color;
     font-family: $c9c-main-font;
-    padding: 1rem;
+    padding: 2rem;
     color: white;
+    text-align: center;
     @include outer-borders;
 
     &__title {
         font-size: 1.5rem;
         text-transform: uppercase;
         margin: 1rem;
-        text-align: center;
-        text-transform: uppercase;
     }
 
     &__sub-title {
-        text-align: center;
         font-size: .5rem;
         max-width: 50vw;
         line-height: 1.5rem;

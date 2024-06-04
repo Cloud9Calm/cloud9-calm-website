@@ -8,7 +8,7 @@ const Contact = () => {
 
 
     return (
-        <section className='contact'>
+        <section className='contact' id='contact'>
             <h2 className='contact__title'>Book A Free Consultation</h2>
                 <h3 className='contact__sub-title'>Let's Chat About Your Goals ✨</h3>
                 <h3 className='contact__sub-title-2'>Discover Cloud9 Calm Co.</h3>
@@ -18,7 +18,7 @@ const Contact = () => {
                 src={erinCronie} 
                 alt="Cloud9 Calm Co.'s Erin Cronie" 
             />
-                <p className='contact__description'>Led by Erin, a software developer, former teaching assistant at BrainStation, and Shopify Plus support specialist, I am committed to delivering top-notch web solutions and eCommerce support. With a passion for crafting seamless user experiences and a dedication to continuous learning, I will bring a unique blend of technical prowess and industry insight to every project. Join me on a journey towards digital excellence with Cloud9 Calm Co.</p>
+                <p className='contact__description'>I am a software developer, former software engineering teaching assistant at BrainStation, and Shopify Plus support specialist. With experience supporting million-dollar Shopify Plus stores, I am committed to delivering top-notch web solutions and eCommerce support. My passion for crafting seamless user experiences, combined with a dedication to continuous learning, ensures I bring a unique blend of technical prowess and industry insight to every project. Join me on a journey towards digital excellence</p>
                 <button
                         className='contact__booking'
                         onClick={handleEmailClick}

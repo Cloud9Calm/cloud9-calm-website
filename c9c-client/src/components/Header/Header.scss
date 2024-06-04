@@ -15,10 +15,12 @@
         @include tablet {
         flex-direction: row;
         }
-            &.header--scrolled {
-            background-color: rgba(255, 255, 255, 0.4); 
-            transition: background-color 0.3s ease;
-            }
+        &.header--scrolled {
+            background-color: rgba(255, 255, 255, 0.6); 
+            backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px);
+            transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+          }
 
     &__title {
         font-size: 1.5rem;
@@ -37,10 +39,25 @@
     }
 
     &__menu-item {
+        a {
+            text-decoration: none;
+            color: black; // Default color
+          }
         list-style-type: none;
             @include tablet {
                 padding: 0 1rem;
             }
     }
 
+}
+
+.header__menu-item.active a {
+    color: $c9c-main-color; 
+}
+
+.header--scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
