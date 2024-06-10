@@ -1,6 +1,8 @@
 import './Services.scss';
+import { Link } from 'react-router-dom';
 import website from '../../assets/images/website-design-graphic.png';
 import ecommerce from '../../assets/images/ecommerce-support-graphic.png';
+import '../../pages/WebsiteDevelopment/WebsiteDevelopment';
 
 const Services = () => {
     return (
@@ -13,7 +15,7 @@ const Services = () => {
                     <img className='services__graphics' src={website} alt="Graphic of a laptop with notebook and pen" />
                     <h3 className='services__cards-title'>Web Development</h3>
                         <p className='services__cards-description'>My web development service transforms your vision into a dynamic online presence, leveraging cutting-edge technology to create responsive, visually appealing websites that deliver exceptional user experiences and support your business objectives.</p>
-                            <button className='services__learn-more'>Learn more</button>
+                            <Link to='WebsiteDevelopment' className='services__learn-more'>Learn more</Link> 
                 </div>
                 <div className='services__card-2 s-cards'>
                     <img className='services__graphics' src={ecommerce} alt="Graphic of a cell phone and shopping cart" />

@@ -1,0 +1,91 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.webdev {
+    background-color: $c9c-main-color;
+    margin: 0;
+
+    &__title {
+        font-family: $c9c-main-font;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: white;
+        padding: 2rem;
+        margin: 0;
+            @include tablet {
+                padding: 2rem;
+                text-align: left;
+            }
+    }
+
+    &__sub-title {
+        font-family: $c9c-secondary-fonts;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-weight: 300;
+        line-height: 2rem;
+        text-align: center;
+            @include tablet {
+                text-align: left;
+                padding: 2rem;
+            }   
+    }   
+
+    &__graphic {
+        width: 100%;
+    }
+
+}
+
+//animations
+@keyframes slide {
+    100% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .webdev__info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    white-space: nowrap;
+    background-color: white;
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+        }
+  }
+  
+  .webdev__info-section {
+    display: inline-block; 
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    white-space: normal;  
+        @include tablet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        animation: slide 20s linear infinite;
+        border-left: 1px solid black; 
+        border-bottom: none;
+        }
+  }
+  
+  .webdev__info-title {
+    font-family: $c9c-main-font;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: .5rem;
+  }
+  
+  .webdev__info-desc {
+    font-family: $c9c-secondary-fonts;
+    color: $c9c-secondary-color;
+    font-size: 1rem;
+    margin: .5rem;
+    line-height: 1.5rem;
+        @include tablet {
+        width: 30rem; 
+        }
+  }
