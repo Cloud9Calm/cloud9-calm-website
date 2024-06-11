@@ -2,7 +2,7 @@
     "name": "cloud9-calm-website",
     "version": "0.1.0",
     "private": true,
-    "homepage": "cloud9calm.com",
+    "homepage": "https://cloud9calm.github.io/cloud9-calm-website/",
     "dependencies": {
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
