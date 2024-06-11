@@ -40,20 +40,20 @@ To get a local copy of this project up and running, follow these steps:
    ```bash
    git clone https://github.com/Cloud9Calm/cloud9-calm-website.git
 
-2. **Navigate to the project directory**:
-3. **Install the dependencies**:
+2. **Navigate to the project directory**: cd cloud9-calm-website
+3. **Install the dependencies**: npm install
 
 ## Usage
 
 ### Running the Development Server
 
-To start the development server, run:
+To start the development server, run: npm start
 
 This will start the application on `http://localhost:3000`.
 
 ### Building for Production
 
-To create a production build, run:
+To create a production build, run: npm run build
 
 The production-ready files will be generated in the `build` directory.
 
