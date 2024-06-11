@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../About/About.scss';
 import Logo from '../../assets/images/cloud9-calm-logo.png';
-import erinCronie from '../../assets/images/erin-cronie-developer-2.jpg'; 
+import erinCronie from '../../assets/images/erin-cronie-developer.jpg'; 
 
 const About = () => {
   return (

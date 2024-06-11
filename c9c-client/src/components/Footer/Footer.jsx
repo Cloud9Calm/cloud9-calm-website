@@ -10,9 +10,7 @@ const Footer = () => {
         <footer className='footer' id='footer'>
             <div className='footer__info'>
                 <h2 className='footer__title'>C9C SOCIAL MEDIA ☁️💻</h2>
-                    <h3 className='footer__sub-title'>Your partner for standout web solutions. Elevating online presence, one click at a time.</h3>
-                    <p className='footer__copywrite'> Copyright Cloud9 Calm Co. 2024</p>
-            </div>
+                    <h3 className='footer__sub-title'>Your partner for standout web solutions. Elevating online presence, one click at a time.</h3>            </div>
 
             <div className='footer__socials'>
   <div className='footer__Linkedin'>
@@ -87,6 +85,7 @@ const Footer = () => {
     </h3>
   </div>
 </div>
+<p className='footer__copywrite'> Copyright Cloud9 Calm Co. 2024</p>
        </footer>
     );
 }

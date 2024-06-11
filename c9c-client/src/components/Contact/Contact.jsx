@@ -1,5 +1,5 @@
 import './Contact.scss';
-import erinCronie from '../../assets/images/erin-cronie-developer.jpg';
+import erinCronie from '../../assets/images/erin-cronie-developer-2.jpg';
 
 const Contact = () => { 
     const handleEmailClick = () => {

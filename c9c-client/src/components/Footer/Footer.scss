@@ -7,13 +7,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include outer-borders;
 
     &__info {
         margin: 1rem;
-        width: 80%;
-            @include tablet {
-                width: 20%;
-            }
+      
     }
 
     &__title {
@@ -31,8 +29,7 @@
     &__socials {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        width: 100vw;
+        justify-content: space-evenly;
     }
 
   &__Linkedin,
@@ -47,7 +44,7 @@
     justify-content: center;
         @include tablet {
             justify-content: start;
-            width: 10vw;
+
         }
 
   } 
@@ -58,7 +55,7 @@
 
     &__social-titles {
         font-family: $c9c-main-font;
-        font-size: .5rem;
+        font-size:.75rem;
         margin: 0 1rem;
         @include hover;
     }
