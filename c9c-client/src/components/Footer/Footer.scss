@@ -4,11 +4,9 @@
 
 .footer {
     background-color: $c9c-main-color;
-    @include flex-column-center;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-        @include tablet {
-            flex-direction: row;
-        }
 
     &__info {
         margin: 1rem;
@@ -31,10 +29,10 @@
     }
 
     &__socials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 100vw;
-            @include tablet {
-                width: 25vw;
-            }
     }
 
   &__Linkedin,

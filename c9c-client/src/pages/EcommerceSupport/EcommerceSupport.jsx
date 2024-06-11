@@ -1,11 +1,11 @@
 import React from 'react';
-import '../WebsiteDevelopment/WebsiteDevelopment.scss';
-import websiteGraphic from '../../assets/images/c9c-website-development.png';
-import services from '../../data/website-development-services.json'; 
+import '../EcommerceSupport/EcommerceSupport.scss';
+import ecommerceGraphic from '../../assets/images/c9c-ecommerce-support-img.png';
+import services from '../../data/ecommerce-support-services.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 import { Link } from 'react-router-dom';
 
-const WebsiteDev = () => {
+const EcommerceSupport = () => {
   return (
     <main className='webdev'>
     <header className='webdev__header'>
@@ -14,19 +14,18 @@ const WebsiteDev = () => {
         </h2>
         <Link to='/' className='webdev__header-menu-item'>Home</Link>
     </header>
-      <h2 className='webdev__title'>More information on Website Development</h2>
+      <h2 className='webdev__title'>More information on Ecommerce Support</h2>
       <div className='webdev__top-section'>
         <img 
         className='webdev__logo'
         src={c9cLogoWhite}
          alt="Cloud9 Calm Logo in white" />
       <h3 className='webdev__sub-title'>
-        Empower your online presence with my dedicated web development support services. I specialize in ensuring the seamless operation of your website, tackling technical challenges, implementing updates, and enhancing functionality.
-      </h3>
+      Enhance your online store with my comprehensive eCommerce support services. I focus on optimizing your eCommerce platform, managing technical issues, implementing updates, and improving functionality to drive sales and enhance the customer experience.      </h3>
       </div>
       <img
         className='webdev__graphic'
-        src={websiteGraphic}
+        src={ecommerceGraphic}
         alt="Graphic of two people working on a computer"
       />
       <div className='webdev__info'>
@@ -41,4 +40,4 @@ const WebsiteDev = () => {
   );
 }
 
-export default WebsiteDev;
+export default EcommerceSupport;

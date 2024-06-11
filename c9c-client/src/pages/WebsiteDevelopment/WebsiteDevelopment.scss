@@ -2,34 +2,81 @@
 @import '../../styles/partials/mixins.scss';
 @import '../../styles/partials/variables.scss';
 
+
 .webdev {
     background-color: $c9c-main-color;
     margin: 0;
 
+    &__header {
+        @include flex-column-center;
+        font-family: $c9c-main-font;
+        background-color: white;
+        padding: 1rem;
+            @include tablet {
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 1rem 2rem
+            }
+    }
+
+    &__header-title {
+        color: $c9c-main-color;
+    }
+
+    &__header-menu-item {
+        a {
+            text-decoration: none;
+        }
+        list-style-type: none;
+            @include tablet {
+                padding: 0 1rem;
+            }
+    }
+
     &__title {
         font-family: $c9c-main-font;
-        font-size: 2rem;
+        color: $c9c-main-color;
+        font-size: 1.5rem;
         text-align: center;
+        line-height: 2.5rem;
         text-transform: uppercase;
+        @include outer-borders;
         background-color: white;
-        padding: 2rem;
+        padding: 4rem;
         margin: 0;
             @include tablet {
-                padding: 2rem;
+                font-size: 2rem;
+                padding: 8rem 2rem;
                 text-align: left;
             }
     }
 
+    &__top-section {
+        @include flex-column-center;
+        background-color: $c9c-main-color;
+        @include outer-borders;
+        padding: 2rem;
+            @include tablet {
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 8rem 2rem;
+            }
+    }
+
+    &__logo {
+        height: 100px;
+        margin: 0 2rem;
+    }
+
     &__sub-title {
         font-family: $c9c-secondary-fonts;
+        color: white;
         font-size: 1.5rem;
-        padding: 1rem;
         font-weight: 300;
         line-height: 2rem;
         text-align: center;
             @include tablet {
                 text-align: left;
-                padding: 2rem;
             }   
     }   
 

@@ -6,14 +6,16 @@
     @include flex-column-center;
     justify-content: space-between;
     background-color: #fff;
-    font-family: 'comfortaa', sans-serif;
+    font-family: $c9c-main-font;
     position: -webkit-sticky; 
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
+    margin: 0;
+    padding: 1rem;
         @include tablet {
-        flex-direction: row;
+            padding: 1rem 2rem;
+            flex-direction: row;
         }
         &.header--scrolled {
             background-color: rgba(255, 255, 255, 0.6); 
@@ -41,7 +43,7 @@
     &__menu-item {
         a {
             text-decoration: none;
-            color: black; // Default color
+            color: black; 
           }
         list-style-type: none;
             @include tablet {
