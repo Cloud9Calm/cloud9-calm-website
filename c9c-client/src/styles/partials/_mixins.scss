@@ -35,9 +35,9 @@
   @include flex-column-center;
         padding: 1rem;
         margin: 1rem 0.5rem;
-        width: 15 rem;
+        width: 90%;
           @include tablet {
-              width: 18rem;
+              width: 20rem;
               margin: 1rem 2rem;
               }
 }

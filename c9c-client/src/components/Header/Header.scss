@@ -7,13 +7,13 @@
     justify-content: space-between;
     background-color: #fff;
     font-family: $c9c-main-font;
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     margin: 0;
     padding: 1rem;
         @include tablet {
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
             padding: 1rem 2rem;
             flex-direction: row;
         }

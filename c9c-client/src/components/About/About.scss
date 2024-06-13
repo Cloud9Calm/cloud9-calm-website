@@ -14,7 +14,10 @@
         font-size: 2rem;
         color: $c9c-secondary-color;
         text-transform: uppercase;
-        margin: 2rem;
+        margin: 1rem;
+            @include tablet {
+                margin: 3rem;
+            }
     }
 
     &__profile-img {
@@ -25,6 +28,7 @@
 
     &__description {
         font-size: 1rem;
+        font-family: $c9c-secondary-fonts;
         line-height: 2rem;
         color: $c9c-secondary-color;
         text-align: center;

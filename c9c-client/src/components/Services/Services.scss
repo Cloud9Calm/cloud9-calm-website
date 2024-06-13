@@ -6,28 +6,35 @@
     @include flex-column-center;
     background-color: $c9c-main-color;
     font-family: $c9c-main-font;
-    padding: 2rem;
     color: white;
     text-align: center;
     @include outer-borders;
+        @include tablet {
+            padding: 2rem;
+        }
 
     &__title {
         font-size: 1.5rem;
         text-transform: uppercase;
-        margin: 1rem;
+        margin: 2rem;
+            @include tablet {
+                font-size: 2rem;
+            }   
     }
 
     &__sub-title {
-        font-size: .5rem;
-        max-width: 50vw;
+        font-size: 1rem;
         line-height: 1.5rem;
         font-family: $c9c-secondary-fonts;
+        max-width: 80%;
             @include tablet {
-                font-size: 1rem;
-            }
+                font-size: 1.5rem;
+                max-width: 70%;
+            }   
     }
 
     &__cards-container {
+        margin: 1rem;
         @include tablet {
             display: flex;
             justify-content: space-around;
@@ -50,21 +57,19 @@
 
     &__cards-title {
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 2rem;
             @include tablet {
-                font-size: 1.5rem;
+                font-size: 2.5rem;
         
             }
 
     }
 
     &__cards-description {
-        font-size: .7rem;
+        font-size: 1rem;
         font-family: $c9c-secondary-fonts;
         line-height: 2rem;
-            @include tablet {
-                font-size: 1rem;
-            }
+    
     }
 
     &__learn-more {
