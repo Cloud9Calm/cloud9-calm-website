@@ -10,7 +10,7 @@ const About = () => {
         <Helmet>
           <title>About Erin Cronie | Cloud9 Calm Co.</title>
           <meta name="description" content="Learn more about Erin Cronie, a passionate software developer and founder of Cloud9 Calm Co., specializing in web development, eCommerce solutions, and SEO services." />
-          <meta name="keywords" content="Erin Cronie, Cloud9 Calm Co., software developer, web development, eCommerce solutions, SEO services" />
+          <meta name="keywords" content="Penticton website developer, website Penticton, Okangan website developer, Erin Cronie, Cloud9 Calm Co., software developer, web development, eCommerce solutions, SEO services" />
           <meta property="og:title" content="About Erin Cronie | Cloud9 Calm Co." />
           <meta property="og:description" content="Discover Erin Cronie's journey in tech and her expertise in web development, eCommerce solutions, and SEO services at Cloud9 Calm Co." />
           <meta property="og:image" content={erinCronie} />

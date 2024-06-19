@@ -12,7 +12,7 @@ const EcommerceSupport = () => {
       <Helmet>
         <title>Ecommerce Support Services | Cloud9 Calm Co.</title>
         <meta name="description" content="Enhance your online store with Cloud9 Calm Co.'s comprehensive eCommerce support services. I focus on optimizing your eCommerce platform, managing technical issues, implementing updates, and improving functionality to drive sales and enhance the customer experience." />
-        <meta name="keywords" content="eCommerce support, online store optimization, technical support, website updates, Cloud9 Calm Co." />
+        <meta name="keywords" content="Penticton website developer, website Penticton, Okangan website developer,, eCommerce support, online store optimization, technical support, website updates, Cloud9 Calm Co." />
         <link rel="canonical" href="https://www.cloud9calm.com/ecommerce-support" />
       </Helmet>
       <main className='webdev'>

@@ -12,7 +12,7 @@ const WebsiteDev = () => {
       <Helmet>
         <title>Website Development Services | Cloud9 Calm Co.</title>
         <meta name="description" content="Empower your online presence with Cloud9 Calm Co.'s dedicated web development support services. We specialize in ensuring the seamless operation of your website, tackling technical challenges, implementing updates, and enhancing functionality." />
-        <meta name="keywords" content="web development, website support, technical support, website updates, Cloud9 Calm Co." />
+        <meta name="keywords" content="Penticton website developer, website Penticton, Okangan website developer, website Okanagan, web development, website support, technical support, website updates, Cloud9 Calm Co." />
         <link rel="canonical" href="https://www.cloud9calm.com/website-development" />
       </Helmet>
       <main className='webdev'>
