@@ -1,3 +1,7 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
 body {
     border: 2px solid black;
     margin: 1rem;
@@ -10,8 +14,28 @@ a {
     cursor: pointer;
 }
 
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
 h1,
 h2,
 h3 {
     font-weight: 100;
 }
+
+h1 {
+    font-family: $c9c-main-font;
+}
+
+h2,
+h3,
+p {
+    font-family: $c9c-secondary-fonts;
+}
+
+

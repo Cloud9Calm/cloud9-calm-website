@@ -1,0 +1,99 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.webdevinfo {
+    border-top: 1px solid black;
+    background-color: white;
+    text-align: center;
+    @include flex-column-center;
+    @include tablet {
+        padding: 2rem;
+    }
+
+    &__description {
+        line-height: 2rem;
+        margin: 2rem;
+    }
+
+    &__img {
+        width: 15rem;
+        border-radius: 50%;
+        @include tablet {
+            width: 40rem;
+        }
+    }
+
+    &__services-title {
+        font-size: 1.5rem;
+        margin: 1rem;
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__services-logo {
+        width: 10rem;
+    }
+
+    &__services-list {
+        @include flex-column-center;
+        background-color: $c9c-main-color;   
+    }
+
+    &__services-item {
+        @include color-borders;
+        @include flex-column-center;
+        justify-content: space-between;
+        background-color: white;
+        width: 70%;
+        margin: 1rem;
+        @include tablet {
+            width: 90%;
+            height: 25rem;
+        }
+    }
+
+    &__services-item-title {
+        font-family: $c9c-main-font;
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__services-item-description {
+        margin: 0;
+        padding: 0;
+        @include tablet {
+            max-width: 60%;
+        }
+    } 
+
+    &__services-item-price {
+        font-size: 1.25rem;
+        color: $c9c-secondary-color;
+        margin-top: 0.5rem;
+        @include tablet {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__pricing {
+        padding: 1rem;
+        margin: 1rem;
+        @include flex-column-center;
+    }   
+
+    &__pricing-note {
+        padding: 1rem;
+    }
+    
+    &__pricing-button {
+        margin: 2rem;
+        @include buttons;
+        color: black;
+    }
+}

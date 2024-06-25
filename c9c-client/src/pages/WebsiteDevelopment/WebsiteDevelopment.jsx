@@ -5,6 +5,7 @@ import websiteGraphic from '../../assets/images/c9c-website-development.png';
 import services from '../../data/website-development-services.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 import { Link } from 'react-router-dom';
+import WebDevelopmentInfo from '../../components/WebDevelopmentInfo/WebDevelopmentInfo';
 
 const WebsiteDev = () => {
   return (
@@ -45,6 +46,7 @@ const WebsiteDev = () => {
             </div>
           ))}
         </div>
+        <WebDevelopmentInfo />
       </main>
     </>
   );

@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "title": "Custom Website Design",
+            "description": "Create a stunning and unique online presence with custom website design services. I work closely with you to understand your brand, goals, and target audience, ensuring a design that reflects your vision and engages your visitors. From wireframes to the final design, I handle everything to create a website that stands out.",
+            "price": "Starting at $2000"
+        },
+        {
+            "title": "Responsive Web Development",
+            "description": "Develop websites that look great and perform well on all devices with responsive web development. I ensure your site is optimized for desktops, tablets, and mobile phones, providing a seamless user experience across all platforms. My focus is on clean, efficient code that enhances speed and usability.",
+            "price": "$75-$100 per hour"
+        },
+        {
+            "title": "E-commerce Solutions",
+            "description": "Launch and grow your online store with comprehensive e-commerce solutions. I offer everything from initial setup and product listings to payment gateway integration and custom features. Whether you're using Shopify, WooCommerce, or another platform, I'll help you create a robust, user-friendly online store.",
+            "price": "$75-$100 per hour"
+        },
+        {
+            "title": "SEO Optimization",
+            "description": "Boost your website's visibility with targeted SEO optimization services. I conduct in-depth keyword research, optimize on-page elements, and implement best practices to improve your search engine rankings. My goal is to drive more organic traffic to your site, increasing your reach and potential customer base.",
+            "price": "$50 per hour"
+        },
+        {
+            "title": "Website Maintenance and Updates",
+            "description": "Keep your website up-to-date and running smoothly with regular maintenance and updates. I handle everything from content updates and security patches to performance optimization and feature enhancements. My services ensure your site remains current, secure, and fully functional at all times.",
+            "price": "$75 per hour"
+        },
+        {
+            "title": "Web Application Development",
+            "description": "Develop custom web applications tailored to your specific business needs. Whether you need a simple tool or a complex system, I provide end-to-end development services, including planning, design, development, testing, and deployment. My focus is on creating scalable, secure, and user-friendly applications.",
+            "price": "Contact for pricing"
+        }
+    ]
+}
