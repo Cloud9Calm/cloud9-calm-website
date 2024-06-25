@@ -51,6 +51,7 @@
 
 @mixin buttons {
   @include color-borders;
+        font-family: $c9c-main-font;
         background-color: transparent;
         padding: 1rem;
         text-transform: uppercase;
