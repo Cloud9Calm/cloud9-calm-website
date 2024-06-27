@@ -1,4 +1,3 @@
-import React from 'react';
 import clientsData from '../../data/clients.json';
 import './Clients.scss';
 
