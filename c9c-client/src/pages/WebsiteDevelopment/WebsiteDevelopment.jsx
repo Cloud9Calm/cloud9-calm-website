@@ -7,7 +7,7 @@ import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 import { Link } from 'react-router-dom';
 import WebDevelopmentInfo from '../../components/WebDevelopmentInfo/WebDevelopmentInfo';
 
-const WebsiteDev = () => {
+const WebsiteDevelopment = () => {
   return (
     <>
       <Helmet>
@@ -52,4 +52,4 @@ const WebsiteDev = () => {
   );
 }
 
-export default WebsiteDev;
+export default WebsiteDevelopment;

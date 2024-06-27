@@ -1,0 +1,59 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.clients {
+    @include flex-column-center;
+    background-color: white;
+    border-top: 1px solid black;
+    padding: 2rem;
+    text-align: center;
+
+    &__title {
+        font-family: $c9c-main-font;
+        margin: 0;
+        padding: 1rem;
+            @include tablet {
+                font-size: 2rem;
+            }
+    }
+
+    &__list {
+        @include flex-column-center;
+        padding: 2rem 0;
+            @include tablet {
+                flex-direction: row;
+            }
+    }
+
+    &__client-info {
+        @include flex-column-center;
+            @include tablet {
+                width: 60%;
+            }
+    }
+
+    &__name {
+        font-family: $c9c-main-font;
+        margin: 0;
+        padding: 1rem;
+            @include tablet {
+                font-size: 2rem;
+            }
+    }
+
+    &__website {
+        text-decoration: none;
+        margin: 0;
+        padding: .5rem;
+            @include tablet {
+                font-size: 1.5rem;
+                padding: 1rem;
+            }
+    }
+
+    &__job-task {
+        margin: 0;
+        width: 80%;
+    }
+}

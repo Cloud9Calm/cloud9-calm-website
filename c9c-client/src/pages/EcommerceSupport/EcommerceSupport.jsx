@@ -6,6 +6,7 @@ import services from '../../data/ecommerce-support-services.json';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 import { Link } from 'react-router-dom';
 import EcommerceSupportInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo';
+import Contact from '../../components/Contact/Contact';
 
 
 const EcommerceSupport = () => {
@@ -48,6 +49,7 @@ const EcommerceSupport = () => {
           ))}
         </div>
         <EcommerceSupportInfo />
+        <Contact />
       </main>
     </>
   );

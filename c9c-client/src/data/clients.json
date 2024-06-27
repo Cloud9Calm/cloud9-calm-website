@@ -1,0 +1,19 @@
+{
+    "clients": [
+        {
+            "companyName": "Backlash Beauty Bar, Penticton",
+            "website": "backlashbeautybar.com",
+            "jobTask": "Assisted by updating their existing website, which had not been refreshed for several years. This involved a comprehensive update of all services offered to ensure the information was current and accurate. Additionally, I added new stock images to enhance the website's visual appeal and better represent the brand's identity. Finally, I implemented SEO strategies to improve the website's search engine visibility, aiming to drive more organic traffic and increase online presence."
+        },
+        {
+            "companyName": "Ryga Arts Festival, Summerland",
+            "website": "rygafest.ca",
+            "jobTask": "Updated the website to include this year's program. As part of the marketing team, I collaborated on a comprehensive website makeover, ensuring the design and content were refreshed and aligned with current branding. Additionally, I implemented SEO optimization strategies to enhance search engine visibility and drive more organic traffic to the site."
+        },
+        {
+            "companyName": "Aikins Loop Cooperative, Naramata",
+            "website": "aikinsloop.com",
+            "jobTask": "Assisted with their ecommerce site by providing SEO optimization and launch support. This included troubleshooting domain issues to ensure a smooth launch and enhancing search engine visibility to drive more organic traffic to the site."
+        }
+    ]
+}

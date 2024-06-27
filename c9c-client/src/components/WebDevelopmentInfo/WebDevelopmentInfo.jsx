@@ -3,6 +3,7 @@ import erinCronie from '../../assets/images/erin-cronie-back-2.jpg';
 import services from '../../data/website-development-info.json';
 import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
 import c9cPricing from '../../assets/images/cloud9calm-2024-prices.pdf';
+import Contact from '../../components/Contact/Contact';
 
 const WebDevelopmentInfo = () => {
     console.log('WebDevelopmentInfo rendered');
@@ -40,6 +41,7 @@ const WebDevelopmentInfo = () => {
                     className='webdevinfo__pricing-button' 
                     download="Cloud9CalmCo_Pricing.pdf">Download Pricing PDF</a>
             </div>
+            <Contact />
         </section>
     );
 }

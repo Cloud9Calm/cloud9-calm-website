@@ -1,9 +1,9 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
 import About from '../../components/About/About';
 import Services from '../../components/Services/Services';
+import Clients from '../../components/Clients/Clients';
 import Contact from '../../components/Contact/Contact'; 
 
 const Home = () => {
@@ -20,6 +20,7 @@ const Home = () => {
         <Hero />
         <About />
         <Services />
+        <Clients />
         <Contact />
       </main>
     </>

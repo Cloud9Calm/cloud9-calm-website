@@ -7,9 +7,6 @@
     background-color: white;
     text-align: center;
     @include flex-column-center;
-    @include tablet {
-        padding: 2rem;
-    }
 
     &__description {
         line-height: 2rem;
