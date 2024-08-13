@@ -40,29 +40,29 @@ function AppContent() {
       </Routes>
       <Footer />
       <CookieConsent
-  location="bottom"
-  buttonText="Got it ☁️"
-  cookieName="cloud9CalmCookieConsent"
-  style={{ 
-    background: "#C6D7EB", 
-    color: "#4A4A4A", 
-    fontFamily: "Comfortaa, sans-serif", 
-    fontSize: "14px", 
-  }}
-  buttonStyle={{ 
-    background: "#4A90E2", 
-    color: "#FFFFFF", 
-    fontSize: "14px",
-    borderRadius: "20px", 
-    padding: "10px 20px", 
-  }}
-  expires={150}
-  onAccept={() => {
-    const measurementId = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
-    if (measurementId) {
-      ReactGA.initialize(measurementId);
-    }
-  }}
+          location="bottom"
+          buttonText="Got it ☁️"
+          cookieName="cloud9CalmCookieConsent"
+          style={{ 
+            background: "#C6D7EB", 
+            color: "#4A4A4A", 
+            fontFamily: "Comfortaa, sans-serif", 
+            fontSize: "14px", 
+          }}
+          buttonStyle={{ 
+            background: "#4A90E2", 
+            color: "#FFFFFF", 
+            fontSize: "14px",
+            borderRadius: "20px", 
+            padding: "10px 20px", 
+          }}
+          expires={150}
+          onAccept={() => {
+            const measurementId = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
+            if (measurementId) {
+              ReactGA.initialize(measurementId);
+            }
+          }}
 >
   This website uses cookies to ensure you get the best experience. By continuing to use our site, you accept our use of cookies.{" "}
   <span style={{ fontSize: "12px" }}>Learn more in our <a href="/privacy-policy" style={{ color: "#4A90E2", textDecoration: "underline" }}>Privacy Policy</a>.</span>
