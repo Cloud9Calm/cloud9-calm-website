@@ -8,19 +8,6 @@ import WebsiteDevelopment from './pages/WebsiteDevelopment/WebsiteDevelopment';
 import EcommerceSupport from './pages/EcommerceSupport/EcommerceSupport';
 import Footer from './components/Footer/Footer';
 
-// Ensure the measurement ID is defined
-const measurementId = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
-if (!measurementId) {
-  throw new Error('REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID environment variable is required');
-}
-
-// Initialize Google Analytics only if consent is given
-useEffect(() => {
-  if (getCookieConsentValue() === "true") {
-    ReactGA.initialize(measurementId);
-  }
-}, []);
-
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -40,35 +27,55 @@ function usePageViews() {
   }, [location]);
 }
 
-function App() {
+function AppContent() {
   usePageViews();
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="website-development" element={<WebsiteDevelopment />} />
-          <Route path="ecommerce-support" element={<EcommerceSupport />} />
-        </Routes>
-      </BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="website-development" element={<WebsiteDevelopment />} />
+        <Route path="ecommerce-support" element={<EcommerceSupport />} />
+      </Routes>
       <Footer />
       <CookieConsent
-        location="bottom"
-        buttonText="I understand"
-        cookieName="cloud9CalmCookieConsent"
-        style={{ background: "#2B373B" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-        expires={150}
-        onAccept={() => {
-          ReactGA.initialize(measurementId);
-        }}
-      >
-        This website uses cookies to ensure you get the best experience on our website. By continuing to use our site, you accept our use of cookies.{" "}
-        <span style={{ fontSize: "10px" }}>Learn more in our <a href="/privacy-policy" style={{ color: "#fff" }}>Privacy Policy</a>.</span>
-      </CookieConsent>
+  location="bottom"
+  buttonText="Got it ☁️"
+  cookieName="cloud9CalmCookieConsent"
+  style={{ 
+    background: "#C6D7EB", 
+    color: "#4A4A4A", 
+    fontFamily: "Comfortaa, sans-serif", 
+    fontSize: "14px", 
+  }}
+  buttonStyle={{ 
+    background: "#4A90E2", 
+    color: "#FFFFFF", 
+    fontSize: "14px",
+    borderRadius: "20px", 
+    padding: "10px 20px", 
+  }}
+  expires={150}
+  onAccept={() => {
+    const measurementId = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
+    if (measurementId) {
+      ReactGA.initialize(measurementId);
+    }
+  }}
+>
+  This website uses cookies to ensure you get the best experience. By continuing to use our site, you accept our use of cookies.{" "}
+  <span style={{ fontSize: "12px" }}>Learn more in our <a href="/privacy-policy" style={{ color: "#4A90E2", textDecoration: "underline" }}>Privacy Policy</a>.</span>
+</CookieConsent>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
 
