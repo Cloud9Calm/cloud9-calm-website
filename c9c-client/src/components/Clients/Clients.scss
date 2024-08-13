@@ -20,6 +20,8 @@
 
     &__list {
         @include flex-column-center;
+        justify-content: center;
+        flex-wrap: wrap;
         padding: 2rem 0;
             @include tablet {
                 flex-direction: row;
@@ -28,17 +30,19 @@
 
     &__client-info {
         @include flex-column-center;
+        width: 80%;
+        margin: 1rem;
             @include tablet {
-                width: 60%;
+                width: 45%;
             }
     }
 
     &__name {
         font-family: $c9c-main-font;
         margin: 0;
-        padding: 1rem;
             @include tablet {
                 font-size: 2rem;
+                padding: 1rem;
             }
     }
 
@@ -54,6 +58,6 @@
 
     &__job-task {
         margin: 0;
-        width: 80%;
+        padding: 1rem;
     }
 }
