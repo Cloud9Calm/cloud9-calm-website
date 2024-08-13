@@ -3,7 +3,7 @@
         {
             "companyName": "Backlash Beauty Bar",
             "website": "https://backlashbeautybar.com/",
-            "jobTask": "Assisted by updating their existing website, which had not been refreshed for several years. This involved a comprehensive update of all services offered to ensure the information was current and accurate. Additionally, I added new stock images to enhance the website's visual appeal and better represent the brand's identity. Finally, I implemented SEO strategies to improve the website's search engine visibility, aiming to drive more organic traffic and increase online presence."
+            "jobTask": "Updated their existing website, which had not been refreshed for several years. This involved a comprehensive update of all services offered to ensure the information was current and accurate. Additionally, I added new stock images to enhance the website's visual appeal and better represent the brand's identity. Finally, I implemented SEO strategies to improve the website's search engine visibility, aiming to drive more organic traffic and increase online presence."
         },
         {
             "companyName": "Ryga Arts Festival",
@@ -14,6 +14,11 @@
             "companyName": "Aikins Loop Cooperative",
             "website": "https://www.aikinsloop.com/",
             "jobTask": "Assisted with their ecommerce site by providing SEO optimization and launch support. This included troubleshooting domain issues to ensure a smooth launch and enhancing search engine visibility to drive more organic traffic to the site."
+        },
+        {
+            "companyName": "Naramata Vineyard Bed & Breakfast",
+            "website": "https://www.naramatavineyardbnb.com/",
+            "jobTask": "Created a Squarespace website while simultaneously creating a custom Next.js project with Google Calendar integration. This involved ensuring seamless functionality between the platforms and enhancing the user experience with tailored solutions."
         }
     ]
 }
