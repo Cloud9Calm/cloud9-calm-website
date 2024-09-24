@@ -5,7 +5,7 @@
 .about {
     @include flex-column-center;
     font-family: $c9c-main-font;
-    background-color: white;
+    background-color: $c9c-off-white;
         @include tablet {
             padding: 2rem;
     }
@@ -31,7 +31,7 @@
         font-family: $c9c-secondary-fonts;
         line-height: 2rem;
         color: $c9c-secondary-color;
-        text-align: center;
+        text-align: justify;
         width: 70%;
         
     }
@@ -54,24 +54,26 @@
     }
 
     &__c9c-logo {
-        height: 75px;
+        height: 10rem;
+        width: 15rem;
         background-color: rgb(194, 217, 243);
-        border-radius: 25px;
-        padding: 10px;
+        border-radius: 50%;
+        margin: 1rem;
         border: 1px solid $c9c-main-color;
     }
 
     &__cards-title {
         text-transform: uppercase;
-        text-align: center;
+        text-align: justify;
         font-size: 1.25rem;
         color: $c9c-secondary-color;
     }
 
     &__cards-description {
-        text-align: center;
+        text-align: justify;
         color: $c9c-main-color;
         font-family: $c9c-secondary-fonts;
+        line-height: 1.5rem;
     }
 
 }

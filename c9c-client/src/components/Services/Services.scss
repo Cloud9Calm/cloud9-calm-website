@@ -6,8 +6,8 @@
     @include flex-column-center;
     background-color: $c9c-main-color;
     font-family: $c9c-main-font;
-    color: white;
-    text-align: center;
+    color: $c9c-off-white;
+    text-align: justify;
     @include outer-borders;
         @include tablet {
             padding: 2rem;
@@ -24,7 +24,7 @@
 
     &__sub-title {
         font-size: 1rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
         font-family: $c9c-secondary-fonts;
         max-width: 80%;
             @include tablet {
@@ -45,7 +45,7 @@
     &__card-2,
     &__card-3 {
         @include cards;
-        text-align: center;
+        text-align: justify;
     }
 
     &__graphics {

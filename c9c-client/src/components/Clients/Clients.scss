@@ -4,10 +4,10 @@
 
 .clients {
     @include flex-column-center;
-    background-color: white;
+    background-color: $c9c-off-white;
     border-top: 1px solid black;
     padding: 2rem;
-    text-align: center;
+    text-align: justify;
 
     &__title {
         font-family: $c9c-main-font;

@@ -4,8 +4,8 @@
 
 .ecommerce {
     border-top: 1px solid black;
-    background-color: white;
-    text-align: center;
+    background-color: $c9c-off-white;
+    text-align: justify;
     @include flex-column-center;
         @include tablet {
             padding: 2rem;
@@ -39,14 +39,14 @@
 
     &__services-list {
         @include flex-column-center;
-        background-color: $c9c-main-color;   
+        background-color: $c9c-off-white;   
     }
 
     &__services-item {
         @include color-borders;
         @include flex-column-center;
         justify-content: space-between;
-        background-color: white;
+        background-color: $c9c-off-white;
         width: 70%;
         margin: 1rem;
             @include tablet {
