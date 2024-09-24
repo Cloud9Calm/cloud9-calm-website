@@ -5,7 +5,7 @@
 .hero {
     @include outer-borders;
     @include flex-column-center;
-    background: radial-gradient(circle,#4489c8 10%,#fff 80%, #fff 100%);
+    background: radial-gradient(circle,#4489c8 10%,$c9c-off-white 80%, $c9c-off-white 100%);
     padding: 2rem;
     margin: 0;
 
@@ -18,7 +18,7 @@
         font-family: $c9c-main-font;
         color: $c9c-main-color;
         font-size: 1rem;
-        text-align: center;
+        text-align: justify;
         margin: 2rem;
         width: 80vw;
             @include tablet {

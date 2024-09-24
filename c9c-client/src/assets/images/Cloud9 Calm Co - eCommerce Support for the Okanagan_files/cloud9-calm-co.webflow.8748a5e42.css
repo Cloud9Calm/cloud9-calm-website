@@ -436,7 +436,7 @@ figure {
 }
 
 figcaption {
-  text-align: center;
+  text-align: justify;
   margin-top: 5px;
 }
 
@@ -493,7 +493,7 @@ button, [type="button"], [type="reset"] {
 }
 
 .w-form-done {
-  text-align: center;
+  text-align: justify;
   background-color: #ddd;
   padding: 20px;
   display: none;
@@ -1020,7 +1020,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-widget-map .gm-style-iw {
-  text-align: center;
+  text-align: justify;
 }
 
 .w-widget-map .gm-style-iw > button {
@@ -1033,7 +1033,7 @@ textarea.w-input, textarea.w-select {
 
 .w-widget-twitter-count-shim {
   vertical-align: top;
-  text-align: center;
+  text-align: justify;
   background: #fff;
   border: 1px solid #758696;
   border-radius: 3px;
@@ -1051,7 +1051,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-widget-twitter-count-shim .w-widget-twitter-count-inner {
-  text-align: center;
+  text-align: justify;
   color: #999;
   font-family: serif;
   font-size: 15px;
@@ -1198,7 +1198,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-slider {
-  text-align: center;
+  text-align: justify;
   clear: both;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1230,7 +1230,7 @@ textarea.w-input, textarea.w-select {
 
 .w-slider-nav {
   z-index: 2;
-  text-align: center;
+  text-align: justify;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   tap-highlight-color: rgba(0, 0, 0, 0);
   height: 40px;
@@ -1444,7 +1444,7 @@ textarea.w-input, textarea.w-select {
   word-spacing: normal;
   word-wrap: normal;
   color: #fff;
-  text-align: center;
+  text-align: justify;
   z-index: 2000;
   opacity: 0;
   -webkit-user-select: none;
@@ -1805,7 +1805,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-richtext figure.w-richtext-align-fullwidth {
-  text-align: center;
+  text-align: justify;
   clear: both;
   width: 100%;
   max-width: 100%;
@@ -1880,7 +1880,7 @@ textarea.w-input, textarea.w-select {
 }
 
 [data-nav-menu-open] {
-  text-align: center;
+  text-align: justify;
   background: #c8c8c8;
   min-width: 200px;
   position: absolute;
@@ -2145,7 +2145,7 @@ h1 {
 
 h2 {
   color: #676770;
-  text-align: center;
+  text-align: justify;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 32px;
@@ -2201,7 +2201,7 @@ p {
 
 .button {
   color: #fff;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: #69b9ff;
@@ -2279,7 +2279,7 @@ p {
 }
 
 .section {
-  text-align: center;
+  text-align: justify;
   background-color: #fff;
   border: 2px solid #000;
   padding: 80px 1rem;
@@ -2294,7 +2294,7 @@ p {
 }
 
 .white-box {
-  text-align: center;
+  text-align: justify;
   background-color: #fff;
   border: 1px solid #dcebf7;
   border-radius: 5px;
@@ -2315,7 +2315,7 @@ p {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   aspect-ratio: 2.39;
-  text-align: center;
+  text-align: justify;
   object-fit: contain;
   background-image: linear-gradient(rgba(46, 157, 255, .5), rgba(46, 157, 255, .22)), radial-gradient(circle, #000, #fff);
   border-bottom: 0 solid #000;
@@ -2388,7 +2388,7 @@ p {
 
 .section-heading.centered {
   color: #676770;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 30px;
@@ -2403,7 +2403,7 @@ p {
 
 .section-subheading.center {
   color: #8e8e9c;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 18px;
@@ -2439,7 +2439,7 @@ p {
 }
 
 .footer.center {
-  text-align: center;
+  text-align: justify;
   background-color: #383838;
   border-top: 1px solid #dbdbdb;
 }
@@ -2486,12 +2486,12 @@ p {
 }
 
 .tab-menu {
-  text-align: center;
+  text-align: justify;
   margin-bottom: 40px;
 }
 
 .tabs-wrapper {
-  text-align: center;
+  text-align: justify;
 }
 
 .fullwidth-image {
@@ -2524,7 +2524,7 @@ p {
 }
 
 .utility-page-content {
-  text-align: center;
+  text-align: justify;
   flex-direction: column;
   width: 260px;
   display: flex;
@@ -2783,7 +2783,7 @@ p {
 .heading-5 {
   background-color: var(--c9c-blue);
   color: #fff;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 1px;
   text-transform: none;
   border-left: 2px solid #000;
@@ -2843,7 +2843,7 @@ p {
 }
 
 .paragraph-5.web-p {
-  text-align: center;
+  text-align: justify;
   width: 20rem;
   padding-left: 0;
   padding-right: 2rem;
@@ -2851,7 +2851,7 @@ p {
 
 .text-block-2 {
   color: #fff;
-  text-align: center;
+  text-align: justify;
   background-color: #4489c8;
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
@@ -2944,7 +2944,7 @@ p {
   }
 
   .section-2.accent {
-    text-align: center;
+    text-align: justify;
     padding: 8rem;
     font-size: 21px;
     display: block;
@@ -3084,7 +3084,7 @@ p {
   }
 
   .paragraph-2 {
-    text-align: center;
+    text-align: justify;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -3120,7 +3120,7 @@ p {
   }
 
   .text-block {
-    text-align: center;
+    text-align: justify;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2rem;
@@ -3233,7 +3233,7 @@ p {
   }
 
   .heading {
-    text-align: center;
+    text-align: justify;
     -webkit-text-fill-color: inherit;
     background-clip: border-box;
     flex: 1;
@@ -3279,7 +3279,7 @@ p {
   }
 
   .text-block {
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     align-items: center;
     width: 90vw;

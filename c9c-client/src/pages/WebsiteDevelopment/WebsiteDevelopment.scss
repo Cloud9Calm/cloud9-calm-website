@@ -10,7 +10,7 @@
     &__header {
         @include flex-column-center;
         font-family: $c9c-main-font;
-        background-color: white;
+        background-color: $c9c-off-white;
         padding: 1rem;
             @include tablet {
                 flex-direction: row;
@@ -37,11 +37,11 @@
         font-family: $c9c-main-font;
         color: $c9c-main-color;
         font-size: 1.5rem;
-        text-align: center;
+        text-align: justify;
         line-height: 2.5rem;
         text-transform: uppercase;
         @include outer-borders;
-        background-color: white;
+        background-color: $c9c-off-white;
         padding: 4rem;
         margin: 0;
             @include tablet {
@@ -70,11 +70,11 @@
 
     &__sub-title {
         font-family: $c9c-secondary-fonts;
-        color: white;
+        color: $c9c-off-white;
         font-size: 1.5rem;
         font-weight: 300;
         line-height: 2rem;
-        text-align: center;
+        text-align: justify;
             @include tablet {
                 text-align: left;
             }   
@@ -97,7 +97,7 @@
     flex-direction: column;
     overflow: hidden; 
     white-space: nowrap;
-    background-color: white;
+    background-color: $c9c-off-white;
         @include tablet {
             flex-direction: row;
             align-items: center;

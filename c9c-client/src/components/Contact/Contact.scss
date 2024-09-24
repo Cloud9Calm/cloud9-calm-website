@@ -4,7 +4,7 @@
 
 .contact {
     @include flex-column-center;
-    background-color: white;
+    background-color: $c9c-off-white;
     @include outer-borders;
 
     &__title {
@@ -13,7 +13,7 @@
         color: $c9c-secondary-color;
         text-transform: uppercase;
         margin: 3rem;
-        text-align: center;
+        text-align: justify;
     }
 
     &__sub-title,
@@ -39,7 +39,7 @@
         line-height: 2rem;
         color: $c9c-secondary-color;
         width: 80%;
-        text-align: center;
+        text-align: justify;
         margin: 1rem;
     }
 
