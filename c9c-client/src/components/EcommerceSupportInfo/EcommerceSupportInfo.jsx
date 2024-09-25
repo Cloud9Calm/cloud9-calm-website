@@ -5,8 +5,7 @@ import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
 import c9cPricing from '../../assets/images/cloud9calm-2024-prices.pdf';
 
 const EcommerceSupportInfo = () => {
-    console.log('EcommerceSupportInfo rendered');
-    return (
+return (
         <section className='ecommerce'>
             <h3 className='ecommerce__description'>
                 From seamless setup to continuous enhancement, I ensure your online store not only meets but exceeds your business goals. Let’s make your eCommerce journey smooth and successful, every step of the way.
