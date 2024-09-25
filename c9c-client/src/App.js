@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import '../src/styles/partials/_global.scss';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga4';
-import CookieConsent, { getCookieConsentValue } from 'react-cookie-consent';
+import { Helmet } from 'react-helmet'; 
+import CookieConsent from 'react-cookie-consent';
 import Home from './pages/Home/Home';
 import WebsiteDevelopment from './pages/WebsiteDevelopment/WebsiteDevelopment';
 import EcommerceSupport from './pages/EcommerceSupport/EcommerceSupport';
-import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'; // Import the Privacy Policy component
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'; 
 import Footer from './components/Footer/Footer';
 
 // Function to scroll to the top on route change
@@ -20,42 +20,29 @@ function ScrollToTop() {
   return null;
 }
 
-// Custom hook to track page views based on location changes
-function usePageViews() {
-  const location = useLocation();
-  useEffect(() => {
-    // Check if cookie consent has been given
-    if (getCookieConsentValue() === 'true') {
-      console.log('Sending pageview to Google Analytics:', location.pathname + location.search); // Debug log to check page views
-      ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
-    } else {
-      console.log('Pageview not sent - cookie consent not given.'); // Debug log if cookies not accepted
-    }
-  }, [location]);
-}
-
-// Function to initialize Google Analytics after cookie consent is accepted
-function initializeAnalytics() {
-  const measurementId = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
-  if (measurementId) {
-    console.log('Initializing Google Analytics with Tracking ID:', measurementId); 
-    ReactGA.initialize(measurementId);
-  } else {
-    console.error('Google Analytics Tracking ID is missing.'); 
-  }
-}
-
 function AppContent() {
-  usePageViews();
-
   return (
     <div className="App">
+      {/* Google Analytics Scripts using Helmet */}
+      <Helmet>
+        {/* Load Google Analytics script */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5E1CQJN8ZH"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5E1CQJN8ZH');
+          `}
+        </script>
+      </Helmet>
+
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="website-development" element={<WebsiteDevelopment />} />
         <Route path="ecommerce-support" element={<EcommerceSupport />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Add the Privacy Policy route */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Privacy Policy route */}
       </Routes>
       <Footer />
       <CookieConsent
@@ -77,14 +64,14 @@ function AppContent() {
         }}
         expires={150}
         onAccept={() => {
-          initializeAnalytics(); // Initialize GA when the user accepts cookies
+          console.log('Cookies accepted'); // Optional: Add any actions needed after consent
         }}
       >
         This website uses cookies to ensure you get the best experience. By continuing to use our site, you accept our use of cookies.{' '}
         <span style={{ fontSize: '12px' }}>
           Learn more in our{' '}
           <a
-            href="/privacy-policy" 
+            href="/privacy-policy"
             target='_blank'
             style={{ color: '#4A90E2', textDecoration: 'underline' }}
           >

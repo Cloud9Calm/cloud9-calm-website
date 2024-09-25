@@ -2,9 +2,9 @@
 
 const PrivacyPolicy = () => {
   return (
-    <div className="p-6 max-w-3xl mx-auto">
+    <div className=" bg-stone-100 p-6 max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
-      <p className="mb-4">Last Updated: [Insert Date]</p>
+      <p className="mb-4">Last Updated: September 2024]</p>
 
       <p className="mb-4">
         Welcome to Cloud9 Calm Co. ("we," "our," or "us"). This Privacy Policy explains how we
