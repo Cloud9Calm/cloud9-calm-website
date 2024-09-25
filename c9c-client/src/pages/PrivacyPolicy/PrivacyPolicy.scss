@@ -1,0 +1,57 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.privacy-policy {
+    padding: 24px;
+    margin: 0 auto;
+    background-color: $c9c-off-white;
+    font-family: $c9c-secondary-fonts;
+  
+    &__title {
+    font-family: $c9c-main-font;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+  
+    &__date {
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+  
+    &__intro {
+      margin-bottom: 16px;
+    }
+  
+    &__section-title {
+        font-family: $c9c-main-font;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+  
+    &__text {
+      margin-bottom: 16px;
+    }
+  
+    &__list {
+      list-style: disc;
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+  
+    &__list-item {
+      margin-bottom: 8px;
+    }
+  
+    &__link {
+      color: $c9c-main-color;
+      text-decoration: underline;
+    }
+  
+    &__contact {
+      margin-bottom: 16px;
+    }
+  }
