@@ -11,6 +11,7 @@
 
     &__title {
         font-family: $c9c-main-font;
+        text-align: center;
         margin: 0;
         padding: 1rem;
             @include tablet {
@@ -21,24 +22,22 @@
     &__list {
         @include flex-column-center;
         justify-content: center;
-        flex-wrap: wrap;
-        padding: 2rem 0;
-            @include tablet {
-                flex-direction: row;
-            }
     }
 
     &__client-info {
         @include flex-column-center;
         width: 80%;
         margin: 1rem;
+        border: 1px solid black;
             @include tablet {
-                width: 45%;
+                width: 50%;
+                margin: 4rem;
             }
     }
 
     &__name {
         font-family: $c9c-main-font;
+        text-align: center;
         margin: 0;
             @include tablet {
                 font-size: 2rem;
@@ -59,5 +58,9 @@
     &__job-task {
         margin: 0;
         padding: 1rem;
+        line-height: 2rem;
+            @include tablet {
+                max-width: 70%;
+            }
     }
 }
