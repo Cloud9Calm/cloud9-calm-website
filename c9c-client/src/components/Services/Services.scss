@@ -34,9 +34,9 @@
     }
 
     &__cards-container {
+        @include flex-column-center;
         margin: 1rem;
         @include tablet {
-            display: flex;
             justify-content: space-around;
         }
     }
@@ -44,24 +44,49 @@
     &__card-1,
     &__card-2,
     &__card-3 {
-        @include cards;
+        @include flex-column-center;
         text-align: justify;
+        margin: 3rem 0;
+            @include tablet {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+    }
+
+    &__cards-upper-section {
+        @include flex-column-center;
+        align-items: center;
+            @include tablet {
+                max-width: 60%;
+                flex-direction: column-reverse;
+            }
     }
 
     &__graphics {
-        width: 100%;
+        width: 80%;
         @include color-borders;
         padding: 0;
+            @include tablet {
+                width: 100%;
+            }
        
     }
 
     &__cards-title {
         text-transform: uppercase;
-        font-size: 2rem;
         text-align: center;
+        font-size: 1.5rem;
             @include tablet {
-                font-size: 2.5rem;
-        
+                font-size: 2rem;      
+                margin: .5rem;
+            }
+
+    }
+
+    &__cards-lower-section {
+        @include flex-column-center;
+            @include tablet {
+                max-width: 50%;
             }
 
     }
@@ -70,10 +95,16 @@
         font-size: 1rem;
         font-family: $c9c-secondary-fonts;
         line-height: 2rem;
+        max-width: 60%;
+            @include tablet {
+                max-width: 80%;
+            }
     
     }
 
     &__learn-more {
         @include buttons;
+        height: 20px;
+        margin: 0;
     }
 }
