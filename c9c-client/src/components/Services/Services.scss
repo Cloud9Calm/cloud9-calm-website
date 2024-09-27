@@ -42,16 +42,22 @@
     }
 
     &__card-1,
-    &__card-2,
-    &__card-3 {
+    &__card-2 {
         @include flex-column-center;
         text-align: justify;
         margin: 3rem 0;
             @include tablet {
                 flex-direction: row;
-                align-items: flex-start;
+                align-items: center;
             }
     }
+
+        &__card-2 {
+            @include tablet {
+                flex-direction: row-reverse
+            }
+        }
+
 
     &__cards-upper-section {
         @include flex-column-center;
