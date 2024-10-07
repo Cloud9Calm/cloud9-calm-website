@@ -42,7 +42,8 @@
     }
 
     &__card-1,
-    &__card-2 {
+    &__card-2,
+    &__card-3 {
         @include flex-column-center;
         text-align: justify;
         margin: 3rem 0;
