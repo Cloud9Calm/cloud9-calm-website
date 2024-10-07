@@ -16,14 +16,29 @@
 
     &__title {
         font-family: $c9c-main-font;
-        color: $c9c-main-color;
+        color: black;
         font-size: 1rem;
-        text-align: justify;
+        text-align: center;
         margin: 2rem;
         width: 80vw;
             @include tablet {
                 font-size: 2rem;
                 margin: 8rem;
             }
+    }
+
+    &__info {
+        text-align: justify;
+        color: black;
+    }
+
+    &__cta-button {
+        background-color: $c9c-main-color;
+        border: none;
+        padding: 1rem;
+        border-radius: 50px;
+        color: $c9c-off-white;
+        font-family: $c9c-main-font;
+        text-align: center;
     }
 }

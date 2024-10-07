@@ -66,6 +66,9 @@ const Header = () => {
           <li className={`header__menu-item ${activeSection === 'contact' ? 'active' : ''}`}>
             <a href="#contact">Contact</a>
           </li>
+          <li className={`header__menu-item dashboard-link ${activeSection === 'contact' ? 'active' : ''}`}>
+  <a href="https://dashboard.cloud9calm.com" target="_blank" rel="noopener noreferrer">Client Dashboard</a>
+</li>
         </ul>
       </nav>
     </header>
