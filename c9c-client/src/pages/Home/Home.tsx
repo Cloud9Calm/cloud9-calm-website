@@ -65,7 +65,7 @@ const Home = () => {
             and web development, my goal is to help small businesses like yours succeed online. I’m dedicated to 
             crafting custom websites that not only look great but are optimized to perform.
           </p>
-          <a href="/about" className="home__cta-link-1">Learn More About Me →</a>
+          <a href="/about" className="home__cta-link">Learn More About Me →</a>
         </motion.section>
 
         {/* Portfolio */}
@@ -83,7 +83,7 @@ const Home = () => {
               />
             <p className="home__portfolio-description">Naramata Vineyard Vacation Rental - Escape to a peaceful retreat in the heart of Naramata wine country, where vineyard views and serene landscapes surround you in comfort and relaxation. ☁️🍇</p>
           </div>
-          <a href="/portfolio" className="home__cta-link-2">View Portfolio →</a>
+          <a href="/portfolio" className="home__cta-link">View Portfolio →</a>
         </motion.section>
 
         {/* Call to Action */}
@@ -95,15 +95,15 @@ const Home = () => {
         >
           <h2 className="home__cta-title">Let’s Build Something Amazing Together</h2>
           <p className="home__cta-description">
-            Whether you're looking for a new website, need help with your eCommerce store, or want to improve your site's SEO, I’m here to help. 
-            Let’s take your business to the next level!
+              Whether you're looking for a new website, need help with your eCommerce store, or want to improve your site's SEO, I’m here to help. 
+              Let’s take your business to the next level!
           </p>
             <img 
                 src={erinCronieComp} 
                 alt="Erin Cronie Penticton's website developer" 
                 className='home__cta-img'
               />
-          
+         
           <a 
               href="https://www.honeybook.com/widget/cloud9_calm_co_283596/cf_id/66fe0a8c3f02e1001f27b81a" 
               target="_blank"

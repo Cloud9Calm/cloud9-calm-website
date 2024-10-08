@@ -33,12 +33,7 @@
     }
 
     &__cta-button {
-        background-color: $c9c-main-color;
-        border: none;
-        padding: 1rem;
-        border-radius: 50px;
-        color: $c9c-off-white;
-        font-family: $c9c-main-font;
-        text-align: center;
+        @include buttons;
+        color: black;
     }
 }

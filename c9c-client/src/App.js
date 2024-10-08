@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import WebsiteDevelopment from './pages/WebsiteDevelopment/WebsiteDevelopment';
 import EcommerceSupport from './pages/EcommerceSupport/EcommerceSupport';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'; 
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 // Function to scroll to the top on route change
@@ -38,6 +39,7 @@ function AppContent() {
       </Helmet>
 
       <ScrollToTop />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="website-development" element={<WebsiteDevelopment />} />

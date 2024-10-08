@@ -45,7 +45,7 @@
     &__card-2,
     &__card-3 {
         @include flex-column-center;
-        text-align: justify;
+        text-align: center;
         margin: 3rem 0;
             @include tablet {
                 flex-direction: row;
@@ -82,9 +82,9 @@
     &__cards-title {
         text-transform: uppercase;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
             @include tablet {
-                font-size: 2rem;      
+                font-size: 2.5rem;      
                 margin: .5rem;
             }
 
@@ -102,7 +102,6 @@
         font-size: 1rem;
         font-family: $c9c-secondary-fonts;
         line-height: 2rem;
-        max-width: 60%;
             @include tablet {
                 max-width: 80%;
             }
