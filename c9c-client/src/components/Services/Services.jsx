@@ -1,8 +1,8 @@
 import './Services.scss';
 import { Link } from 'react-router-dom';
-import website from '../../assets/images/website-design-graphic.png';
-import ecommerce from '../../assets/images/ecommerce-support-graphic.png';
-import seo from '../../assets/images/c9c-seo.png';
+import website from '../../assets/images/c9c-3d-graphic.webp';
+import ecommerce from '../../assets/images/c9c-3d-ecommerce.webp';
+import seo from '../../assets/images/c9c-3d-seo.webp';
 import '../../pages/WebsiteDevelopment/WebsiteDevelopment';
 
 const Services = () => {
