@@ -12,21 +12,35 @@
         @include box-shadow;
         padding: 1rem;
         margin: 0 auto;
+    } &__intro-title {
+        @include heading-text;
+            @include desktop {
+                padding: 4rem;
+            }
     } &__prof-img {
         max-width: 50%;
         border-radius: 1000px;
     } &__intro-mission {
       @include body-text;
         text-align: justify;
+            @include desktop {
+                padding: 4rem;
+            }
     }
 
     &__journey {
         padding: 2rem;
+            @include desktop {
+                margin: 10rem 0;
+            }
     } &__journey-title {
         @include heading-text;
     } &__journey-text {
         @include body-text;
         padding: 1rem .5rem;
+            @include desktop {
+                padding: 2rem 6rem;
+            }
     }
 
     &__why {
@@ -40,6 +54,9 @@
         @include body-text;
         text-align: justify;
         padding: 0 1rem;
+            @include desktop {
+                padding: 2rem 3rem;
+            }
     }
 
     &__values {
@@ -49,6 +66,8 @@
         @include heading-text;
     } &__values-list {
         @include flex-column-center;
+        align-items: center;
+        justify-content: space-evenly;
         @include tablet {
             flex-direction: row;
             flex-wrap: wrap;
@@ -62,9 +81,15 @@
         padding: .5rem 1rem;
         margin: 1rem;
         border-radius: 1000px;
+            @include desktop {
+                font-size: 2rem;
+            }
     } &__values-icons {
         height: 30px;
         padding: .5rem;
+            @include desktop {
+                height: 50px;
+            }
     }
 
     &__services {
@@ -87,6 +112,11 @@
         @include body-text;
         color: $c9c-off-white;
         text-align: justify;
+            @include desktop {
+                padding: 2rem 3rem;
+                margin: 0 auto;
+                max-width: 70%;
+            }
     }
 
     &__cta {

@@ -70,6 +70,9 @@
   font-size: 1.5;
     @include tablet {
       font-size: 2rem;
+        @include desktop {
+          font-size: 3rem;
+        }
     }
 }
 
@@ -81,5 +84,10 @@
     @include tablet {
       font-size: 1rem;
       line-height: 2rem;
+        @include desktop {
+          font-size: 2rem;
+          line-height: 3rem;
+          padding: 1rem;
+        }
     }
 }
