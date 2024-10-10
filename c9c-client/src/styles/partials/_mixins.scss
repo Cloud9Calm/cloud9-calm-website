@@ -53,9 +53,9 @@
   @include box-shadow;
         font-family: $c9c-main-font;
         text-transform: uppercase;
+        text-align: center;
         padding: 1rem;
         margin: 1rem;
-        color: white;
         cursor: pointer;
         @include hover;
 }
@@ -82,8 +82,8 @@
   line-height: 1.75rem;
   font-weight: 100;
     @include tablet {
-      font-size: 1rem;
-      line-height: 2rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
         @include desktop {
           font-size: 2rem;
           line-height: 3rem;

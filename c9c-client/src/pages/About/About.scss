@@ -22,7 +22,7 @@
         border-radius: 1000px;
     } &__intro-mission {
       @include body-text;
-        text-align: justify;
+        text-align: center;
             @include desktop {
                 padding: 4rem;
             }
@@ -98,7 +98,11 @@
         @include heading-text;
     }   &__services-text {
         @include body-text;
-        padding: 0 1rem;
+        padding: 1rem;
+            @include tablet {
+                text-align: right;
+                padding: 1rem;
+            }
     }
 
     &__fun-facts {

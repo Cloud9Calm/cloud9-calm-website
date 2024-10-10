@@ -13,7 +13,8 @@
     &__logo {
         width: 70vw;
     } &__title {
-       @include body-text;
+       @include heading-text;
+       text-align: center;
     } &__info {
         @include body-text;
         text-align: center;

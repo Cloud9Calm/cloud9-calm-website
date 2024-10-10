@@ -3,55 +3,29 @@
 @import '../../styles/partials/variables.scss';
 
 .privacy-policy {
-    padding: 24px;
+    padding: 2rem;
     margin: 0 auto;
-    background-color: $c9c-off-white;
-    font-family: $c9c-secondary-fonts;
+    background-color: white;
   
     &__title {
-    font-family: $c9c-main-font;
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 16px;
-    }
-  
-    &__date {
-      margin-bottom: 16px;
-      font-style: italic;
-    }
-  
-    &__intro {
-      margin-bottom: 16px;
-    }
-  
-    &__section-title {
-        font-family: $c9c-main-font;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-top: 24px;
-      margin-bottom: 8px;
-    }
-  
-    &__text {
-      margin-bottom: 16px;
-    }
-  
-    &__list {
-      list-style: disc;
-      margin-left: 20px;
-      margin-bottom: 16px;
-    }
-  
-    &__list-item {
-      margin-bottom: 8px;
-    }
-  
-    &__link {
+        @include heading-text;
+    } &__date {;
+        font-style: italic;
+    } &__intro {
+        @include body-text;
+    } &__section-title {
+        @include heading-text;
+    } &__text {
+        padding: 1rem;
+    } &__list {
+        list-style: disc;
+        @include body-text;
+    } &__list-item {
+        padding: 1rem;
+    } &__link {
       color: $c9c-main-color;
       text-decoration: underline;
-    }
-  
-    &__contact {
-      margin-bottom: 16px;
+    } &__contact {
+      padding: 1rem;
     }
   }

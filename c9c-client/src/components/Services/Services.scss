@@ -58,9 +58,8 @@
         width: 80%;
         @include color-borders;
         @include box-shadow;
-        padding: 0;
             @include tablet {
-                width: 100%;
+                width: 70%;
                     @include desktop {
                         width: 60%;
                     }
