@@ -40,6 +40,9 @@
         background-color: $c9c-secondary-color;
         padding: 2rem;
         color: $c9c-off-white;
+            @include desktop {
+                padding: 6rem;
+            }
     } &__portfolio-title {
         @include heading-text;
     } &__portfolio-item {

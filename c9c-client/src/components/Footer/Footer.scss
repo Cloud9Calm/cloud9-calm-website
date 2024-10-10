@@ -24,6 +24,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+            @include desktop {
+                justify-content: flex-start;
+            }
     } &__Linkedin,
       &__Instagram,
       &__Facebook,
@@ -31,7 +34,9 @@
       &__Shopify {
             @include tablet {
                 justify-content: start;
-
+                    @include desktop {
+                        padding: 0 2rem;
+                    }
             }
     } &__social-icons {
         width: 25px;

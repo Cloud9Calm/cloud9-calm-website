@@ -21,7 +21,7 @@ const Services = () => {
                     </div>
                     <div className='services__cards-lower-section'>
                         <p className='services__cards-description'>My web development service transforms your vision into a dynamic online presence, leveraging cutting-edge technology to create responsive, visually appealing websites that deliver exceptional user experiences and support your business objectives.</p>
-                            <Link to='/website-development' className='services__learn-more'>Learn more</Link> 
+                        <Link to='/website-development' className='services__learn-more'>Learn more</Link> 
                     </div>
                 </div>
 
@@ -35,14 +35,15 @@ const Services = () => {
                      <Link to='ecommerce-support' className='services__learn-more'>Learn more</Link> 
                     </div>
                 </div>
+
                 <div className='services__card-3 s-cards'>
                     <div className='services__cards-upper-section'>
                         <img className='services__graphics' src={seo} alt="Graphic of a cell phone and shopping cart" />
                         <h3 className='services__cards-title'>SEO</h3>
                     </div>
                     <div className='services__cards-lower-section'>
-                    <p className='services__cards-description'>My SEO support service focuses on enhancing your website's visibility and driving organic traffic. I utilize proven strategies like keyword optimization, content refinement, and technical SEO to ensure your site ranks higher on search engines, helping your business attract more qualified leads and achieve long-term success.</p>                        
-                    <Link to='seo' className='services__learn-more'>Learn more</Link> 
+                        <p className='services__cards-description'>My SEO support service focuses on enhancing your website's visibility and driving organic traffic. I utilize proven strategies like keyword optimization, content refinement, and technical SEO to ensure your site ranks higher on search engines, helping your business attract more qualified leads and achieve long-term success.</p>                        
+                        <Link to='seo' className='services__learn-more'>Learn more</Link> 
                     </div>
                 </div>
             </div>

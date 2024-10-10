@@ -35,18 +35,6 @@ const Home = () => {
         
         <Hero />
         
-        {/* Services section */}
-        <motion.section
-          className="home__services-overview"
-          initial="hidden"
-          animate="visible"
-          variants={fadeInVariant}
-        >
-            <div className="home__services-list">
-              <Services />
-            </div>
-        </motion.section>
-
         {/* About Section */}
         <motion.section
           className="home__about"
@@ -66,6 +54,18 @@ const Home = () => {
             crafting custom websites that not only look great but are optimized to perform.
           </p>
           <a href="/about" className="home__cta-link-1">Learn More About Me →</a>
+        </motion.section>
+
+         {/* Services section */}
+         <motion.section
+          className="home__services-overview"
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+        >
+            <div className="home__services-list">
+              <Services />
+            </div>
         </motion.section>
 
         {/* Portfolio */}

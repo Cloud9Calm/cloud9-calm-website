@@ -48,6 +48,9 @@
         color: $c9c-off-white;
         padding: 2rem;
         @include outer-borders;
+            @include tablet {
+                padding: 6rem;
+            }
     } &__why-title {
         @include heading-text;
     } &__why-text {
@@ -106,9 +109,28 @@
     }
 
     &__fun-facts {
-        background-color: $c9c-main-color;
-        @include outer-borders;
         padding: 2rem;
+            @include tablet {
+                padding: 6rem;
+            }
+        background: radial-gradient(circle at 20% 40%, $analogous-color-2, transparent 60%), 
+                    radial-gradient(circle at 80% 60%, $analogous-color-1, transparent 60%),
+                    linear-gradient(135deg, $analogous-color-2, $analogous-color-1, $analogous-color-2);
+        background-size: 200% 200%; 
+        animation: gradientAnimation 10s ease infinite; 
+        @include outer-borders;
+        
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     } &__fun-facts-title {
         @include heading-text;
         color: $c9c-off-white;
