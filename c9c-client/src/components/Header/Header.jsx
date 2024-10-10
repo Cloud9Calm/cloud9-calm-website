@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import '../Header/Header.scss';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,54 +21,35 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const options = {
-      root: null,
-      threshold: 0.6,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    }, options);
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
-
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="header__logo">
         <h2 className="header__title">Cloud9 Calm Co.</h2>
       </div>
+
       <nav className="header__menu">
         <ul className="header__menu-list">
-          <li className={`header__menu-item ${activeSection === 'home' ? 'active' : ''}`}>
-            <a href="#home">Home</a>
+
+          <li className='header__menu-item'>
+            <Link to="/">Home</Link>
           </li>
-          <li className={`header__menu-item ${activeSection === 'about' ? 'active' : ''}`}>
-            <a href="#about">About</a>
+
+          <li className='header__menu-item'>
+            <Link to="/about">About</Link> 
           </li>
-          <li className={`header__menu-item ${activeSection === 'services' ? 'active' : ''}`}>
-            <a href="#services">Services</a>
+
+          <li className='header__menu-item'>
+            <Link to="/services">Services</Link>
           </li>
-          <li className={`header__menu-item ${activeSection === 'contact' ? 'active' : ''}`}>
-            <a href="#contact">Contact</a>
+
+          <li className='header__menu-item'>
+            <Link to="/contact">Contact</Link>
           </li>
-          <li className={`header__menu-item dashboard-link ${activeSection === 'contact' ? 'active' : ''}`}>
-  <a href="https://dashboard.cloud9calm.com" target="_blank" rel="noopener noreferrer">Client Dashboard</a>
-</li>
+
+          <li className='header__menu-item dashboard-link'>
+            <a href="https://dashboard.cloud9calm.com" target="_blank" rel="noopener noreferrer">Client Dashboard</a> {/* External link remains as <a> */}
+          </li>
+
         </ul>
       </nav>
     </header>

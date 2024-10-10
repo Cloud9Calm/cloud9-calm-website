@@ -1,0 +1,97 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.about {
+    @include flex-column-center;
+	padding: 2rem;
+	line-height: 1.5;
+	color: $c9c-secondary-color;
+	background-color: $c9c-off-white;
+
+
+    &__prof-img {
+        width: 70%;
+        border-radius: 1000px;
+            @include tablet {
+                width: 30%;
+            }
+    }
+
+
+	&__intro {
+		@include flex-column-center;
+		padding: .5rem;
+		background-color: #fff;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: justify;
+            @include tablet {
+                padding: 2rem;
+            }
+
+		.about__title {
+            font-family: $c9c-main-font;
+			font-size: 2.5rem;
+			color: $c9c-secondary-color;
+            margin-bottom: 1rem;
+			
+		}
+
+		.about__mission {
+			font-size: 1.25rem;
+			max-width: 600px;
+			margin: 0 auto;
+            padding: 2rem 1rem;
+		}
+	}
+
+	&__heading {
+		font-size: 1.5rem;
+		color: $c9c-secondary-color;
+		font-family: $c9c-main-font;
+        border-bottom: 1px solid black;
+            @include tablet {
+                font-size: 2rem;
+            }
+	}
+
+	&__text {
+        font-family: $c9c-secondary-fonts;
+		font-size: 1rem;
+		color: #4a4a4a;
+		line-height: 1.5;
+        text-align: center;
+            @include tablet {
+                font-size: 1.25rem;
+                line-height: 2;
+            }
+	}
+
+	&__cta {
+        text-align: center;
+		padding: 2rem;
+		background-color: #fff;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+		.about__cta-link {
+			@include buttons;
+            color: $c9c-secondary-color;
+		}
+	}
+
+	&__values-list {
+		@include flex-column-center;
+            @include tablet {
+                flex-direction: row;
+            }
+	}
+
+	&__values-item {
+        color: $c9c-off-white;
+        font-family: $c9c-main-font;
+        text-align: center;
+		background-color: $triadic-color-2;
+		padding: 1rem;
+        margin: 1rem;
+        border-radius: 50px;
+	}
+}

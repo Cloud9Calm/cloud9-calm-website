@@ -61,7 +61,7 @@ const Home = () => {
               className='home__about-profile'
             />
           <p className="home__about-description">
-            As a one-person team, I bring a personal touch to every project. With years of experience in eCommerce 
+            My name is <strong>Erin</strong> from the beautiful Okanagan. As a one-person team, I bring a personal touch to every project. With years of experience in eCommerce 
             and web development, my goal is to help small businesses like yours succeed online. I’m dedicated to 
             crafting custom websites that not only look great but are optimized to perform.
           </p>

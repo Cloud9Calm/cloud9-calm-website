@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react';
 import '../src/styles/partials/_global.scss';
+
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet'; 
 import CookieConsent from 'react-cookie-consent';
+
+import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import WebsiteDevelopment from './pages/WebsiteDevelopment/WebsiteDevelopment';
 import EcommerceSupport from './pages/EcommerceSupport/EcommerceSupport';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'; 
-import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 // Function to scroll to the top on route change
@@ -42,9 +45,10 @@ function AppContent() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="website-development" element={<WebsiteDevelopment />} />
         <Route path="ecommerce-support" element={<EcommerceSupport />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Privacy Policy route */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
       <CookieConsent

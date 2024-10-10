@@ -12,6 +12,7 @@
         @include outer-borders;
         @include flex-column-center;
         background-color: $c9c-off-white;
+        font-weight: 100;
     }
 
     &__about-title {
@@ -27,14 +28,18 @@
         padding: 1rem;
         text-align: justify;
         line-height: 1.5rem;
+        font-weight: 100;
         @include tablet {
             max-width: 60%;
         }
     }
 
     &__about-profile {
-        height: 300px;
+        width: 80%;
         border-radius: 50%;
+            @include tablet {
+                width: 40%;
+            }
     }
 
     &__cta-link-1 {
@@ -48,6 +53,7 @@
         background-color: $c9c-main-color;
         padding: 1rem;
         color: $c9c-off-white;
+        font-weight: 100;
     }
 
     &__portfolio-title {
@@ -99,13 +105,22 @@
     &__cta-description {
         font-family: $c9c-secondary-fonts;
         padding: 1rem;
-        text-align: justify;
+        text-align: center;
+        line-height: 1.5;
+        font-weight: 100;
+            @include tablet {
+                max-width: 60%;
+            }
     }
 
     &__cta-img {
         height: 200px;
         width: 200px;
         border-radius: 50%;
+            @include tablet {
+                height: 350px;
+                width: 350px;;
+            }
     }
 
     &__cta-button {
