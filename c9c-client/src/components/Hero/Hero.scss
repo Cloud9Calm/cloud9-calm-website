@@ -16,7 +16,7 @@
 
     &__title {
         font-family: $c9c-main-font;
-        color: black;
+        color: $c9c-secondary-color;
         font-size: 1rem;
         text-align: center;
         margin: 2rem;
@@ -29,11 +29,11 @@
 
     &__info {
         text-align: justify;
-        color: black;
+        color: $c9c-secondary-color;
     }
 
     &__cta-button {
         @include buttons;
-        color: black;
+        color: $c9c-secondary-color;
     }
 }

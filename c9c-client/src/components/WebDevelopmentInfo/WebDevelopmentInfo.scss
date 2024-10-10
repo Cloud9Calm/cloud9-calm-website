@@ -94,6 +94,6 @@
     &__pricing-button {
         margin: 2rem;
         @include buttons;
-        color: black;
+        color: $c9c-secondary-color;
     }
 }
