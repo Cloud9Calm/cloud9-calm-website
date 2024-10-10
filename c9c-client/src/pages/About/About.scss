@@ -105,6 +105,9 @@
             @include tablet {
                 text-align: right;
                 padding: 1rem;
+                    @include desktop {
+                        padding: 4rem;
+                    }
             }
     }
 

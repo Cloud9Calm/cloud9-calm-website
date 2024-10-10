@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 import '../WebsiteDevelopment/WebsiteDevelopment.scss';
-import seoGraphic from '../../assets/images/c9c-seo-support.png';
+import seoGraphic from '../../assets/images/c9c-3d-seo.webp';
 import services from '../../data/seo-services.json';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 import { Link } from 'react-router-dom';

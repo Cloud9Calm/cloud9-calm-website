@@ -1,6 +1,6 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
 import '../WebsiteDevelopment/WebsiteDevelopment.scss';
+
+import { Helmet } from 'react-helmet';
 import websiteGraphic from '../../assets/images/c9c-website-development.png';
 import services from '../../data/website-development-services.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';

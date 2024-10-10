@@ -1,0 +1,17 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+
+.notfound {
+        @include flex-column-center;
+        background-color: $c9c-off-white;
+        padding: 10rem;
+    &__title {
+        @include heading-text;
+    } &__desc {
+        @include body-text;
+    } &__link {
+        @include buttons;
+    }
+}

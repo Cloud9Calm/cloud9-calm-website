@@ -4,6 +4,7 @@ import '../Header/Header.scss';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false); // State to control dropdown visibility
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,10 @@ const Header = () => {
     };
   }, []);
 
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="header__logo">
@@ -29,27 +34,37 @@ const Header = () => {
 
       <nav className="header__menu">
         <ul className="header__menu-list">
-
-          <li className='header__menu-item'>
+          <li className="header__menu-item">
             <Link to="/">Home</Link>
           </li>
 
-          <li className='header__menu-item'>
-            <Link to="/about">About</Link> 
+          <li className="header__menu-item">
+            <Link to="/about">About</Link>
           </li>
 
-          <li className='header__menu-item'>
+          {/* Services with dropdown */}
+          <li className="header__menu-item" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
             <Link to="/services">Services</Link>
+            <ul className={`header__dropdown ${dropdownVisible ? 'visible' : ''}`}>
+              <li className="header__dropdown-item">
+                <Link to="/services/website-development">Website Development</Link>
+              </li>
+              <li className="header__dropdown-item">
+                <Link to="/services/ecommerce-support">eCommerce Support</Link>
+              </li>
+              <li className="header__dropdown-item">
+                <Link to="/services/seo">SEO</Link>
+              </li>
+            </ul>
           </li>
 
-          <li className='header__menu-item'>
+          <li className="header__menu-item">
             <Link to="/contact">Contact</Link>
           </li>
 
-          <li className='header__menu-item dashboard-link'>
-            <a href="https://dashboard.cloud9calm.com" target="_blank" rel="noopener noreferrer">Client Dashboard</a> {/* External link remains as <a> */}
+          <li className="header__menu-item dashboard-link">
+            <a href="https://dashboard.cloud9calm.com" target="_blank" rel="noopener noreferrer">Client Dashboard</a>
           </li>
-
         </ul>
       </nav>
     </header>

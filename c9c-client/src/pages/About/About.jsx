@@ -65,7 +65,7 @@ const About = () => {
 
 			{/* Core Values Section */}
 			<div className='about__values'>
-				<h2 className='about__values-title'>My Values</h2>
+				<h2 className='about__values-title'>What I Offer</h2>
 				<ul className='about__values-list'>
 					<li className='about__values-item'>
 						<img 
@@ -104,7 +104,6 @@ const About = () => {
 
 			{/* Services Section */}
 			<div className='about__services'>
-				<h2 className='about__services-title'>What I Offer</h2>
 				<div className='about__container container-2'>
 				<p className='about__services-text'>
 					Whether you need a custom website, SEO optimization, or eCommerce

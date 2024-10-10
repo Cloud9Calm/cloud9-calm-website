@@ -60,7 +60,9 @@
             } 
     } &__portfolio-description {
         @include body-text;
-        padding: 2rem;
+            @include desktop {
+                padding: 4rem;
+            }
     }
 
 
@@ -86,14 +88,23 @@
     } &__cta-button {
         @include buttons;
         color: $c9c-secondary-color;
+            @include desktop {
+                margin: 4rem;
+            }
     }
 
     &__cta-link-1 {
         @include buttons;
         color: $c9c-secondary-color;
+        @include desktop {
+            margin: 4rem;
+        }
     } &__cta-link-2 {
         @include buttons;
         color: $c9c-off-white;
+        @include desktop {
+            margin: 4rem;
+        }
     }
 
 }

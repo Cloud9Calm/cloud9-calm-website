@@ -105,7 +105,7 @@ const Home = () => {
               />
           
           <a 
-              href="https://www.honeybook.com/widget/cloud9_calm_co_283596/cf_id/66fe0a8c3f02e1001f27b81a" 
+              href="https://dashboard.cloud9calm.com/public/66feeb5f372371001f841096" 
               target="_blank"
               rel="noopener noreferrer"
               className="home__cta-button"

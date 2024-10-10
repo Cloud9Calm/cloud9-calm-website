@@ -10,7 +10,9 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import WebsiteDevelopment from './pages/WebsiteDevelopment/WebsiteDevelopment';
 import EcommerceSupport from './pages/EcommerceSupport/EcommerceSupport';
+import SEO from './pages/SEO/SEO';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'; 
+import NotFound from './pages/404/404';
 import Footer from './components/Footer/Footer';
 
 // Function to scroll to the top on route change
@@ -46,9 +48,11 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="website-development" element={<WebsiteDevelopment />} />
-        <Route path="ecommerce-support" element={<EcommerceSupport />} />
+        <Route path="/website-development" element={<WebsiteDevelopment />} />
+        <Route path="/ecommerce-support" element={<EcommerceSupport />} />
+        <Route path="/seo-services" element={<SEO />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NotFound />} /> {/* Optional 404 page */}
       </Routes>
       <Footer />
       <CookieConsent
