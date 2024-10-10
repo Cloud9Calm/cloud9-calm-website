@@ -67,7 +67,7 @@
 
 @mixin heading-text {
   font-family: $c9c-main-font;
-  font-size: 1.5;
+  font-size: 1.5rem;
     @include tablet {
       font-size: 2rem;
         @include desktop {

@@ -12,111 +12,66 @@
         @include outer-borders;
         @include flex-column-center;
         background-color: $c9c-off-white;
-        font-weight: 100;
-    }
-
-    &__about-title {
-        font-family: $c9c-main-font;
-        font-size: 2rem;
-        text-align: center;
-        padding: 1rem;
-        margin: 0;
-        font-weight: 400;
-    }
-
-    &__about-description {
-        font-family: $c9c-secondary-fonts;
-        padding: 1rem;
-        text-align: justify;
-        line-height: 1.5rem;
-        font-weight: 100;
-        @include tablet {
-            max-width: 60%;
-        }
-    }
-
-    &__about-profile {
-        width: 80%;
-        border-radius: 50%;
+    } &__about-title {
+       @include heading-text;
+       color: $c9c-off-white;
+    } &__about-description {
+       @include body-text;
+       text-align: justify;
+       padding: 2rem;
+            @include tablet {
+                max-width: 60%;
+            }
+        } &__about-profile {
+        width: 50%;
+        border-radius: 1000px;
         @include box-shadow;
             @include tablet {
                 width: 40%;
+                @include desktop {
+                    width: 20%;
+                }
             }
-    }
-
-    &__cta-link-1 {
-        @include buttons;
-        color: $c9c-secondary-color;
     }
 
     &__portfolio {
         @include outer-borders;
         @include flex-column-center;
         background-color: $c9c-secondary-color;
-        padding: 1rem;
+        padding: 2rem;
         color: $c9c-off-white;
-        font-weight: 100;
-    }
-
-    &__portfolio-title {
-        font-family: $c9c-main-font;
-        font-size: 2rem;
-    }
-
-    &__portfolio-item {
+    } &__portfolio-title {
+        @include heading-text;
+    } &__portfolio-item {
         @include flex-column-center;
             @include tablet {
               flex-direction: row;
               align-items: center;
               justify-content: space-around;
             }
-    }
-
-    &__portfolio-image {
+    } &__portfolio-image {
         width: 90%;
         @include box-shadow;
             @include tablet {
                 width: 50%;
             } 
+    } &__portfolio-description {
+        @include body-text;
+        padding: 2rem;
     }
 
-    &__portfolio-description {
-        line-height: 1.5rem;
-        font-size: 1rem;
-        text-align: justify;
-        @include tablet {
-            max-width: 40%;
-            font-size: 1.5rem;
-        }
-    }
 
-    &__cta-link-2 {
-        @include buttons;
-        color: $c9c-off-white;
-    }
-
-    &__call-to-action {
+    &__cta {
         @include outer-borders;
         @include flex-column-center;
-    } 
-
-    &__cta-title {
-        font-family: $c9c-main-font;
-        text-align: center;
-    }
-
-    &__cta-description {
-        font-family: $c9c-secondary-fonts;
-        padding: 1rem;
-        text-align: center;
-        line-height: 1.5;
-        font-weight: 100;
-            @include tablet {
-                max-width: 60%;
-            }
-    }
-
-    &__cta-img {
+        padding: 2rem;
+    } &__cta-title {
+        @include heading-text;
+    } &__cta-description {
+       @include body-text;
+       padding: 2rem;
+       text-align: justify;
+    } &__cta-img {
         height: 200px;
         width: 200px;
         border-radius: 50%;
@@ -125,11 +80,17 @@
                 height: 350px;
                 width: 350px;;
             }
-    }
-
-    &__cta-button {
+    } &__cta-button {
         @include buttons;
         color: $c9c-secondary-color;
+    }
+
+    &__cta-link-1 {
+        @include buttons;
+        color: $c9c-secondary-color;
+    } &__cta-link-2 {
+        @include buttons;
+        color: $c9c-off-white;
     }
 
 }

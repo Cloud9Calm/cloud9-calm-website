@@ -88,7 +88,7 @@ const Home = () => {
 
         {/* Call to Action */}
         <motion.section
-          className="home__call-to-action"
+          className="home__cta"
           initial="hidden"
           animate="visible"
           variants={fadeInVariant}

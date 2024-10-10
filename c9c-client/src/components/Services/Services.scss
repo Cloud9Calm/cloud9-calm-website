@@ -5,61 +5,46 @@
 .services {
     @include flex-column-center;
     background-color: $c9c-main-color;
-    font-family: $c9c-main-font;
     color: $c9c-off-white;
-    text-align: justify;
     @include outer-borders;
         @include tablet {
             padding: 2rem;
-        }
-
-    &__title {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        margin: 2rem;
-            @include tablet {
-                font-size: 2rem;
-            }   
-    }
-
-    &__sub-title {
-        font-size: 1rem;
-        line-height: 2rem;
-        font-family: $c9c-secondary-fonts;
-        max-width: 80%;
-            @include tablet {
-                font-size: 1.5rem;
-                max-width: 70%;
-            }   
+        } &__title {
+            @include heading-text;
+    } &__sub-title {
+            @include body-text;
+            padding: 2rem;
+            text-align: justify; 
+                @include desktop {
+                    max-width: 50%;
+                }
     }
 
     &__cards-container {
         @include flex-column-center;
-        margin: 1rem;
+        padding: 1rem;
         @include tablet {
             justify-content: space-around;
         }
-    }
-
-    &__card-1,
-    &__card-2,
-    &__card-3 {
+    } &__card-1,
+      &__card-2,
+      &__card-3 {
         @include flex-column-center;
-        text-align: center;
         margin: 3rem 0;
             @include tablet {
                 flex-direction: row;
                 align-items: center;
+                    @include desktop {
+                        max-width: 80%;
+                    }
             }
-    }
-
-        &__card-2 {
+    } &__card-2 {
             @include tablet {
-                flex-direction: row-reverse
+                flex-direction: row-reverse;
+                text-align: right;
             }
-        }
-
-
+        } 
+        
     &__cards-upper-section {
         @include flex-column-center;
         align-items: center;
@@ -76,42 +61,20 @@
         padding: 0;
             @include tablet {
                 width: 100%;
+                    @include desktop {
+                        width: 60%;
+                    }
             }
-       
-    }
-
-    &__cards-title {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2rem;
-            @include tablet {
-                font-size: 2.5rem;      
-                margin: .5rem;
-            }
-
-    }
-
-    &__cards-lower-section {
+    } &__cards-title {
+       @include heading-text;
+    } &__cards-lower-section {
         @include flex-column-center;
             @include tablet {
                 max-width: 50%;
             }
-
-    }
-
-    &__cards-description {
-        font-size: 1rem;
-        font-family: $c9c-secondary-fonts;
-        line-height: 2rem;
-            @include tablet {
-                max-width: 80%;
-            }
-    
-    }
-
-    &__learn-more {
+    } &__cards-description {
+        @include body-text;
+    } &__learn-more {
         @include buttons;
-        height: 20px;
-        margin: 0;
     }
 }
