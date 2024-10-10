@@ -9,18 +9,22 @@
   
     &__title {
         @include heading-text;
-    } &__date {;
+        text-decoration: underline;
+    } &__date {
         font-style: italic;
     } &__intro {
         @include body-text;
     } &__section-title {
         @include heading-text;
+        text-decoration: underline;
     } &__text {
         padding: 1rem;
+        @include body-text;
     } &__list {
         list-style: disc;
         @include body-text;
     } &__list-item {
+      @include body-text;
         padding: 1rem;
     } &__link {
       color: $c9c-main-color;
