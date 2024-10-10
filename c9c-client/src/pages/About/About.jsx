@@ -1,7 +1,10 @@
 import './About.scss';
 
 import erinCronieProfile from '../../assets/images/erin-cronie-website-profile.png';
-
+import quote from '../../assets/icons/quote.svg';
+import person from '../../assets/icons/personSearch.svg';
+import target from '../../assets/icons/target.svg';
+import engineering from '../../assets/icons/engineering.svg';
 const About = () => {
 	return (
 		<section className='about'>
@@ -52,10 +55,38 @@ const About = () => {
 			<div className='about__values'>
 				<h2 className='about__heading'>My Values</h2>
 				<ul className='about__values-list'>
-					<li className='about__values-item'>Transparency</li>
-					<li className='about__values-item'>Simplicity</li>
-					<li className='about__values-item'>Affordable</li>
-					<li className='about__values-item'>Custom Solutions</li>
+					<li className='about__values-item'>
+						<img 
+							src={person}
+							alt="Gear icon"
+							className="about__values-icon"
+						/>
+						Transparency
+					</li>
+					<li className='about__values-item'>
+						<img 
+							src={target} 
+							alt="Target icon"
+							className="about__values-icons"
+						/>
+						Simplicity
+					</li>
+					<li className='about__values-item'>
+					<img 
+							src={quote} 
+							alt="Money icon"
+							className="about__values-icons"
+						/>
+						Affordable
+					</li>
+					<li className='about__values-item'>
+					<img 
+							src={engineering} 
+							alt="Engineering icon"
+							className="about__values-icons"
+						/>
+						Custom Solutions
+					</li>
 				</ul>
 			</div>
 
