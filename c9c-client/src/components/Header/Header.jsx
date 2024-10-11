@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link
 import '../Header/Header.scss';
+
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,10 +49,10 @@ const Header = () => {
             <Link to="/services">Services</Link>
             <ul className={`header__dropdown ${dropdownVisible ? 'visible' : ''}`}>
               <li className="header__dropdown-item">
-                <Link to="/services/website-development">Website Development</Link>
+                <Link to="/website-development">Website Development</Link>
               </li>
               <li className="header__dropdown-item">
-                <Link to="/services/ecommerce-support">eCommerce Support</Link>
+                <Link to="/ecommerce-support">eCommerce Support</Link>
               </li>
               <li className="header__dropdown-item">
                 <Link to="/services/seo">SEO</Link>

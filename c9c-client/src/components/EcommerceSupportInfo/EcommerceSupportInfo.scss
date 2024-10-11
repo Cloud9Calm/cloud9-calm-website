@@ -5,93 +5,71 @@
 .ecommerce {
     border-top: 1px solid black;
     background-color: $c9c-off-white;
-    text-align: justify;
-    @include flex-column-center;
-        @include tablet {
-            padding: 2rem;
-        }
 
     &__description {
-        line-height: 2rem;
-        margin: 2rem;
-        text-align: center;
-        
-    }
-
-    &__img {
-        width: 15rem;
+        @include body-text;
+        padding: 2rem;
+            @include desktop {
+                width: 60%;
+                padding: 4rem;
+                text-align: justify;
+            }
+    } &__img {
+        width: 50%;
         border-radius: 50%;
             @include tablet {
                 width: 40rem;
-            }
-    }
+        }
 
-    &__services-title {
-        font-size: 1.5rem;
-        margin: 1rem;
+    } &__section {
+        @include flex-column-center;
+            @include desktop {
+                flex-direction: row-reverse;
+                padding: 4rem;
+            }
+    } &__services {
+        @include moving-background;
+        margin: 0 auto;
+    } &__services-title {
+        @include heading-text;
+        color: $c9c-off-white;
+        padding: 1rem;
         text-align: center;
             @include tablet {
-                font-size: 2rem;
+                padding: 2rem;
             }
-    }
-
-    &__services-logo {
-        width: 10rem;
-    }
-
-    &__services-list {
+    } &__services-list{
         @include flex-column-center;
-        background-color: $c9c-off-white;   
-    }
-
-    &__services-item {
-        @include color-borders;
+            @include desktop {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+    }  &__services-item {
         @include flex-column-center;
-        justify-content: space-between;
+        @include box-shadow;
         background-color: $c9c-off-white;
-        width: 70%;
         margin: 1rem;
-            @include tablet {
-                width: 60%;
-                    @include desktop {
-                        width: 50%;
-                    }
+        padding: 1rem;
+        border-radius: 20px;
+        width: 80%;
+            @include desktop {
+                justify-content: center;
+                width: 600px;
+                height: 1000px;
+                padding: 2rem;
+                margin: 2rem;
             }
-    }
-
-    &__services-item-title {
-        font-family: $c9c-main-font;
-        margin: 0;
-        padding: 1rem 0;
-        font-size: 1.5rem;
+    } &__services-logo {
+        width: 30%;
+    } &__services-item-title {
+        @include heading-text;
         text-align: center;
-            @include tablet {
-                font-size: 2rem;
-            }
-
+    } &__services-item-desc {
+        @include body-text;
+        text-align: center;
+    } &__services-item-price {
+        text-transform: capitalize;
     }
 
-    &__services-item-description {
-        margin: 0;
-        padding: 0;
-            @include tablet {
-                max-width: 60%;
-            }
-    } 
-
-    &__pricing {
-        padding: 1rem;
-        margin: 1rem;
-        @include flex-column-center;
-    }   
-
-    &__pricing-note {
-        padding: 1rem;
-    }
-    
-    &__pricing-button {
-        margin: 2rem;
-        @include buttons;
-        color: $c9c-secondary-color;
-    }
 }

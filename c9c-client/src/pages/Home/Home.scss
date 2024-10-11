@@ -60,6 +60,7 @@
             } 
     } &__portfolio-description {
         @include body-text;
+        padding: 2rem;
             @include desktop {
                 padding: 4rem;
             }

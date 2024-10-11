@@ -1,55 +1,48 @@
-import React from 'react';
+import './EcommerceSupport.scss'; 
+
 import { Helmet } from 'react-helmet';
-import '../EcommerceSupport/EcommerceSupport.scss';
+import { Link } from 'react-router-dom';
+
 import ecommerceGraphic from '../../assets/images/c9c-ecommerce-support-img.png';
 import services from '../../data/ecommerce-support-services.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import { Link } from 'react-router-dom';
-import EcommerceSupportInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo';
-import Contact from '../../components/Contact/Contact';
-
+import EcommerceInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo'; 
 
 const EcommerceSupport = () => {
   return (
     <>
       <Helmet>
-        <title>Ecommerce Support Services | Cloud9 Calm Co.</title>
-        <meta name="description" content="Enhance your online store with Cloud9 Calm Co.'s comprehensive eCommerce support services. I focus on optimizing your eCommerce platform, managing technical issues, implementing updates, and improving functionality to drive sales and enhance the customer experience." />
-        <meta name="keywords" content="Penticton website developer, website Penticton, Okangan website developer,, eCommerce support, online store optimization, technical support, website updates, Cloud9 Calm Co." />
+        <title>eCommerce Support Services | Cloud9 Calm Co.</title>
+        <meta name="description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
+        <meta name="keywords" content="Penticton eCommerce support, eCommerce Penticton, Okanagan eCommerce developer, Shopify support, eCommerce solutions, website support, technical support, online store updates, Cloud9 Calm Co." />
         <link rel="canonical" href="https://www.cloud9calm.com/ecommerce-support" />
       </Helmet>
-      <main className='webdev'>
-        <header className='webdev__header'>
-          <h2 className='webdev__header-title'>
-            Cloud9 Calm Co.
-          </h2>
-          <Link to='/' className='webdev__header-menu-item'>Home</Link>
-        </header>
-        <h2 className='webdev__title'>More information on Ecommerce Support</h2>
-        <div className='webdev__top-section'>
+      <main className='ecom'>
+    
+        <h2 className='ecom__title'>More information on eCommerce Support</h2>
+        <div className='ecom__top-section'>
           <img 
-            className='webdev__logo'
+            className='ecom__logo'
             src={c9cLogoWhite}
             alt="Cloud9 Calm Logo in white" />
-          <h3 className='webdev__sub-title'>
-            Enhance your online store with my comprehensive eCommerce support services. I focus on optimizing your eCommerce platform, managing technical issues, implementing updates, and improving functionality to drive sales and enhance the customer experience.
+          <h3 className='ecom__sub-title'>
+            Maximize your eCommerce potential with my dedicated eCommerce support services. I specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store.
           </h3>
         </div>
         <img
-          className='webdev__graphic'
+          className='ecom__graphic'
           src={ecommerceGraphic}
-          alt="Graphic of two people working on a computer"
+          alt="Graphic of people managing an online store"
         />
-        <div className='webdev__info'>
+        <div className='ecom__info'>
           {services.map((service, index) => (
-            <div key={index} className='webdev__info-section'>
-              <h4 className='webdev__info-title'>{service.title}</h4>
-              <p className='webdev__info-desc'>{service.description}</p>
+            <div key={index} className='ecom__info-section'>
+              <h4 className='ecom__info-title'>{service.title}</h4>
+              <p className='ecom__info-desc'>{service.description}</p>
             </div>
           ))}
         </div>
-        <EcommerceSupportInfo />
-        <Contact />
+        <EcommerceInfo />
       </main>
     </>
   );

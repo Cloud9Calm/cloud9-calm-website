@@ -1,10 +1,11 @@
 import '../WebsiteDevelopment/WebsiteDevelopment.scss';
 
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+
 import websiteGraphic from '../../assets/images/c9c-website-development.png';
 import services from '../../data/website-development-services.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import { Link } from 'react-router-dom';
 import WebDevelopmentInfo from '../../components/WebDevelopmentInfo/WebDevelopmentInfo';
 
 const WebsiteDevelopment = () => {
@@ -17,12 +18,7 @@ const WebsiteDevelopment = () => {
         <link rel="canonical" href="https://www.cloud9calm.com/website-development" />
       </Helmet>
       <main className='webdev'>
-        <header className='webdev__header'>
-          <h2 className='webdev__header-title'>
-            Cloud9 Calm Co.
-          </h2>
-          <Link to='/' className='webdev__header-menu-item'>Home</Link>
-        </header>
+    
         <h2 className='webdev__title'>More information on Website Development</h2>
         <div className='webdev__top-section'>
           <img 

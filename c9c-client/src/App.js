@@ -52,7 +52,7 @@ function AppContent() {
         <Route path="/ecommerce-support" element={<EcommerceSupport />} />
         <Route path="/seo-services" element={<SEO />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="*" element={<NotFound />} /> {/* Optional 404 page */}
+        <Route path="*" element={<NotFound />} /> 
       </Routes>
       <Footer />
       <CookieConsent

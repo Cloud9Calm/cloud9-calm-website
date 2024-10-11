@@ -6,7 +6,11 @@
 .notfound {
         @include flex-column-center;
         background-color: $c9c-off-white;
-        padding: 10rem;
+        padding: 2rem;
+            @include desktop {
+                padding: 8rem;
+            }
+        
     &__title {
         @include heading-text;
     } &__desc {
