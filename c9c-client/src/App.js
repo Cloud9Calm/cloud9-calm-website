@@ -12,6 +12,7 @@ import WebsiteDevelopment from './pages/WebsiteDevelopment/WebsiteDevelopment';
 import EcommerceSupport from './pages/EcommerceSupport/EcommerceSupport';
 import SEO from './pages/SEO/SEO';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'; 
+import ContactPage from './pages/Contact/Contact';
 import NotFound from './pages/404/404';
 import Footer from './components/Footer/Footer';
 
@@ -52,6 +53,7 @@ function AppContent() {
         <Route path="/ecommerce-support" element={<EcommerceSupport />} />
         <Route path="/seo-services" element={<SEO />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFound />} /> 
       </Routes>
       <Footer />

@@ -4,8 +4,9 @@
 
 
 .webdev {
- &__title {
     background-color: $c9c-off-white;
+    text-align: center;
+ &__title {
       @include heading-text;
       padding: 2rem;
       margin: 0;

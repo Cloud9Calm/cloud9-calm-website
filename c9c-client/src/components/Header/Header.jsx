@@ -55,7 +55,7 @@ const Header = () => {
                 <Link to="/ecommerce-support">eCommerce Support</Link>
               </li>
               <li className="header__dropdown-item">
-                <Link to="/services/seo">SEO</Link>
+                <Link to="seo-services">SEO</Link>
               </li>
             </ul>
           </li>

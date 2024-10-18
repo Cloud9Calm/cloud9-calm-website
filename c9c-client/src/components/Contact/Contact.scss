@@ -5,10 +5,9 @@
 .contact {
     @include flex-column-center;
     color: $c9c-off-white;
-    padding: 2rem;
     background-color: $c9c-off-white;
     color: $c9c-secondary-color;
-
+    text-align: center;
     &__title {
         @include heading-text;
     } &__sub-title,
@@ -25,6 +24,7 @@
             }
     } &__description {
       @include body-text;
+      padding: 1rem;
         @include desktop {
             padding: 4rem;
             max-width: 70%;

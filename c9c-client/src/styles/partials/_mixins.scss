@@ -67,26 +67,26 @@
 
 @mixin heading-text {
   font-family: $c9c-main-font;
-  font-size: 1.5rem;
+  font-size: 1rem;
     @include tablet {
-      font-size: 2rem;
+      font-size: 1.5rem;
         @include desktop {
-          font-size: 3rem;
+          font-size: 2rem;
         }
     }
 }
 
 @mixin body-text {
   font-family: $c9c-secondary-fonts;
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: .75rem;
+  line-height: 1rem;
   font-weight: 100;
     @include tablet {
-      font-size: 1.5rem;
-      line-height: 2.5rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
         @include desktop {
-          font-size: 2rem;
-          line-height: 3rem;
+          font-size: 1.25rem;
+          line-height: 2rem;
           padding: 1rem;
         }
     }

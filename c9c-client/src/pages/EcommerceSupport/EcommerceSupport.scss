@@ -3,38 +3,32 @@
 @import '../../styles/partials/variables.scss';
 
 .ecom {
+  background-color: $c9c-off-white ;
   &__title {
     background-color: $c9c-off-white;
     @include heading-text;
     padding: 2rem;
     margin: 0;
     @include outer-borders;
-  }
-
-  &__top-section {
-    @include flex-column-center;
-    background-color: $c9c-main-color;
-    @include outer-borders;
-    padding: 2rem;
-    @include tablet {
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 8rem 2rem;
-    }
-  }
-
-  &__logo {
-    height: 100px;
-    margin: 0 2rem;
-  }
-
-  &__sub-title {
-    @include body-text;
-    color: $c9c-off-white;
-  }
-
-  &__graphic {
-    width: 100%;
+  } &__top-section {
+      @include flex-column-center;
+      background-color: $c9c-main-color;
+      @include outer-borders;
+      padding: 2rem;
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 8rem 2rem;
+      }
+  } &__logo {
+      height: 100px;
+      margin: 0 2rem;
+  } &__sub-title {
+      @include body-text;
+      color: $c9c-off-white;
+      text-align: center;
+  } &__graphic {
+      width: 100%;
   }
 }
 

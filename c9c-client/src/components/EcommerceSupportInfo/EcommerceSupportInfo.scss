@@ -3,26 +3,27 @@
 @import '../../styles/partials/variables.scss';
 
 .ecommerce {
-    border-top: 1px solid black;
-    background-color: $c9c-off-white;
-
     &__description {
         @include body-text;
-        padding: 2rem;
+        padding: 1rem;
             @include desktop {
                 width: 60%;
                 padding: 4rem;
                 text-align: justify;
             }
     } &__img {
-        width: 50%;
-        border-radius: 50%;
+            width: 50%;
+            border-radius: 50%;
+            padding: 1rem;
             @include tablet {
                 width: 40rem;
         }
+    
+    } 
 
-    } &__section {
+    &__section {
         @include flex-column-center;
+        @include outer-borders;
             @include desktop {
                 flex-direction: row-reverse;
                 padding: 4rem;
@@ -30,6 +31,7 @@
     } &__services {
         @include moving-background;
         margin: 0 auto;
+        padding: 2rem;
     } &__services-title {
         @include heading-text;
         color: $c9c-off-white;
@@ -51,25 +53,26 @@
         background-color: $c9c-off-white;
         margin: 1rem;
         padding: 1rem;
-        border-radius: 20px;
+        border-radius: 10px;
         width: 80%;
             @include desktop {
                 justify-content: center;
-                width: 600px;
-                height: 1000px;
-                padding: 2rem;
-                margin: 2rem;
+                width: 35%;
             }
     } &__services-logo {
-        width: 30%;
+        width: 50%;
     } &__services-item-title {
         @include heading-text;
+        padding: 0;
+        margin: 0;
         text-align: center;
     } &__services-item-desc {
         @include body-text;
         text-align: center;
     } &__services-item-price {
-        text-transform: capitalize;
+        padding: 0;
+        margin: 0;
+        @include body-text;
     }
 
 }

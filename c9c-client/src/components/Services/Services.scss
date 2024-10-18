@@ -4,34 +4,18 @@
 
 .services {
     @include flex-column-center;
-    padding: 2rem;
+    padding: 1rem;
     color: $c9c-off-white;
     @include outer-borders;
-    
-    background: radial-gradient(circle at 30% 50%, $analogous-color-1, transparent 90%), 
-                radial-gradient(circle at 70% 50%, $analogous-color-2, transparent 90%);
-    background-size: 200% 200%;
-    animation: gradientAnimation 10s ease infinite;
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 0%;
-        }
-        50% {
-            background-position: 100% 100%;
-        }
-        100% {
-            background-position: 0% 0%;
-        }
-    }
-
-    @include tablet {
-        padding: 2rem;
+    @include moving-background;
+        @include tablet {
+            padding: 2rem;
     } &__title {
         @include heading-text;
     } &__sub-title {
         @include body-text;
-        padding: 2rem;
-        text-align: justify;
+        padding: 1rem;
+        text-align: center;
         @include desktop {
             max-width: 50%;
         }
@@ -103,9 +87,7 @@
         }
     } &__cards-description {
         @include body-text;
-        @include desktop {
-            text-align: center;
-        }
+        text-align: center;
     } &__learn-more {
         @include buttons;
     }
