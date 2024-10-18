@@ -1,10 +1,10 @@
 import '../WebsiteDevelopment/WebsiteDevelopment.scss';
+import services from '../../data/website-development-services.json'; 
 
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import websiteGraphic from '../../assets/images/c9c-website-development.png';
-import services from '../../data/website-development-services.json'; 
+import websiteGraphic from '../../assets/images/c9c-3d-graphic.webp';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 import WebDevelopmentInfo from '../../components/WebDevelopmentInfo/WebDevelopmentInfo';
 

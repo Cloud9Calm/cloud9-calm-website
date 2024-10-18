@@ -1,14 +1,13 @@
-import './EcommerceSupportInfo.scss';
-import Contact from '../Contact/Contact';
+import './SEOinfo.scss';
 
 import services from '../../data/ecommerce-service-info.json';
 
 import erinCronie from '../../assets/images/erin-cronie-back.jpg';
 import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
 
+import Contact from '../Contact/Contact';
 
-
-const EcommerceSupportInfo = () => {
+const SEOinfo = () => {
 return (
         <section className='ecom-services'>
             <div className='ecom-services__section'>
@@ -44,4 +43,4 @@ return (
     );
 }
 
-export default EcommerceSupportInfo;
+export default SEOinfo;

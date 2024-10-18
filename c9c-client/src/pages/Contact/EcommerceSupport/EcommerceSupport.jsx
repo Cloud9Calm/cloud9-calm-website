@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import ecommerceGraphic from '../../assets/images/c9c-3d-ecommerce.webp';
-import services from '../../data/ecommerce-support-services.json'; 
+import services from '../../../data/ecommerce-support-services.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import EcommerceInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo'; 
+import EcommerceInfo from '../../../components/EcommerceSupportInfo/EcommerceSupportInfo'; 
 
 const EcommerceSupport = () => {
     const schemaData = {
@@ -18,7 +18,7 @@ const EcommerceSupport = () => {
         "mainEntity": {
             "@type": "Organization",
             "name": "Cloud9 Calm Co.",
-            "logo": "https://www.cloud9calm.com/path/to/c9c-logo-white.png",
+            "logo": "https://www.cloud9calm.com/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png",
             "sameAs": [
                 "https://www.facebook.com/profile.php?id=61559123841203",
                 "https://x.com/cloud9calmco",
@@ -38,7 +38,7 @@ const EcommerceSupport = () => {
                 {/* Open Graph (OG) tags */}
                 <meta property="og:title" content="Cloud9 Calm Co. | eCommerce Services" />
                 <meta property="og:description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
-                <meta property="og:image" content="https://www.cloud9calm.com/path/to/c9c-logo-white.png" />
+                <meta property="og:image" content="https://www.cloud9calm.com/path/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png" />
                 <meta property="og:url" content="https://www.cloud9calm.com/ecommerce-support" />
                 <meta property="og:type" content="website" />
                 
@@ -46,7 +46,7 @@ const EcommerceSupport = () => {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Cloud9 Calm Co. | eCommerce Services" />
                 <meta name="twitter:description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
-                <meta name="twitter:image" content="https://www.cloud9calm.com/path/to/c9c-logo-white.png" />
+                <meta name="twitter:image" content="https://www.cloud9calm.com/path/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png" />
                 
                 <script type="application/ld+json">
                     {JSON.stringify(schemaData)}
@@ -82,4 +82,4 @@ const EcommerceSupport = () => {
     );
 }
 
-export default EcommerceSupport
+export default EcommerceSupport;

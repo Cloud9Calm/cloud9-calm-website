@@ -16,7 +16,7 @@
             border-radius: 50%;
             padding: 1rem;
             @include tablet {
-                width: 40rem;
+                width: 30%;
         }
     
     } 
@@ -60,7 +60,8 @@
                 width: 35%;
             }
     } &__services-logo {
-        width: 50%;
+        width: 20%;
+        padding: 1rem;
     } &__services-item-title {
         @include heading-text;
         padding: 0;
