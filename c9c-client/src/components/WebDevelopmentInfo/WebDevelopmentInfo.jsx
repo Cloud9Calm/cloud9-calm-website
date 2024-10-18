@@ -1,8 +1,11 @@
 import './WebDevelopmentInfo.scss';
-import erinCronie from '../../assets/images/erin-cronie-back-2.jpg';
-import services from '../../data/website-development-info.json';
-import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
+
+import services from '../../data/website-development-services.json';
 import Contact from '../../components/Contact/Contact';
+
+import erinCronie from '../../assets/images/erin-cronie-back-2.jpg';
+import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
+
 
 const WebDevelopmentInfo = () => {
     console.log('WebDevelopmentInfo rendered');

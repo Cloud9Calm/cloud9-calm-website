@@ -1,5 +1,5 @@
 import '../WebsiteDevelopment/WebsiteDevelopment.scss';
-import services from '../../data/website-development-services.json'; 
+import services from '../../data/website-development-info.json'; 
 
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';

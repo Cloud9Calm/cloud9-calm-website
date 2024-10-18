@@ -1,22 +1,20 @@
 import './SEO.scss'; 
 import SEOinfo from '../../components/SEOinfo/SEOinfo';
-import Contact from '../Contact/Contact';  
 
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import ecommerceGraphic from '../../assets/images/c9c-3d-ecommerce.webp';
-import services from '../../data/ecommerce-support-services.json'; 
+import seoGraphic from '../../assets/images/c9c-3d-seo.webp';
+import services from '../../data/seo-services.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 
-
-const EcommerceSupport = () => {
+const SEO = () => {
     const schemaData = {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Cloud9 Calm Co. | eCommerce Services",
-        "description": "Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store.",
-        "url": "https://www.cloud9calm.com/ecommerce-support",
+        "name": "Cloud9 Calm Co. | SEO Services",
+        "description": "Maximize your SEO potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your SEO strategy, optimizing search engine rankings, and ensuring smooth operations for your online presence.",
+        "url": "https://www.cloud9calm.com/seo-services",
         "mainEntity": {
             "@type": "Organization",
             "name": "Cloud9 Calm Co.",
@@ -32,57 +30,56 @@ const EcommerceSupport = () => {
     return (
         <>
             <Helmet>
-                <title>Cloud9 Calm Co. | eCommerce Services</title>
-                <meta name="description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
-                <meta name="keywords" content="Penticton eCommerce support, eCommerce Penticton, Okanagan eCommerce developer, Shopify support, eCommerce solutions, website support, technical support, online store updates, Cloud9 Calm Co." />
-                <link rel="canonical" href="https://www.cloud9calm.com/ecommerce-support" />
+                <title>Cloud9 Calm Co. | SEO Services</title>
+                <meta name="description" content="Maximize your SEO potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your SEO strategy, optimizing search engine rankings, and ensuring smooth operations for your online presence." />
+                <meta name="keywords" content="Penticton SEO support, SEO Penticton, Okanagan SEO developer, SEO solutions, website support, technical support, online presence optimization, Cloud9 Calm Co." />
+                <link rel="canonical" href="https://www.cloud9calm.com/seo-services" />
                 
                 {/* Open Graph (OG) tags */}
-                <meta property="og:title" content="Cloud9 Calm Co. | eCommerce Services" />
-                <meta property="og:description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
-                <meta property="og:image" content="https://www.cloud9calm.com/path/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png" />
-                <meta property="og:url" content="https://www.cloud9calm.com/ecommerce-support" />
+                <meta property="og:title" content="Cloud9 Calm Co. | SEO Services" />
+                <meta property="og:description" content="Maximize your SEO potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your SEO strategy, optimizing search engine rankings, and ensuring smooth operations for your online presence." />
+                <meta property="og:image" content="https://www.cloud9calm.com/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png" />
+                <meta property="og:url" content="https://www.cloud9calm.com/seo-services" />
                 <meta property="og:type" content="website" />
                 
                 {/* Twitter Card tags */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Cloud9 Calm Co. | eCommerce Services" />
-                <meta name="twitter:description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
-                <meta name="twitter:image" content="https://www.cloud9calm.com/path/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png" />
+                <meta name="twitter:title" content="Cloud9 Calm Co. | SEO Services" />
+                <meta name="twitter:description" content="Maximize your SEO potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your SEO strategy, optimizing search engine rankings, and ensuring smooth operations for your online presence." />
+                <meta name="twitter:image" content="https://www.cloud9calm.com/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png" />
                 
                 <script type="application/ld+json">
                     {JSON.stringify(schemaData)}
                 </script>
             </Helmet>
-            <main className='ecom'>
-                <h2 className='ecom__title'>More information on eCommerce Support</h2>
-                <div className='ecom__top-section'>
+            <main className='seo'>
+                <h2 className='seo__title'>More information on SEO Services</h2>
+                <div className='seo__top-section'>
                     <img 
-                        className='ecom__logo'
+                        className='seo__logo'
                         src={c9cLogoWhite}
                         alt="Cloud9 Calm Logo in white" />
-                    <h3 className='ecom__sub-title'>
-                        Maximize your eCommerce potential with my dedicated eCommerce support services. I specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store.
+                    <h3 className='seo__sub-title'>
+                        Maximize your SEO potential with my dedicated SEO support services. I specialize in managing your SEO strategy, optimizing search engine rankings, and ensuring smooth operations for your online presence.
                     </h3>
                 </div>
                 <img
-                    className='ecom__graphic'
-                    src={ecommerceGraphic}
-                    alt="Graphic of people managing an online store"
+                    className='seo__graphic'
+                    src={seoGraphic}
+                    alt="Graphic of SEO services"
                 />
-                <div className='ecom__info'>
-                    {services.map((service, index) => (
-                        <div key={index} className='ecom__info-section'>
-                            <h4 className='ecom__info-title'>{service.title}</h4>
-                            <p className='ecom__info-desc'>{service.description}</p>
+                <div className='seo__info'>
+                    {Array.isArray(services) && services.map((service, index) => (
+                        <div key={index} className='seo__info-section'>
+                            <h4 className='seo__info-title'>{service.title}</h4>
+                            <p className='seo__info-desc'>{service.description}</p>
                         </div>
                     ))}
                 </div>
                 <SEOinfo />
-                <Contact />
             </main>
         </>
     );
 }
 
-export default EcommerceSupport;
+export default SEO;

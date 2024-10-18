@@ -11,8 +11,8 @@ import About from './pages/About/About';
 import WebsiteDevelopment from './pages/WebsiteDevelopment/WebsiteDevelopment';
 import EcommerceSupport from './pages/EcommerceSupport/EcommerceSupport';
 import SEO from './pages/SEO/SEO';
-import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'; 
 import ContactPage from './pages/Contact/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'; 
 import NotFound from './pages/404/404';
 import Footer from './components/Footer/Footer';
 
