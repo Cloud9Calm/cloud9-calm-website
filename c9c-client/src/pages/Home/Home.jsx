@@ -1,10 +1,10 @@
 import '../Home/Home.scss';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion'; 
-//components
+
 import Hero from '../../components/Hero/Hero';
 import Services from '../../components/Services/Services';
-//images
+
 import erinCronieProfile from '../../assets/images/erin-cronie-website-profile.png';
 import c9cProject from '../../assets/images/c9c-project-nvvr.png';
 import erinCronieComp from '../../assets/images/erin-cronie-developer-2.jpg'
