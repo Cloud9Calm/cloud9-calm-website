@@ -3,15 +3,25 @@
 @import '../../styles/partials/variables.scss';
 
 body {
-    border: 2px solid black;
     margin: 1rem;
-    background-color: rgb(194, 217, 243);
+    border: 2px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
     @include box-shadow;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &.light-theme {
+        @include light-theme;
+    }
+
+    &.dark-theme {
+        @include dark-theme;
+    }
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--link-color);
     cursor: pointer;
 }
 
@@ -22,6 +32,3 @@ li {
     text-decoration: none;
     list-style: none;
 }
-
-
-

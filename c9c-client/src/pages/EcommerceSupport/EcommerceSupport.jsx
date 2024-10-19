@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 import ecommerceGraphic from '../../assets/images/c9c-3d-ecommerce.webp';
 import services from '../../data/ecommerce-support-services.json'; 
-import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
+import c9cLogo from '../../assets/images/c9c-logo-black.png';
 
 const EcommerceSupport = () => {
     const schemaData = {
@@ -58,7 +58,7 @@ const EcommerceSupport = () => {
                 <div className='ecom__top-section'>
                     <img 
                         className='ecom__logo'
-                        src={c9cLogoWhite}
+                        src={c9cLogo}
                         alt="Cloud9 Calm Logo in white" />
                     <h3 className='ecom__sub-title'>
                         Maximize your eCommerce potential with my dedicated eCommerce support services. I specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store.

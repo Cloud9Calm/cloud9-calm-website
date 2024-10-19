@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import websiteGraphic from '../../assets/images/c9c-3d-graphic.webp';
-import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
+import c9cLogo from '../../assets/images/c9c-logo-black.png';
 
 const WebsiteDevelopment = () => {
     const schemaData = {
@@ -58,7 +58,7 @@ const WebsiteDevelopment = () => {
                 <div className='webdev__top-section'>
                     <img 
                         className='webdev__logo'
-                        src={c9cLogoWhite}
+                        src={c9cLogo}
                         alt="Cloud9 Calm Logo in white" />
                     <h3 className='webdev__sub-title'>
                         Empower your online presence with my dedicated web development support services. I specialize in ensuring the seamless operation of your website, tackling technical challenges, implementing updates, and enhancing functionality.

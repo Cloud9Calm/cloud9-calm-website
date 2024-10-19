@@ -3,7 +3,7 @@ import './About.scss';
 import LetsConnect from '../../components/LetsConnect/LetsConnect';
 
 import erinCronieProfile from '../../assets/images/erin-cronie-website-profile.png';
-import computerCloud from '../../assets/images/c9c-computer-cloud.webp';
+import computerCloud from '../../assets/images/c9c-cloud-computer.webp';
 import bundle from '../../assets/images/bundles.webp';
 
 import quote from '../../assets/icons/quote.svg';

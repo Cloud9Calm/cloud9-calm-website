@@ -3,53 +3,53 @@
 @import '../../styles/partials/variables.scss';
 
 .home {
-    border-top: 1px solid black;
+    @include outer-borders; 
     padding: 0;
-    margin: 0;;
-    background-color: $c9c-off-white;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
     
     &__about {
         @include outer-borders;
         @include flex-column-center;
-        background-color: $c9c-off-white;
     } 
     
     &__about-title {
        @include heading-text;
-       color: $c9c-off-white;
     } 
     
     &__about-description {
        @include body-text;
        text-align: center;
        padding: 1rem;
-            @include tablet {
-                max-width: 60%;
-            }
-        } 
+       color: var(--text-color);
+       @include tablet {
+           max-width: 60%;
+       }
+    } 
         
     &__about-profile {
         width: 50%;
         border-radius: 1000px;
         @include box-shadow;
-            @include tablet {
-                width: 40%;
-                @include desktop {
-                    width: 20%;
-                }
+        @include tablet {
+            width: 40%;
+            @include desktop {
+                width: 20%;
             }
+        }
     }
 
     &__portfolio {
         @include outer-borders;
         @include flex-column-center;
-        background-color: $c9c-secondary-color;
         padding: 1rem;
         text-align: center;
-        color: $c9c-off-white;
-            @include desktop {
-                padding: 6rem;
-            }
+        background-color: var(--background-color);
+        color: var(--text-color);
+        @include desktop {
+            padding: 6rem;
+        }
     } 
     
     &__portfolio-title {
@@ -58,45 +58,49 @@
     
     &__portfolio-item {
         @include flex-column-center;
-            @include tablet {
-              flex-direction: row;
-              align-items: center;
-              justify-content: space-around;
-            }
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
     } 
     
     &__portfolio-image {
         width: 90%;
         @include box-shadow;
-            @include tablet {
-                width: 50%;
-            } 
+        @include tablet {
+            width: 50%;
+        } 
     } 
     
     &__portfolio-description {
         @include body-text;
         padding: 2rem;
-            @include desktop {
-                padding: 4rem;
-            }
+        color: var(--text-color);
+        @include desktop {
+            padding: 4rem;
+        }
     }
-
 
     &__cta {
         @include outer-borders;
         @include flex-column-center;
         padding: 1rem;
+        background-color: var(--background-color);
+        color: var(--text-color);
     } 
     
     &__cta-title {
         @include heading-text;
         text-align: center;
+        color: var(--text-color);
     } 
     
     &__cta-description {
        @include body-text;
        padding: 1rem;
        text-align: center;
+       color: var(--text-color);
     } 
     
     &__cta-img {
@@ -104,23 +108,25 @@
         width: 200px;
         border-radius: 50%;
         @include box-shadow;
-            @include tablet {
-                height: 350px;
-                width: 350px;;
-            }
+        @include tablet {
+            height: 350px;
+            width: 350px;
+        }
     } 
     
     &__cta-button {
         @include buttons;
-        color: $c9c-secondary-color;
-            @include desktop {
-                margin: 4rem;
-            }
+        background-color: var(--background-color);
+        color: var(--text-color);
+        @include desktop {
+            margin: 4rem;
+        }
     }
 
     &__cta-link-1 {
         @include buttons;
-        color: $c9c-secondary-color;
+        background-color: var(--background-color);
+        color: var(--text-color);
         @include desktop {
             margin: 4rem;
         }
@@ -128,7 +134,8 @@
     
     &__cta-link-2 {
         @include buttons;
-        color: $c9c-off-white;
+        background-color: var(--background-color);
+        color: var(--text-color);
         @include desktop {
             margin: 4rem;
         }

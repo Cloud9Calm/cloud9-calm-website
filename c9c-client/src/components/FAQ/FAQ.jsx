@@ -6,7 +6,7 @@ const FAQ = () => {
   return (
     <section className="faq">
         <div className='faq__main-container'>
-        <h2 className="faq__title">Frequently Asked Questions →</h2>
+        <h2 className="faq__title">Frequently Asked Questions</h2>
         <ul className="faq__list">
             {faqs.map((faq, index) => (
             <li key={index} className="faq__item">

@@ -4,12 +4,12 @@
 
 .about {
     background-color: $c9c-off-white;
+    color: $c9c-off-black;
 
     &__intro {
         @include flex-column-center;
         @include box-shadow;
         max-width: 80%;
-        background-color: $c9c-off-white;
         border-radius: 10px;
         padding: 1rem;
         margin: 0 auto;
@@ -55,8 +55,6 @@
     }
 
     &__why {
-        background-color: $c9c-secondary-color;
-        color: $c9c-off-white;
         padding: 2rem;
         @include outer-borders;
             @include tablet {
@@ -100,7 +98,7 @@
         display: flex;
         align-items: center;
         font-family: $c9c-main-font;
-        color: $c9c-off-white;
+        color: white;
         background-color: $triadic-color-2;
         padding: .5rem 1rem;
         margin: 1rem;
@@ -130,7 +128,7 @@
         @include body-text;
         padding: 1rem;
             @include tablet {
-                text-align: right;
+                text-align: justify;
                 padding: 1rem;
                     @include desktop {
                         padding: 4rem;
@@ -149,12 +147,10 @@
     
     &__fun-facts-title {
         @include heading-text;
-        color: $c9c-off-white;
     } 
     
     &__fun-facts-text {
         @include body-text;
-        color: $c9c-off-white;
         text-align: justify;
             @include desktop {
                 padding: 2rem 3rem;

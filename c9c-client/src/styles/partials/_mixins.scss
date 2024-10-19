@@ -20,7 +20,7 @@
 }
 
 @mixin outer-borders {
-  border-top: 2px solid black;
+  border-top: 2px solid var(--border-color)
 }
 
 @mixin color-borders {
@@ -111,4 +111,18 @@
       background-position: 0% 50%;
       }
   }
+}
+
+@mixin light-theme {
+  --background-color: #f5f5f5;
+  --text-color: #080808;
+  --border-color: black;
+  --link-color: var(--text-color);
+}
+
+@mixin dark-theme {
+  --background-color: #080808;
+  --text-color: #f5f5f5;
+  --border-color: #f5f5f5;
+  --link-color: var(--text-color);
 }

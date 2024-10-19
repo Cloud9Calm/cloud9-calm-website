@@ -1,35 +1,11 @@
 import '../Header/Header.scss';
-
-import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import LightModeIcon from '../../assets/icons/lightmode.svg';
+import DarkModeIcon from '../../assets/icons/darkmode.svg';
 
-
-const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [dropdownVisible, setDropdownVisible] = useState(false); // State to control dropdown visibility
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const toggleDropdown = () => {
-    setDropdownVisible(!dropdownVisible);
-  };
-
+const Header = ({ toggleTheme, theme }) => {
   return (
-    <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
+    <header className="header">
       <div className="header__logo">
         <h2 className="header__title">Cloud9 Calm Co.</h2>
       </div>
@@ -44,10 +20,9 @@ const Header = () => {
             <Link to="/about">About</Link>
           </li>
 
-          {/* Services with dropdown */}
-          <li className="header__menu-item" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+          <li className="header__menu-item">
             <Link to="/services">Services</Link>
-            <ul className={`header__dropdown ${dropdownVisible ? 'visible' : ''}`}>
+            <ul className="header__dropdown">
               <li className="header__dropdown-item">
                 <Link to="/website-development">Website Development</Link>
               </li>
@@ -55,13 +30,24 @@ const Header = () => {
                 <Link to="/ecommerce-support">eCommerce Support</Link>
               </li>
               <li className="header__dropdown-item">
-                <Link to="seo-services">SEO</Link>
+                <Link to="/seo-services">SEO</Link>
               </li>
             </ul>
           </li>
 
           <li className="header__menu-item">
             <Link to="/contact">Contact</Link>
+          </li>
+          
+          {/* Theme toggle button */}
+          <li className="header__menu-item">
+            <button onClick={toggleTheme} className="header__button">
+              {theme === 'light' ? (
+                <img src={DarkModeIcon} className="header__theme-icon" alt="Switch to Dark Mode" />
+              ) : (
+                <img src={LightModeIcon} className="header__theme-icon" alt="Switch to Light Mode" />
+              )}
+            </button>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,6 @@
 import './LetsConnect.scss';
 import email from '../../assets/icons/email.svg';
+import { Link } from 'react-router-dom';
 
 const LetsConnect = () => { 
     return (
@@ -14,14 +15,12 @@ const LetsConnect = () => {
                 alt="Email icon" 
                 className="connect__cta-icon"
             />
-            <a 
-                href='https://dashboard.cloud9calm.com/public/66feeb5f372371001f841096' 
+            <Link 
+                to='/contact' 
                 className='connect__cta-link'
-                target='_blank'
-                rel='noopener noreferrer'
             >
                 Get in touch
-            </a>
+            </Link>
         </section>
     );
 }

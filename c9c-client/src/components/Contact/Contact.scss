@@ -6,7 +6,7 @@
     @include flex-column-center;
     color: $c9c-off-white;
     background-color: $c9c-off-white;
-    color: $c9c-secondary-color;
+    color: $c9c-off-black;
     text-align: center;
 
     &__title {
@@ -40,7 +40,7 @@
     
     &__booking {
         @include buttons;
-        color: $c9c-secondary-color;
+        color: $c9c-off-black;
     }
 
 
@@ -59,6 +59,6 @@
     &__meet {
         margin: 2rem;
         @include buttons;
-        color: $c9c-secondary-color;
+        color: $c9c-off-black;
     }
 }

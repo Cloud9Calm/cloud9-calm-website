@@ -3,30 +3,37 @@
 @import '../../styles/partials/variables.scss';
 
 .seo {
-    background-color: $c9c-off-white ;
+    background-color: $c9c-off-white;
+    color: $c9c-off-black;
+
     &__title {
       @include heading-text;
       padding: 2rem;
       margin: 0;
       @include outer-borders;
-    } &__top-section {
+    } 
+    
+    &__top-section {
         @include flex-column-center;
-        background-color: $c9c-main-color;
-        @include outer-borders;
         padding: 2rem;
         @include tablet {
           flex-direction: row;
           justify-content: space-around;
-          padding: 8rem 2rem;
+          padding: 4rem 2rem;
         }
-    } &__logo {
+    } 
+    
+    &__logo {
           width: 20%;
           margin: 0 2rem;
-    } &__sub-title {
+    } 
+    
+    &__sub-title {
           @include body-text;
-          color: $c9c-off-white;
           text-align: center;
-    } &__graphic {
+    } 
+    
+    &__graphic {
         width: 100%;
     }
   }
@@ -72,7 +79,7 @@
   
   .seo__info-desc {
     font-family: $c9c-secondary-fonts;
-    color: $c9c-secondary-color;
+    color: $c9c-off-black;
     font-size: 1rem;
     margin: .5rem;
     line-height: 1.5rem;

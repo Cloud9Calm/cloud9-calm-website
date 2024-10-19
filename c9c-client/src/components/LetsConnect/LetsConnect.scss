@@ -16,6 +16,7 @@
     &__cta-text {
         @include body-text;
         max-width: 50%;
+        text-align: center;
     }  
     
     &__cta-icon {
@@ -24,6 +25,6 @@
     
     &__cta-link {
         @include buttons;
-        color: $c9c-secondary-color;
+        color: $c9c-off-black;
     }
 }

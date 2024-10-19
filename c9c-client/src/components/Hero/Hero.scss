@@ -5,7 +5,9 @@
 .hero {
     @include outer-borders;
     @include flex-column-center;
-    background: radial-gradient(circle,#4489c8 10%,$c9c-off-white 80%, $c9c-off-white 100%);
+    color: var(--text-color);
+    text-align: center;
+    background: radial-gradient(circle, #4489c8 10%, var(--background-color) 80%, var(--background-color) 100%);
     padding: 2rem;
     margin: 0;
 
@@ -14,17 +16,17 @@
     } 
     
     &__title {
-       @include heading-text;
-       text-align: center;
+        @include heading-text;
     } 
     
     &__info {
         @include body-text;
-        text-align: center;
+        @include tablet {
+            max-width: 60%;
+        }
     } 
     
     &__cta-button {
         @include buttons;
-        color: $c9c-secondary-color;
     }
 }
