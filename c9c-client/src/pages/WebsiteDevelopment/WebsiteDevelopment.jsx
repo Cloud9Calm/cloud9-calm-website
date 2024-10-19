@@ -1,5 +1,6 @@
 import '../WebsiteDevelopment/WebsiteDevelopment.scss';
 import services from '../../data/website-development-info.json'; 
+import Contact from '../Contact/Contact'; 
 
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -77,6 +78,7 @@ const WebsiteDevelopment = () => {
                     ))}
                 </div>
                 <WebDevelopmentInfo />
+                <Contact />
             </main>
         </>
     );

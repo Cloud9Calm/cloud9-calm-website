@@ -1,11 +1,12 @@
 import './SEO.scss'; 
 import SEOinfo from '../../components/SEOinfo/SEOinfo';
+import Contact from '../Contact/Contact';  
 
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import seoGraphic from '../../assets/images/c9c-3d-seo.webp';
-import services from '../../data/seo-services.json'; 
+import services from '../../data/seo-info.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 
 const SEO = () => {
@@ -77,6 +78,7 @@ const SEO = () => {
                     ))}
                 </div>
                 <SEOinfo />
+                <Contact />
             </main>
         </>
     );

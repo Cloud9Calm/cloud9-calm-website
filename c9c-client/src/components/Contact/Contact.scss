@@ -13,23 +13,22 @@
     } &__sub-title,
       &__sub-title-2 {
        @include body-text;
-    } &__profile {
-        @include color-borders;
-        @include box-shadow;
+    } &__icon {
         padding: 0;
         margin: 1rem;
-        width: 60%;
+        width: 20%;
             @include tablet {
-                width: 30%;
+                max-width: 30%;
             }
     } &__description {
-      @include body-text;
-      padding: 1rem;
-        @include desktop {
-            padding: 4rem;
-            max-width: 70%;
-            text-align: justify;
-        }
+        @include body-text;
+        padding: 1rem;
+        width: 50%;
+            @include desktop {
+                padding: 2rem;
+                max-width: 40%;
+                text-align: justify;
+            }
     } &__booking {
         @include buttons;
         color: $c9c-secondary-color;

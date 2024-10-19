@@ -1,5 +1,4 @@
 import './EcommerceSupportInfo.scss';
-import Contact from '../Contact/Contact';
 
 import services from '../../data/ecommerce-service-info.json';
 
@@ -37,9 +36,7 @@ return (
                         </li>
                     ))}
                 </ul>
-            </div>
-           
-            <Contact />
+            </div>            
         </section>
     );
 }

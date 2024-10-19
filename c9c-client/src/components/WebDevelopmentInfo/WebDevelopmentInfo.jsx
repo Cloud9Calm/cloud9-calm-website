@@ -1,14 +1,12 @@
 import './WebDevelopmentInfo.scss';
 
 import services from '../../data/website-development-services.json';
-import Contact from '../../components/Contact/Contact';
 
 import erinCronie from '../../assets/images/erin-cronie-back-2.jpg';
 import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
 
 
 const WebDevelopmentInfo = () => {
-    console.log('WebDevelopmentInfo rendered');
     return (
         <section className='dev-services'>
             <div className='dev-services__section'>
@@ -39,8 +37,6 @@ const WebDevelopmentInfo = () => {
                         </ul>
                     </div>
                 </div>
-
-            <Contact />
         </section>
     );
 }

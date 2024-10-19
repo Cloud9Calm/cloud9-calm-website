@@ -5,7 +5,6 @@
 .seo {
     background-color: $c9c-off-white ;
     &__title {
-      background-color: $c9c-off-white;
       @include heading-text;
       padding: 2rem;
       margin: 0;
