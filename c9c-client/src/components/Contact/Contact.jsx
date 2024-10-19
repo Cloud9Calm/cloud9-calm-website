@@ -1,8 +1,8 @@
 import './Contact.scss';
-import Email from '../../assets/icons/email.svg'
+import Email from '../../assets/icons/email.svg';
+import { Link } from 'react-router-dom';
 
 const Contact = () => { 
-   
     return (
         <section className='contact' id='contact'>
             <h2 className='contact__title'>Book A Free Consultation</h2>
@@ -23,14 +23,9 @@ const Contact = () => {
                     src={Email} 
                     alt="Email icon" 
                 />
-                <a
-                    href="https://dashboard.cloud9calm.com/public/66feead6372371001f841019"
-                    target="_blank"
-                    rel="noopener noreferrer"  
-                    className="contact__meet"
-                >
+                <Link to="/contact" className="contact__meet">
                     Book a free meeting!
-                </a>
+                </Link>
             </div>
        </section>
     );

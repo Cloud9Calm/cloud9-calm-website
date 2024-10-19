@@ -10,16 +10,22 @@
     @include moving-background;
         @include tablet {
             padding: 2rem;
-    } &__title {
+    } 
+    
+    &__title {
         @include heading-text;
-    } &__sub-title {
+    } 
+    
+    &__sub-title {
         @include body-text;
         padding: 1rem;
         text-align: center;
         @include desktop {
             max-width: 50%;
         }
-    } &__cards-container {
+    } 
+    
+    &__cards-container {
         @include flex-column-center;
         padding: 1rem;
         @include tablet {
@@ -29,9 +35,11 @@
                     align-items: center;
                 }
         }
-    } &__card-1,
-      &__card-2,
-      &__card-3 {
+    } 
+    
+    &__card-1,
+    &__card-2,
+    &__card-3 {
         @include flex-column-center;
         margin: 3rem 0;
         @include tablet {
@@ -44,7 +52,9 @@
                 margin: 0;
             }
         }
-    } &__card-2 {
+    } 
+    
+    &__card-2 {
         @include tablet {
             flex-direction: row-reverse;
             text-align: right;
@@ -52,14 +62,18 @@
                     flex-direction: column;
                 }
         }
-    } &__cards-upper-section {
+    } 
+    
+    &__cards-upper-section {
         @include flex-column-center;
         align-items: center;
         @include tablet {
             max-width: 60%;
             flex-direction: column-reverse;
         }
-    } &__graphics {
+    } 
+    
+    &__graphics {
         width: 80%;
         @include color-borders;
         @include box-shadow;
@@ -69,26 +83,34 @@
                 width: 90%;
             }
         }
-    } &__cards-title {
+    } 
+    
+    &__cards-title {
         @include heading-text;
             @include desktop {
                 text-align: center;
                 height: 80px;
             }
-    } &__cards-lower-section {
+    } 
+    
+    &__cards-lower-section {
         @include flex-column-center;
         @include tablet {
             max-width: 50%;
                 @include desktop {
                     justify-content: space-between;
-                    height: 700px;
+                    height: 400px;
                     max-width: 90%;
                 }
         }
-    } &__cards-description {
+    } 
+    
+    &__cards-description {
         @include body-text;
         text-align: center;
-    } &__learn-more {
+    } 
+    
+    &__learn-more {
         @include buttons;
     }
 }

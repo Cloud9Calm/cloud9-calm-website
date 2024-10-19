@@ -1,0 +1,85 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.contact-form {
+    @include flex-column-center;
+    @include outer-borders;
+    @include moving-background;
+    margin: 0;
+    padding: 0;
+
+    &__title {
+        @include heading-text;
+    }
+
+    &__container {
+        background-color: $c9c-off-white;
+        @include flex-column-center;
+        @include box-shadow;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        width: 80%;
+        @include tablet {
+            width: 60%;
+        }
+        @include desktop {
+            max-width: 40%;
+        }
+    }
+
+    &__name-email {
+        @include flex-column-center;
+        @include tablet {
+            flex-direction: row
+        }
+    }
+
+    &__inputs {
+        @include body-text;
+        @include flex-column-center;
+        text-align: center;
+        padding: 1rem;
+
+        textarea {
+            @include color-borders; 
+            padding: 1rem;
+            width: 80%;
+            height: 100px;
+            resize: auto;
+            overflow: auto;
+    
+        }
+    }
+
+    &__name,
+    &__email,
+    &__website,
+    &__inquiry {
+        @include body-text;
+        width: 90%;
+        @include tablet {
+            width: 80%;
+        }
+        @include desktop {
+            max-width: 40%;
+        }
+    }
+
+    &__icon {
+        width: 100px;
+    }
+
+    &__button {
+        @include buttons;
+        width: 80%;
+    }   
+}
+
+.contact-form__inputs input[name="name"],
+.contact-form__inputs input[name="email"],
+.contact-form__inputs input[name="website"] {
+    @include color-borders;
+    padding: .5rem;
+}

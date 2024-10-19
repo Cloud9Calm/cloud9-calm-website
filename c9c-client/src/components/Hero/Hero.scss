@@ -9,16 +9,21 @@
     padding: 2rem;
     margin: 0;
 
-
     &__logo {
         width: 70vw;
-    } &__title {
+    } 
+    
+    &__title {
        @include heading-text;
        text-align: center;
-    } &__info {
+    } 
+    
+    &__info {
         @include body-text;
         text-align: center;
-    } &__cta-button {
+    } 
+    
+    &__cta-button {
         @include buttons;
         color: $c9c-secondary-color;
     }

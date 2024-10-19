@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
 import './About.scss';
+import LetsConnect from '../../components/LetsConnect/LetsConnect';
 
 import erinCronieProfile from '../../assets/images/erin-cronie-website-profile.png';
 import computerCloud from '../../assets/images/c9c-computer-cloud.webp';
@@ -9,7 +10,6 @@ import quote from '../../assets/icons/quote.svg';
 import person from '../../assets/icons/personSearch.svg';
 import target from '../../assets/icons/target.svg';
 import engineering from '../../assets/icons/engineering.svg';
-import email from '../../assets/icons/email.svg';
 
 const About = () => {
     const schemaData = {
@@ -166,28 +166,7 @@ const About = () => {
                     When I’m not busy building websites, I <i>love getting creative</i> in the kitchen, trying out <u>new recipes</u>, and sharing <i>delicious meals</i> with friends. You might also find me tending to my <u>garden</u>, sipping on a glass of <i>wine</i>, or unwinding with a <u>good game</u>. I’m all about <i>cozy moments</i>, whether it’s a <u>quiet night in</u> with my pets or hosting a <i>laid-back gathering</i> with the people I care about. Life’s all about <i>balance</i>—good food, good company, and a <u>little bit of fun</u>!
                 </p>
             </div>
-
-            {/* Call to Action Section */}
-            <div className='about__cta'>
-                <h2 className='about__cta-title'>Let's Connect👋</h2>
-                <p className='about__cta-text'>
-                    Ready to bring your vision to life? Reach out to me today, and let’s
-                    chat about how I can help your business grow!
-                </p>
-                <img 
-                    src={email}
-                    alt="Email icon" 
-                    className="about__cta-icon"
-                />
-                <a 
-                    href='https://dashboard.cloud9calm.com/public/66feeb5f372371001f841096' 
-                    className='about__cta-link'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    Get in touch
-                </a>
-            </div>
+            <LetsConnect />
         </section>
     );
 };

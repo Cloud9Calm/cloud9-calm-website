@@ -12,17 +12,23 @@
         @include outer-borders;
         @include flex-column-center;
         background-color: $c9c-off-white;
-    } &__about-title {
+    } 
+    
+    &__about-title {
        @include heading-text;
        color: $c9c-off-white;
-    } &__about-description {
+    } 
+    
+    &__about-description {
        @include body-text;
        text-align: center;
        padding: 1rem;
             @include tablet {
                 max-width: 60%;
             }
-        } &__about-profile {
+        } 
+        
+    &__about-profile {
         width: 50%;
         border-radius: 1000px;
         @include box-shadow;
@@ -44,22 +50,30 @@
             @include desktop {
                 padding: 6rem;
             }
-    } &__portfolio-title {
+    } 
+    
+    &__portfolio-title {
         @include heading-text;
-    } &__portfolio-item {
+    } 
+    
+    &__portfolio-item {
         @include flex-column-center;
             @include tablet {
               flex-direction: row;
               align-items: center;
               justify-content: space-around;
             }
-    } &__portfolio-image {
+    } 
+    
+    &__portfolio-image {
         width: 90%;
         @include box-shadow;
             @include tablet {
                 width: 50%;
             } 
-    } &__portfolio-description {
+    } 
+    
+    &__portfolio-description {
         @include body-text;
         padding: 2rem;
             @include desktop {
@@ -72,14 +86,20 @@
         @include outer-borders;
         @include flex-column-center;
         padding: 1rem;
-    } &__cta-title {
+    } 
+    
+    &__cta-title {
         @include heading-text;
         text-align: center;
-    } &__cta-description {
+    } 
+    
+    &__cta-description {
        @include body-text;
        padding: 1rem;
        text-align: center;
-    } &__cta-img {
+    } 
+    
+    &__cta-img {
         height: 200px;
         width: 200px;
         border-radius: 50%;
@@ -88,7 +108,9 @@
                 height: 350px;
                 width: 350px;;
             }
-    } &__cta-button {
+    } 
+    
+    &__cta-button {
         @include buttons;
         color: $c9c-secondary-color;
             @include desktop {
@@ -102,7 +124,9 @@
         @include desktop {
             margin: 4rem;
         }
-    } &__cta-link-2 {
+    } 
+    
+    &__cta-link-2 {
         @include buttons;
         color: $c9c-off-white;
         @include desktop {

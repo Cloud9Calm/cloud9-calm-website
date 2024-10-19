@@ -1,6 +1,6 @@
 import './SEO.scss'; 
 import SEOinfo from '../../components/SEOinfo/SEOinfo';
-import Contact from '../Contact/Contact';  
+import LetsConnect from '../../components/LetsConnect/LetsConnect';
 
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -78,7 +78,7 @@ const SEO = () => {
                     ))}
                 </div>
                 <SEOinfo />
-                <Contact />
+                <LetsConnect />
             </main>
         </>
     );

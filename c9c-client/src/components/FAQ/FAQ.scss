@@ -1,0 +1,54 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+
+.faq {
+    @include flex-column-center;
+    @include outer-borders;
+    background-color: black;
+    color: $c9c-off-white;
+    padding: 1rem;
+
+    &__title {
+        @include heading-text;
+    }
+
+    &__main-container {
+        @include flex-column-center;
+        @include box-shadow;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        @include tablet {
+            flex-direction: row;
+            width: 80%;
+        }
+        @include desktop {
+            max-width: 80%;
+        }
+    }
+
+    &__list {
+        @include tablet {
+            width: 60%; 
+        }
+        @include desktop {
+            max-width: 40%;
+        }
+    } 
+
+    &__spacer {
+        padding: 1rem;
+        border-bottom: 2px solid $c9c-off-white;   
+    }
+
+    &__item {
+        @include body-text;
+    }
+
+    &__question {
+        @include heading-text;
+    }
+}

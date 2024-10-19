@@ -63,10 +63,6 @@ const Header = () => {
           <li className="header__menu-item">
             <Link to="/contact">Contact</Link>
           </li>
-
-          <li className="header__menu-item dashboard-link">
-            <a href="https://dashboard.cloud9calm.com" target="_blank" rel="noopener noreferrer">Client Dashboard</a>
-          </li>
         </ul>
       </nav>
     </header>

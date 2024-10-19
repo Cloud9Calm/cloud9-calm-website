@@ -8,19 +8,26 @@
     background-color: $c9c-off-white;
     color: $c9c-secondary-color;
     text-align: center;
+
     &__title {
         @include heading-text;
-    } &__sub-title,
-      &__sub-title-2 {
+    } 
+
+    &__sub-title,
+    &__sub-title-2 {
        @include body-text;
-    } &__icon {
+    } 
+    
+    &__icon {
         padding: 0;
         margin: 1rem;
         width: 20%;
             @include tablet {
                 max-width: 30%;
             }
-    } &__description {
+    } 
+    
+    &__description {
         @include body-text;
         padding: 1rem;
         width: 50%;
@@ -29,7 +36,9 @@
                 max-width: 40%;
                 text-align: justify;
             }
-    } &__booking {
+    } 
+    
+    &__booking {
         @include buttons;
         color: $c9c-secondary-color;
     }
@@ -39,11 +48,15 @@
         @include outer-borders;
         padding: 1rem;
         @include flex-column-center;
-    } &__pricing-note {
+    } 
+    
+    &__pricing-note {
         @include body-text;
         text-align: center;
         max-width: 60%;
-    } &__meet {
+    } 
+    
+    &__meet {
         margin: 2rem;
         @include buttons;
         color: $c9c-secondary-color;

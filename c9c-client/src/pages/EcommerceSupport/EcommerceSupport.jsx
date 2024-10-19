@@ -1,5 +1,6 @@
 import './EcommerceSupport.scss'; 
-import Contact from '../Contact/Contact'; 
+import EcommerceInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo'; 
+import LetsConnect from '../../components/LetsConnect/LetsConnect';
 
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -7,7 +8,6 @@ import { Link } from 'react-router-dom';
 import ecommerceGraphic from '../../assets/images/c9c-3d-ecommerce.webp';
 import services from '../../data/ecommerce-support-services.json'; 
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import EcommerceInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo'; 
 
 const EcommerceSupport = () => {
     const schemaData = {
@@ -78,7 +78,7 @@ const EcommerceSupport = () => {
                     ))}
                 </div>
                 <EcommerceInfo />
-                <Contact />
+                <LetsConnect />
             </main>
         </>
     );
