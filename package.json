@@ -22,8 +22,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix c9c-client && npm run build --prefix c9c-client",
-    "heroku-postbuild": "npm install --prefix c9c-server"
+    "heroku-postbuild": "npm install --prefix c9c-client && npm run build --prefix c9c-client && npm install --prefix c9c-server"
   },
   "engines": {
     "node": "18.18.2",
