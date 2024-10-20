@@ -4,8 +4,8 @@
 
 
 .faq {
-    background-color: $c9c-off-white;
-    color: $c9c-off-black;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 1rem;
     text-align: center;
 
@@ -36,7 +36,7 @@
 
     &__spacer {
         padding: 1rem;
-        border-bottom: 2px solid $c9c-off-black;
+        border-bottom: 2px solid var(--text-color);
             @include tablet {
                 padding: 2rem;
             }   

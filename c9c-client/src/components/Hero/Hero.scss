@@ -3,7 +3,6 @@
 @import '../../styles/partials/variables.scss';
 
 .hero {
-    @include outer-borders;
     @include flex-column-center;
     color: var(--text-color);
     text-align: center;
@@ -13,6 +12,9 @@
 
     &__logo {
         width: 70vw;
+            @include desktop {
+                width: 40vw;
+            }
     } 
     
     &__title {

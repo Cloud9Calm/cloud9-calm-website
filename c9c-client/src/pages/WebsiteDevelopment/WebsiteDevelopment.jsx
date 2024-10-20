@@ -9,6 +9,13 @@ import { useState, useEffect } from 'react';
 import websiteGraphic from '../../assets/images/c9c-3d-graphic.webp';
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
+import { motion } from 'framer-motion';
+
+// Define scroll animation variant
+const scrollVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const WebsiteDevelopment = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,7 +26,7 @@ const WebsiteDevelopment = () => {
             setIsDarkMode(currentTheme);
         };
 
-        checkTheme(); // Initial check when component mounts
+        checkTheme(); 
 
         const observer = new MutationObserver(checkTheme);
         observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
@@ -68,9 +75,23 @@ const WebsiteDevelopment = () => {
                     {JSON.stringify(schemaData)}
                 </script>
             </Helmet>
-            <main className='webdev'>
-                <h2 className='webdev__title'>More information on Website Development</h2>
-                <div className='webdev__top-section'>
+            <motion.main 
+                className='webdev'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={scrollVariant}
+            >
+                <motion.h2 
+                    className='webdev__title'
+                    variants={scrollVariant}
+                >
+                    More information on Website Development
+                </motion.h2>
+                <motion.div 
+                    className='webdev__top-section'
+                    variants={scrollVariant}
+                >
                     <img 
                         className='webdev__logo'
                         src={isDarkMode ? c9cLogoWhite : c9cLogoBlack}
@@ -78,23 +99,31 @@ const WebsiteDevelopment = () => {
                     <h3 className='webdev__sub-title'>
                         Empower your online presence with my dedicated web development support services. I specialize in ensuring the seamless operation of your website, tackling technical challenges, implementing updates, and enhancing functionality.
                     </h3>
-                </div>
-                <img
+                </motion.div>
+                <motion.img
                     className='webdev__graphic'
                     src={websiteGraphic}
                     alt="Graphic of two people working on a computer"
+                    variants={scrollVariant}
                 />
-                <div className='webdev__info'>
+                <motion.div 
+                    className='webdev__info'
+                    variants={scrollVariant}
+                >
                     {services.map((service, index) => (
-                        <div key={index} className='webdev__info-section'>
+                        <motion.div 
+                            key={index} 
+                            className='webdev__info-section'
+                            variants={scrollVariant}
+                        >
                             <h4 className='webdev__info-title'>{service.title}</h4>
                             <p className='webdev__info-desc'>{service.description}</p>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
                 <WebDevelopmentInfo />
                 <LetsConnect />
-            </main>
+            </motion.main>
         </>
     );
 }

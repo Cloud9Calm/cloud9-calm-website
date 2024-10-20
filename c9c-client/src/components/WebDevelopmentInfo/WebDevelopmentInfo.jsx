@@ -31,7 +31,6 @@ const WebDevelopmentInfo = () => {
                                         className='dev-services__services-logo' />
                                     <h4 className='dev-services__services-item-title'>{service.title}</h4>
                                     <p className='dev-services__services-item-desc'>{service.description}</p>
-                                    <p className='dev-services__services-item-price'>{service.price}</p>
                                 </li>
                             ))}
                         </ul>

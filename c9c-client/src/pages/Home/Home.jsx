@@ -1,6 +1,7 @@
 import '../Home/Home.scss';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion'; 
+import { Link } from 'react-router-dom';
 
 import Hero from '../../components/Hero/Hero';
 import Services from '../../components/Services/Services';
@@ -9,10 +10,27 @@ import erinCronieProfile from '../../assets/images/erin-cronie-website-profile.p
 import c9cProject from '../../assets/images/c9c-project-nvvr.png';
 import erinCronieComp from '../../assets/images/erin-cronie-developer-2.jpg'
 
-// Define scroll animation variants
 const fadeInVariant = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Cloud9 Calm Co. | Penticton and Okanagan's Web Development and eCommerce Support",
+  "description": "Welcome to Cloud9 Calm Co. I offer premier web development and eCommerce support services. My goal is to empower your online presence with seamless, user-friendly websites and optimized online stores.",
+  "url": "https://www.cloud9calm.com/",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Cloud9 Calm Co.",
+    "logo": "https://www.cloud9calm.com/path/to/c9c-logo-white.png",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61559123841203",
+      "https://x.com/cloud9calmco",
+      "https://www.linkedin.com/company/102845546"
+    ]
+  }
 };
 
 const Home = () => {
@@ -29,17 +47,20 @@ const Home = () => {
           content="Penticton website developer, website Penticton, Okanagan website developer, Cloud9 Calm Co., web development, eCommerce support, website optimization, online store support"
         />
         <link rel="canonical" href="https://www.cloud9calm.com/" />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
       </Helmet>
 
       <div className="home">
         
         <Hero />
         
-        {/* About Section */}
         <motion.section
           className="home__about"
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
           variants={fadeInVariant}
         >
           <h2 className="home__about-title">About Cloud9 Calm Co.</h2>
@@ -56,11 +77,11 @@ const Home = () => {
           <a href="/about" className="home__cta-link-1">Learn More About Me →</a>
         </motion.section>
 
-         {/* Services section */}
          <motion.section
           className="home__services-overview"
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
           variants={fadeInVariant}
         >
             <div className="home__services-list">
@@ -68,11 +89,11 @@ const Home = () => {
             </div>
         </motion.section>
 
-        {/* Portfolio */}
         <motion.section
           className="home__portfolio"
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
           variants={fadeInVariant}
         >
           <h2 className="home__portfolio-title">See My Work</h2>
@@ -86,11 +107,12 @@ const Home = () => {
           <a href="/portfolio" className="home__cta-link-2">View Portfolio →</a>
         </motion.section>
 
-        {/* Call to Action */}
+
         <motion.section
           className="home__cta"
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
           variants={fadeInVariant}
         >
           <h2 className="home__cta-title">Let’s Build Something Amazing Together</h2>
@@ -104,14 +126,11 @@ const Home = () => {
                 className='home__cta-img'
               />
           
-          <a 
-              href="https://dashboard.cloud9calm.com/public/66feeb5f372371001f841096" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="home__cta-button"
-            >
+              <Link
+              to='/contact'
+              className='home__cta-link-1'>
               Get in Touch
-          </a>
+              </Link>
         </motion.section>
       </div>
     </>

@@ -9,6 +9,8 @@
     font-family: $c9c-main-font;
     margin: 0;
     padding: 1rem;
+    border-bottom: 2px solid var(--text-color);
+    transition: opacity 0.3s ease;
 
     @include tablet {
         position: -webkit-sticky; 
@@ -20,10 +22,16 @@
         height: 50px;
     }
 
+    &--scrolled {
+        @include desktop {
+            opacity: 0.8;
+        }
+    }
+
     &__title {
         text-transform: uppercase;
-    } 
-    
+    }
+
     &__menu-list {
         display: flex;
         flex-direction: column;
@@ -33,17 +41,18 @@
         @include tablet {
             flex-direction: row;
         }
-    } 
-    
-    &__menu-item {
-        a {
-            text-decoration: none;
-            color: var(--text-color, $c9c-off-black); 
-            transition: color 0.3s ease;
+    }
 
-            &:hover {
-              filter: brightness(1.2);
-            }
+    &__menu-item {
+        position: relative; 
+        a, .header__dropdown-label {
+            text-decoration: none;
+            color: var(--text-color, $c9c-off-black);
+            transition: color 0.3s ease;
+        }
+
+        &:hover .header__dropdown {
+            display: block;
         }
 
         @include tablet {
@@ -51,20 +60,59 @@
         }
     }
 
-    &__button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.3s ease;
+    &__dropdown {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        background-color: var(--background-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        z-index: 999;
+        @include tablet {
+            min-width: 150px;
+        }
 
-      &:hover {
-        transform: scale(1.1);
-      }
+        &-item {
+            margin-bottom: 0.5rem;
+
+            a {
+                text-decoration: none;
+                color: var(--text-color);
+                display: block;
+                padding: 0.5rem 1rem;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: var(--text-color, $c9c-off-black);
+                    color: var(--background-color, $c9c-off-white);
+                }
+            }
+        }
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__theme-icon {
-        width: 24px; 
-        height: 24px; 
+        width: 24px;
+        height: 24px;
         transition: all 0.3s ease;
     }
+}
+.header__arrow {
+    display: inline-block;
+    margin-left: .5rem;
+    border: solid var(--text-color);
+    border-width: 0 2px 2px 0;
+    padding: .25rem;
+    transform: rotate(45deg); 
 }

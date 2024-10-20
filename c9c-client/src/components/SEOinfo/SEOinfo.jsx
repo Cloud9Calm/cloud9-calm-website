@@ -30,7 +30,6 @@ return (
                                 className='seo-services__services-logo' />
                             <h4 className='seo-services__services-item-title'>{service.title}</h4>
                             <p className='seo-services__services-item-desc'>{service.description}</p>
-                            <p className='seo-services__services-item-price'>{service.price}</p>
                         </li>
                     ))}
                 </ul>

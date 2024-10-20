@@ -1,18 +1,40 @@
 import './Contact.scss';
 import ContactForm from '../../components/ContactForm/ContactForm'; 
 import FAQ from '../../components/FAQ/FAQ'; 
+import { motion } from 'framer-motion';
+
+const fadeInVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const ContactPage = () => { 
     return (
-        <section className="contact-page">
-            <h2 className='contact-page__title'>Your next steps start here ☁️</h2>
-             <div className="contact-page__faq">
+        <motion.section 
+            className="contact-page"
+            initial="hidden"
+            animate="visible"
+            variants={fadeInVariant}
+        >
+            <motion.h2 
+                className='contact-page__title'
+                variants={fadeInVariant}
+            >
+                Your next steps start here ☁️
+            </motion.h2>
+            <motion.div 
+                className="contact-page__faq"
+                variants={fadeInVariant}
+            >
                 <FAQ />
-            </div>
-            <div className="contact-page__form">
+            </motion.div>
+            <motion.div 
+                className="contact-page__form"
+                variants={fadeInVariant}
+            >
                 <ContactForm />
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     );
 }
 

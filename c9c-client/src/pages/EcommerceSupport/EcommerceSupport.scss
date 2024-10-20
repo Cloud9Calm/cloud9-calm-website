@@ -6,35 +6,38 @@
   background-color: var(--background-color);
   color: var(--text-color);
 
-  &__title {
-    @include heading-text;
-    padding: 2rem;
-    margin: 0;
-    @include outer-borders;
-  } 
-  
-  &__top-section {
-    @include flex-column-center;
-    padding: 2rem;
-    @include tablet {
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 4rem 2rem;
-    }
-  } 
-  
-  &__logo {
-    width: 20%;
-    margin: 0 2rem;
-  } 
-  
-  &__sub-title {
-    @include body-text;
-    text-align: center;
-  } 
-  
-  &__graphic {
-    width: 100%;
+    &__title {
+      @include heading-text;
+      padding: 2rem;
+      margin: 0;
+      ;
+    } 
+    
+    &__top-section {
+      @include flex-column-center;
+      padding: 2rem;
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 4rem 2rem;
+      }
+    } 
+    
+    &__logo {
+      width: 20%;
+      margin: 0 2rem;
+    } 
+    
+    &__sub-title {
+      @include body-text;
+      text-align: center;
+    } 
+    
+    &__graphic {
+      width: 100%;
+          @include tablet {
+              display: none;
+          }
   }
 }
 

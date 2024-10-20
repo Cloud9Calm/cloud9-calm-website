@@ -45,7 +45,7 @@
 
 
     &__pricing {
-        @include outer-borders;
+        ;
         padding: 1rem;
         @include flex-column-center;
     } 

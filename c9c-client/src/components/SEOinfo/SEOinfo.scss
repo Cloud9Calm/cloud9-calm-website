@@ -25,7 +25,7 @@
 
     &__section {
         @include flex-column-center;
-        @include outer-borders;
+        ;
         @include desktop {
             flex-direction: row-reverse;
             padding: 4rem;

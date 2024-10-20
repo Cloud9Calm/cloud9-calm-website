@@ -6,7 +6,6 @@
     @include flex-column-center;
     padding: 1rem;
     color: $c9c-off-white;
-    @include outer-borders;
     @include moving-background;
         @include tablet {
             padding: 2rem;
@@ -89,7 +88,6 @@
         @include heading-text;
             @include desktop {
                 text-align: center;
-                height: 80px;
             }
     } 
     
@@ -99,7 +97,6 @@
             max-width: 50%;
                 @include desktop {
                     justify-content: space-between;
-                    height: 400px;
                     max-width: 90%;
                 }
         }
@@ -108,6 +105,10 @@
     &__cards-description {
         @include body-text;
         text-align: center;
+            @include desktop {
+                text-align: justify;
+                width: 80%;
+            }
     } 
     
     &__learn-more {

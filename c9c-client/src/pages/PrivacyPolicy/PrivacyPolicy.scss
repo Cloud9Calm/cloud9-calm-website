@@ -5,7 +5,7 @@
 .privacy-policy {
     padding: 2rem;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--background-color);
       @include desktop {
         max-width: 60%;
       }

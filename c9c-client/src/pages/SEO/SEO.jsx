@@ -9,6 +9,12 @@ import services from '../../data/seo-info.json';
 
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
+import { motion } from 'framer-motion';
+
+const scrollVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const SEO = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,8 +25,7 @@ const SEO = () => {
             setIsDarkMode(currentTheme);
         };
 
-        checkTheme(); // Initial check when component mounts
-
+        checkTheme(); 
         const observer = new MutationObserver(checkTheme);
         observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
@@ -68,9 +73,23 @@ const SEO = () => {
                     {JSON.stringify(schemaData)}
                 </script>
             </Helmet>
-            <main className='seo'>
-                <h2 className='seo__title'>More information on SEO Services</h2>
-                <div className='seo__top-section'>
+            <motion.main 
+                className='seo'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={scrollVariant}
+            >
+                <motion.h2 
+                    className='seo__title'
+                    variants={scrollVariant}
+                >
+                    More information on SEO Services
+                </motion.h2>
+                <motion.div 
+                    className='seo__top-section'
+                    variants={scrollVariant}
+                >
                     <img 
                         className='seo__logo'
                         src={isDarkMode ? c9cLogoWhite : c9cLogoBlack}
@@ -78,23 +97,31 @@ const SEO = () => {
                     <h3 className='seo__sub-title'>
                         Maximize your SEO potential with my dedicated SEO support services. I specialize in managing your SEO strategy, optimizing search engine rankings, and ensuring smooth operations for your online presence.
                     </h3>
-                </div>
-                <img
+                </motion.div>
+                <motion.img
                     className='seo__graphic'
                     src={seoGraphic}
                     alt="Graphic of SEO services"
+                    variants={scrollVariant}
                 />
-                <div className='seo__info'>
+                <motion.div 
+                    className='seo__info'
+                    variants={scrollVariant}
+                >
                     {Array.isArray(services) && services.map((service, index) => (
-                        <div key={index} className='seo__info-section'>
+                        <motion.div 
+                            key={index} 
+                            className='seo__info-section'
+                            variants={scrollVariant}
+                        >
                             <h4 className='seo__info-title'>{service.title}</h4>
                             <p className='seo__info-desc'>{service.description}</p>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
                 <SEOinfo />
                 <LetsConnect />
-            </main>
+            </motion.main>
         </>
     );
 }

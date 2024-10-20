@@ -18,13 +18,16 @@
     &__intro-title {
         @include heading-text;
         @include desktop {
-            padding: 4rem;
+            padding: 2rem;
         }
     } 
     
     &__prof-img {
         max-width: 50%;
         border-radius: 1000px;
+            @include desktop {
+                max-width: 30%;
+            }
     } 
     
     &__intro-mission {
@@ -38,7 +41,7 @@
     &__journey {
         padding: 2rem;
         @include desktop {
-            margin: 10rem 0;
+            margin: 2rem 0;
         }
     } 
     
@@ -56,7 +59,7 @@
 
     &__why {
         padding: 2rem;
-        @include outer-borders;
+        ;
         @include tablet {
             padding: 6rem;
         }
@@ -77,7 +80,6 @@
 
     &__values {
         padding: 2rem;
-        @include outer-borders;
     } 
     
     &__values-title {
@@ -95,24 +97,20 @@
     } 
     
     &__values-item {
+        @include body-text;
         display: flex;
         align-items: center;
-        font-family: $c9c-main-font;
         color: white;
         background-color: $triadic-color-2; 
-        padding: .5rem 1rem;
-        margin: 1rem;
         border-radius: 1000px;
-        @include desktop {
-            font-size: 2rem;
-        }
+       
     } 
     
     &__values-icons {
-        height: 30px;
+        height: 20px;
         padding: .5rem;
         @include desktop {
-            height: 50px;
+            height: 30px;
         }
     }
 

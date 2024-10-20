@@ -10,7 +10,7 @@
       @include heading-text;
       padding: 2rem;
       margin: 0;
-      @include outer-borders;
+      ;
     } 
     
     &__top-section {
@@ -33,8 +33,11 @@
       text-align: center;
     } 
     
-    &__graphic {
-      width: 100%;
+      &__graphic {
+        width: 100%;
+            @include tablet {
+                display: none;
+            }
     }
 }
 

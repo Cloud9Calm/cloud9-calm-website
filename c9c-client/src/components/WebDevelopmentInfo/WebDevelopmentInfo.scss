@@ -11,7 +11,9 @@
                 padding: 4rem;
                 text-align: justify;
             }
-    } &__img {
+    } 
+    
+    &__img {
             width: 50%;
             border-radius: 50%;
             padding: 1rem;
@@ -23,30 +25,38 @@
 
     &__section {
         @include flex-column-center;
-        @include outer-borders;
+        ;
             @include desktop {
                 flex-direction: row-reverse;
                 padding: 4rem;
             }
-    } &__services {
+    } 
+    
+    &__services {
         @include moving-background;
         margin: 0 auto;
         padding: 2rem;
-    } &__services-title {
+    } 
+    
+    &__services-title {
         @include heading-text;
         padding: 1rem;
         text-align: center;
             @include tablet {
                 padding: 2rem;
             }
-    } &__services-list{
+    } 
+    
+    &__services-list{
         @include flex-column-center;
             @include desktop {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-around;
             }
-    }  &__services-item {
+    }  
+    
+    &__services-item {
         @include flex-column-center;
         @include box-shadow;
         background-color: var(--background-color);
@@ -58,18 +68,26 @@
                 justify-content: center;
                 width: 35%;
             }
-    } &__services-logo {
+    } 
+    
+    &__services-logo {
         width: 20%;
         padding: 1rem;
-    } &__services-item-title {
+    } 
+    
+    &__services-item-title {
         @include heading-text;
         padding: 0;
         margin: 0;
         text-align: center;
-    } &__services-item-desc {
+    } 
+    
+    &__services-item-desc {
         @include body-text;
         text-align: center;
-    } &__services-item-price {
+    } 
+    
+    &__services-item-price {
         padding: 0;
         margin: 0;
         @include body-text;

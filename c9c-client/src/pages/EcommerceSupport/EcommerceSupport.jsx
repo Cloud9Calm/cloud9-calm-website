@@ -7,6 +7,13 @@ import { useState, useEffect } from 'react';
 import ecommerceGraphic from '../../assets/images/c9c-3d-ecommerce.webp';
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
+import { motion } from 'framer-motion';
+
+
+const scrollVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const EcommerceSupport = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -17,7 +24,7 @@ const EcommerceSupport = () => {
             setIsDarkMode(currentTheme);
         };
 
-        checkTheme(); // Initial check when component mounts
+        checkTheme();
 
         const observer = new MutationObserver(checkTheme);
         observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
@@ -66,9 +73,23 @@ const EcommerceSupport = () => {
                     {JSON.stringify(schemaData)}
                 </script>
             </Helmet>
-            <main className='ecom'>
-                <h2 className='ecom__title'>More information on eCommerce Support</h2>
-                <div className='ecom__top-section'>
+            <motion.main 
+                className='ecom'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={scrollVariant}
+            >
+                <motion.h2 
+                    className='ecom__title'
+                    variants={scrollVariant}
+                >
+                    More information on eCommerce Support
+                </motion.h2>
+                <motion.div 
+                    className='ecom__top-section'
+                    variants={scrollVariant}
+                >
                     <img 
                         className='ecom__logo'
                         src={isDarkMode ? c9cLogoWhite : c9cLogoBlack}
@@ -76,23 +97,31 @@ const EcommerceSupport = () => {
                     <h3 className='ecom__sub-title'>
                         Maximize your eCommerce potential with my dedicated eCommerce support services. I specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store.
                     </h3>
-                </div>
-                <img
+                </motion.div>
+                <motion.img
                     className='ecom__graphic'
                     src={ecommerceGraphic}
                     alt="Graphic of people managing an online store"
+                    variants={scrollVariant}
                 />
-                <div className='ecom__info'>
+                <motion.div 
+                    className='ecom__info'
+                    variants={scrollVariant}
+                >
                     {services.map((service, index) => (
-                        <div key={index} className='ecom__info-section'>
+                        <motion.div 
+                            key={index} 
+                            className='ecom__info-section'
+                            variants={scrollVariant}
+                        >
                             <h4 className='ecom__info-title'>{service.title}</h4>
                             <p className='ecom__info-desc'>{service.description}</p>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
                 <EcommerceInfo />
                 <LetsConnect />
-            </main>
+            </motion.main>
         </>
     );
 }
