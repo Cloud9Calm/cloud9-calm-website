@@ -36,17 +36,23 @@ const schemaData = {
 const Home = () => {
   return (
     <>
-      <Helmet>
-        <title>Cloud9 Calm Co. | Penticton and Okanagan's Web Development and eCommerce Support</title>
-        <meta
-          name="description"
-          content="Welcome to Cloud9 Calm Co. I offer premier web development and eCommerce support services. My goal is to empower your online presence with seamless, user-friendly websites and optimized online stores."
-        />
-        <meta
-          name="keywords"
-          content="Penticton website developer, website Penticton, Okanagan website developer, Cloud9 Calm Co., web development, eCommerce support, website optimization, online store support"
-        />
+          <Helmet>
+        <title>Cloud9 Calm Co. | Penticton and Okanagan Web Development & eCommerce Support</title>
+        <meta name="description" content="Discover Cloud9 Calm Co., your trusted partner for web development and eCommerce support in Penticton and the Okanagan. Empower your business with custom websites, seamless user experiences, and optimized online stores." />
+        <meta name="keywords" content="Penticton web development, Okanagan web development, Naramata web developer, eCommerce support, Cloud9 Calm Co., custom websites, Shopify expert, local web developer, small business web design, SEO services, BC web development, online store optimization, Okanagan website design" />
         <link rel="canonical" href="https://www.cloud9calm.com/" />
+
+        <meta property="og:title" content="Cloud9 Calm Co. | Penticton and Okanagan Web Development & eCommerce Support" />
+        <meta property="og:description" content="Discover Cloud9 Calm Co., offering premier web development and eCommerce support services for small businesses in Penticton and the Okanagan." />
+        <meta property="og:image" content="https://www.cloud9calm.com/static/media/cloud9-calm-website-image.jpeg" />
+        <meta property="og:url" content="https://www.cloud9calm.com/" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cloud9 Calm Co. | Penticton and Okanagan Web Development & eCommerce Support" />
+        <meta name="twitter:description" content="Discover Cloud9 Calm Co., offering premier web development and eCommerce support services for small businesses in Penticton and the Okanagan." />
+        <meta name="twitter:image" content="https://www.cloud9calm.com/static/media/cloud9-calm-website-image.jpeg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

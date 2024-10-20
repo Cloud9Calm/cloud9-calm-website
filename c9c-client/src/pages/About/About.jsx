@@ -37,6 +37,7 @@ const About = () => {
     };
 
     return (
+        <>
         <motion.section 
             className='about'
             initial="hidden"
@@ -46,8 +47,9 @@ const About = () => {
             <Helmet>
                 <title>About Cloud9 Calm Co. | Erin Cronie</title>
                 <meta name="description" content="Learn more about Erin Cronie and Cloud9 Calm Co., where web development is made stress-free for small businesses." />
-                <meta name="keywords" content="Erin Cronie, Cloud9 Calm Co., web development, small business, custom web solutions" />
-                
+                <meta name="keywords" content="Erin Cronie, Cloud9 Calm Co., Naramata web development, Penticton web development, small business web design, custom web solutions, local web developer, Naramata small business websites, affordable web design, Naramata SEO services, BC web development, Okanagan web developer, custom websites Naramata" />
+                <link rel="canonical" href="https://www.cloud9calm.com/about" />    
+
                 <meta property="og:title" content="About Cloud9 Calm Co. | Erin Cronie" />
                 <meta property="og:description" content="Learn more about Erin Cronie and Cloud9 Calm Co., where web development is made stress-free for small businesses." />
                 <meta property="og:image" content="https://www.cloud9calm.com/static/media/erin-cronie-developer-3.4b0d1fb98035f42df36b.jpeg" />
@@ -172,6 +174,7 @@ const About = () => {
             </motion.div>
             <LetsConnect />
         </motion.section>
+        </>
     );
 };
 

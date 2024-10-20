@@ -55,8 +55,8 @@ const EcommerceSupport = () => {
             <Helmet>
                 <title>Cloud9 Calm Co. | eCommerce Services</title>
                 <meta name="description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
-                <meta name="keywords" content="Penticton eCommerce support, eCommerce Penticton, Okanagan eCommerce developer, Shopify support, eCommerce solutions, website support, technical support, online store updates, Cloud9 Calm Co." />
-                <link rel="canonical" href="https://www.cloud9calm.com/ecommerce-support" />
+                <meta name="keywords" content="Penticton eCommerce support, Okanagan eCommerce support, Naramata Shopify support, eCommerce solutions, online store updates, Shopify expert Penticton, local eCommerce developer, BC eCommerce support, Cloud9 Calm Co., small business eCommerce, website maintenance Okanagan, Shopify setup and integration, Naramata eCommerce services" />               
+               <link rel="canonical" href="https://www.cloud9calm.com/ecommerce-support" />
                 
                 <meta property="og:title" content="Cloud9 Calm Co. | eCommerce Services" />
                 <meta property="og:description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
