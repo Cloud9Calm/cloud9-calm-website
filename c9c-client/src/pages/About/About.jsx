@@ -73,16 +73,16 @@ const About = () => {
             <div className='about__journey'>
                 <h2 className='about__journey-title'>My Journey</h2>
                 <p className='about__journey-text'>
-                    Before launching <b>Cloud9 Calm Co.</b>, I spent several <i>transformative</i> years managing <u>Mile Zero Wine Bar</u> in Penticton, where I honed my <b>leadership</b> and <b>operational skills</b>. During my time there, I not only managed the <u>day-to-day operations</u> but also built <i>strong relationships</i> with local vendors and customers. This experience taught me the value of <u>community</u> and the importance of <b>supporting local businesses</b>, which remains a core philosophy at Cloud9 Calm Co.
+                    Before launching <b>Cloud9 Calm Co.</b>, I spent several <i>transformative</i> years managing Mile Zero Wine Bar in Penticton, where I honed my <b>leadership</b> and <b>operational skills</b>. During my time there, I not only managed the day-to-day operations but also built <i>strong relationships</i> with local vendors and customers. This experience taught me the value of community and the importance of <b>supporting local businesses</b>, which remains a core philosophy at Cloud9 Calm Co.
                 </p>
                 <p className='about__journey-text'>
-                    It was also during my time at <u>Mile Zero Wine Bar</u> that I was awarded two <b>scholarships</b> to complete my <i>Level Two</i> and <i>Level Three WSET</i> (<u>Wine & Spirit Education Trust</u>), an achievement that highlights my <b>dedication to continuous learning</b> and <i>professional development</i>.
+                    It was also during my time at Mile Zero Wine Bar that I was awarded two <b>scholarships</b> to complete my <i>Level Two</i> and <i>Level Three WSET</i> (Wine & Spirit Education Trust), an achievement that highlights my <b>dedication to continuous learning</b> and <i>professional development</i>.
                 </p>
                 <p className='about__journey-text'>
-                    In <b>2020</b>, I made a <i>significant career change</i> into tech by working at <u>Shopify Plus</u>, where I had the opportunity to assist <b>multimillion-dollar businesses</b>. This role allowed me to further develop my <b>expertise in web development</b>, <i>UX/UI design</i>, and <u>eCommerce solutions</u>, equipping me with the skills needed to build <i>dynamic</i>, <b>user-friendly websites</b> and optimize businesses' <i>online presence</i>.
+                    In <b>2020</b>, I made a <i>significant career change</i> into tech by working at Shopify Plus, where I had the opportunity to assist <b>multimillion-dollar businesses</b>. This role allowed me to further develop my <b>expertise in web development</b>, <i>UX/UI design</i>, and eCommerce solutions, equipping me with the skills needed to build <i>dynamic</i>, <b>user-friendly websites</b> and optimize businesses' <i>online presence</i>.
                 </p>
                 <p className='about__journey-text'>
-                    With a deep understanding of both the <b>wine industry</b> and <i>tech</i>, I knew I was ready to launch <u>Cloud9 Calm Co.</u>—a business dedicated to creating <i>affordable</i>, <b>custom web solutions</b> for <u>small businesses</u> that need a <b>strong online presence</b>.
+                    With a deep understanding of both the <b>wine industry</b> and <i>tech</i>, I knew I was ready to launch Cloud9 Calm Co.—a business dedicated to creating <i>affordable</i>, <b>custom web solutions</b> for small businesses that need a <b>strong online presence</b>.
                 </p>
             </div>
 
@@ -163,7 +163,7 @@ const About = () => {
             <div className='about__fun-facts'>
                 <h2 className='about__fun-facts-title'>Fun Facts</h2>
                 <p className='about__fun-facts-text'>
-                    When I’m not busy building websites, I <i>love getting creative</i> in the kitchen, trying out <u>new recipes</u>, and sharing <i>delicious meals</i> with friends. You might also find me tending to my <u>garden</u>, sipping on a glass of <i>wine</i>, or unwinding with a <u>good game</u>. I’m all about <i>cozy moments</i>, whether it’s a <u>quiet night in</u> with my pets or hosting a <i>laid-back gathering</i> with the people I care about. Life’s all about <i>balance</i>—good food, good company, and a <u>little bit of fun</u>!
+                    When I’m not busy building websites, I <i>love getting creative</i> in the kitchen, trying out new recipes, and sharing <i>delicious meals</i> with friends. You might also find me tending to my garden, sipping on a glass of <i>wine</i>, or unwinding with a good game. I also <i>love to travel</i>, exploring new places and experiencing different cultures. I’m all about <i>cozy moments</i>, whether it’s a quiet night in with my pets or hosting a <i>laid-back gathering</i> with the people I care about. Life’s all about <i>balance</i>—good food, good company, and a little bit of fun!
                 </p>
             </div>
             <LetsConnect />

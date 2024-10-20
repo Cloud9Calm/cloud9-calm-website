@@ -20,9 +20,6 @@
             @include tablet {
                 width: 80%;
             }
-                @include desktop {
-                    max-width: 80%;
-                }
     }
 
     &__list {
@@ -30,8 +27,8 @@
             width: 60%; 
         }
             @include desktop {
-                max-width: 40%;
-            }
+                width: 90%;
+            }   
     } 
 
     &__spacer {

@@ -26,7 +26,7 @@ const Header = ({ toggleTheme, theme }) => {
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="header__logo">
-        <h2 className="header__title">Cloud9 Calm Co.</h2>
+      <Link className="header__title" to="/">Cloud9 Calm Co.</Link>
       </div>
 
       <nav className="header__menu">

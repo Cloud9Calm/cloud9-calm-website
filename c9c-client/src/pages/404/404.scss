@@ -5,7 +5,8 @@
 
 .notfound {
         @include flex-column-center;
-        background-color: $c9c-off-white;
+        background-color: var(--background-color);
+        color: var(--text-color);   
         padding: 2rem;
             @include desktop {
                 padding: 8rem;

@@ -2,6 +2,7 @@ import './ContactForm.scss';
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import email from '../../assets/icons/email.svg'; 
 
@@ -9,6 +10,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', website: '', inquiry: '', email: '' });
   const [emailSuggestions, setEmailSuggestions] = useState([]);
   const [responseMessage, setResponseMessage] = useState('');
+  const [recaptchaToken, setRecaptchaToken] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -46,14 +48,25 @@ const ContactForm = () => {
     e.preventDefault();
     console.log('Form Data:', formData);
 
+    if (!recaptchaToken) {
+      setResponseMessage('Please complete the reCAPTCHA.');
+      return;
+    }
+
     try {
-      const response = await axios.post('/api/contact', formData);
+      const response = await axios.post('YOUR_API_ENDPOINT', { ...formData, recaptchaToken });
       console.log('API Response:', response.data);
       setResponseMessage('Your message has been sent successfully!');
+      setFormData({ name: '', website: '', inquiry: '', email: '' }); 
+      setRecaptchaToken(''); 
     } catch (error) {
       console.error('Error sending form data:', error);
       setResponseMessage('There was an error sending your message. Please try again later.');
     }
+  };
+
+  const handleRecaptchaChange = (token) => {
+    setRecaptchaToken(token);
   };
 
   return (
@@ -120,6 +133,11 @@ const ContactForm = () => {
             required 
           />
         </div>
+
+        <ReCAPTCHA
+          sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+          onChange={handleRecaptchaChange}
+        />
        
         <button 
           type="submit"
