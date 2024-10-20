@@ -54,7 +54,7 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await axios.post('YOUR_API_ENDPOINT', { ...formData, recaptchaToken });
+      const response = await axios.post('/api/contact', { ...formData, recaptchaToken });
       console.log('API Response:', response.data);
       setResponseMessage('Your message has been sent successfully!');
       setFormData({ name: '', website: '', inquiry: '', email: '' }); 
