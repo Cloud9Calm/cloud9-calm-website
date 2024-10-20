@@ -8,7 +8,7 @@ const Clients = () => {
 
     return (
         <section className="clients">
-            <h2 className="clients__title">☁️ Recent Clients ☁️</h2>
+            <h2 className="clients__title">☁️ Recent Work ☁️</h2>
             <div className="clients__list">
                 {clientsData.clients.map((client, index) => (
                     <div key={index} className="clients__client-info">

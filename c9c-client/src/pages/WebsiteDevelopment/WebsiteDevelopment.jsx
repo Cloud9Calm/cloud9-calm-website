@@ -11,7 +11,6 @@ import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 import { motion } from 'framer-motion';
 
-// Define scroll animation variant
 const scrollVariant = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },

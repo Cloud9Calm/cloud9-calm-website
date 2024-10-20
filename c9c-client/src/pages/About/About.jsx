@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { motion } from 'framer-motion';
 import './About.scss';
 import LetsConnect from '../../components/LetsConnect/LetsConnect';
 
@@ -10,6 +11,11 @@ import quote from '../../assets/icons/quote.svg';
 import person from '../../assets/icons/personSearch.svg';
 import target from '../../assets/icons/target.svg';
 import engineering from '../../assets/icons/engineering.svg';
+
+const fadeInVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const About = () => {
     const schemaData = {
@@ -31,20 +37,23 @@ const About = () => {
     };
 
     return (
-        <section className='about'>
+        <motion.section 
+            className='about'
+            initial="hidden"
+            animate="visible"
+            variants={fadeInVariant}
+        >
             <Helmet>
                 <title>About Cloud9 Calm Co. | Erin Cronie</title>
                 <meta name="description" content="Learn more about Erin Cronie and Cloud9 Calm Co., where web development is made stress-free for small businesses." />
                 <meta name="keywords" content="Erin Cronie, Cloud9 Calm Co., web development, small business, custom web solutions" />
                 
-                {/* Open Graph (OG) tags */}
                 <meta property="og:title" content="About Cloud9 Calm Co. | Erin Cronie" />
                 <meta property="og:description" content="Learn more about Erin Cronie and Cloud9 Calm Co., where web development is made stress-free for small businesses." />
                 <meta property="og:image" content="https://www.cloud9calm.com/static/media/erin-cronie-developer-3.4b0d1fb98035f42df36b.jpeg" />
                 <meta property="og:url" content="https://www.cloud9calm.com/about" />
                 <meta property="og:type" content="website" />
                 
-                {/* Twitter Card tags */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="About Cloud9 Calm Co. | Erin Cronie" />
                 <meta name="twitter:description" content="Learn more about Erin Cronie and Cloud9 Calm Co., where web development is made stress-free for small businesses." />
@@ -54,8 +63,8 @@ const About = () => {
                     {JSON.stringify(schemaData)}
                 </script>
             </Helmet>
-            {/* Intro Section */}
-            <div className='about__intro'>
+
+            <motion.div className='about__intro' variants={fadeInVariant}>
                 <h1 className='about__intro-title'>Hi, I'm <u><i>Erin</i></u></h1>
                 <img 
                     src={erinCronieProfile} 
@@ -67,10 +76,9 @@ const About = () => {
                     for small businesses. I’m <i>passionate</i> about helping businesses grow by
                     creating custom web solutions that are both beautiful and functional.
                 </p>
-            </div>
+            </motion.div>
 
-            {/* Journey Section */}
-            <div className='about__journey'>
+            <motion.div className='about__journey' variants={fadeInVariant}>
                 <h2 className='about__journey-title'>My Journey</h2>
                 <p className='about__journey-text'>
                     Before launching <b>Cloud9 Calm Co.</b>, I spent several <i>transformative</i> years managing Mile Zero Wine Bar in Penticton, where I honed my <b>leadership</b> and <b>operational skills</b>. During my time there, I not only managed the day-to-day operations but also built <i>strong relationships</i> with local vendors and customers. This experience taught me the value of community and the importance of <b>supporting local businesses</b>, which remains a core philosophy at Cloud9 Calm Co.
@@ -84,12 +92,11 @@ const About = () => {
                 <p className='about__journey-text'>
                     With a deep understanding of both the <b>wine industry</b> and <i>tech</i>, I knew I was ready to launch Cloud9 Calm Co.—a business dedicated to creating <i>affordable</i>, <b>custom web solutions</b> for small businesses that need a <b>strong online presence</b>.
                 </p>
-            </div>
+            </motion.div>
 
-            {/* Why I Started Section */}
-            <div className='about__why'>
+            <motion.div className='about__why' variants={fadeInVariant}>
                 <h2 className='about__why-title'>Why I Started Cloud9 Calm Co.</h2>
-                    <div className='about__container container-1'>
+                <div className='about__container container-1'>
                     <p className='about__why-text'>
                         I founded Cloud9 Calm Co. because I saw a gap in affordable,
                         high-quality web development for small businesses. As a one-person
@@ -102,10 +109,9 @@ const About = () => {
                         className='about__graphic'    
                     />
                 </div>
-            </div>
+            </motion.div>
 
-            {/* Core Values Section */}
-            <div className='about__values'>
+            <motion.div className='about__values' variants={fadeInVariant}>
                 <h2 className='about__values-title'>What I Offer</h2>
                 <ul className='about__values-list'>
                     <li className='about__values-item'>
@@ -141,33 +147,31 @@ const About = () => {
                         Custom Solutions
                     </li>
                 </ul>
-            </div>
+            </motion.div>
 
-            {/* Services Section */}
-            <div className='about__services'>
+            <motion.div className='about__services' variants={fadeInVariant}>
                 <div className='about__container container-2'>
-                <p className='about__services-text'>
-                    Whether you need a custom website, SEO optimization, or eCommerce
-                    support, I provide tailored solutions to meet your business needs.
-                    Let’s take your brand to the next level together.
-                </p>
-                <img 
-                    src={bundle} 
-                    alt="3D shopping cart and computer" 
-                    className="about__graphic"    
-                />
+                    <p className='about__services-text'>
+                        Whether you need a custom website, SEO optimization, or eCommerce
+                        support, I provide tailored solutions to meet your business needs.
+                        Let’s take your brand to the next level together.
+                    </p>
+                    <img 
+                        src={bundle} 
+                        alt="3D shopping cart and computer" 
+                        className="about__graphic"    
+                    />
                 </div>
-            </div>
+            </motion.div>
 
-            {/* Fun Facts Section */}
-            <div className='about__fun-facts'>
+            <motion.div className='about__fun-facts' variants={fadeInVariant}>
                 <h2 className='about__fun-facts-title'>Fun Facts</h2>
                 <p className='about__fun-facts-text'>
                     When I’m not busy building websites, I <i>love getting creative</i> in the kitchen, trying out new recipes, and sharing <i>delicious meals</i> with friends. You might also find me tending to my garden, sipping on a glass of <i>wine</i>, or unwinding with a good game. I also <i>love to travel</i>, exploring new places and experiencing different cultures. I’m all about <i>cozy moments</i>, whether it’s a quiet night in with my pets or hosting a <i>laid-back gathering</i> with the people I care about. Life’s all about <i>balance</i>—good food, good company, and a little bit of fun!
                 </p>
-            </div>
+            </motion.div>
             <LetsConnect />
-        </section>
+        </motion.section>
     );
 };
 

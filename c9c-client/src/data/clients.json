@@ -16,9 +16,17 @@
             "jobTask": "Assisted with their ecommerce site by providing SEO optimization and launch support. This included troubleshooting domain issues to ensure a smooth launch and enhancing search engine visibility to drive more organic traffic to the site."
         },
         {
-            "companyName": "Naramata Vineyard Bed & Breakfast",
-            "website": "https://www.naramatavineyardbnb.ca/",
-            "jobTask": "Created a Squarespace website while simultaneously creating a custom Next.js project with Google Calendar integration. This involved ensuring seamless functionality between the platforms and enhancing the user experience with tailored solutions."
-        }
+            "companyName": "BarKeep General Store",
+            "website": "https://barkeepstore.ca/",
+            "jobTask": "Updated their Shopify checkout using Shopify Liquid to include an interactive calendar, allowing customers to easily view their estimated product delivery date. This enhanced the user experience by providing clear and accurate delivery timelines."        },
+        {
+            "companyName": "Erin Cronie Portfolio",
+            "website": "https://www.erincronie.me/",
+            "jobTask": "Developed a personal profile website using React, integrating React Helmet for optimized SEO. This project focused on enhancing visibility and search engine rankings while delivering a streamlined and user-friendly experience."
+        },
+        {
+            "companyName": "Shop Cloud9 Calm",
+            "website": "https://www.shopcloud9calm.com/",
+            "jobTask": "Developed a Shopify store to sell merchandise, focusing on creating a seamless shopping experience and optimizing the platform for eCommerce success. This involved customizing the store layout, integrating product management, and ensuring a user-friendly interface for customers."        }
     ]
 }

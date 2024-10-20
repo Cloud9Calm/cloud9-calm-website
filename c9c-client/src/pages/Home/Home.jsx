@@ -104,7 +104,11 @@ const Home = () => {
               />
             <p className="home__portfolio-description">Naramata Vineyard Vacation Rental - Escape to a peaceful retreat in the heart of Naramata wine country, where vineyard views and serene landscapes surround you in comfort and relaxation. ☁️🍇</p>
           </div>
-          <a href="/portfolio" className="home__cta-link-2">See my experience showcase →</a>
+          <Link 
+            to="/work-experience" 
+            className="home__cta-link-2">
+              See my experience showcase →
+            </Link>
         </motion.section>
 
 
