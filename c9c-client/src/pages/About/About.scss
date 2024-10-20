@@ -3,8 +3,8 @@
 @import '../../styles/partials/variables.scss';
 
 .about {
-    background-color: $c9c-off-white;
-    color: $c9c-off-black;
+    background-color: var(--background-color);
+    color: var(--text-color);
 
     &__intro {
         @include flex-column-center;
@@ -17,9 +17,9 @@
     
     &__intro-title {
         @include heading-text;
-            @include desktop {
-                padding: 4rem;
-            }
+        @include desktop {
+            padding: 4rem;
+        }
     } 
     
     &__prof-img {
@@ -28,18 +28,18 @@
     } 
     
     &__intro-mission {
-      @include body-text;
+        @include body-text;
         text-align: center;
-            @include desktop {
-                padding: 4rem;
-            }
+        @include desktop {
+            padding: 4rem;
+        }
     }
 
     &__journey {
         padding: 2rem;
-            @include desktop {
-                margin: 10rem 0;
-            }
+        @include desktop {
+            margin: 10rem 0;
+        }
     } 
     
     &__journey-title {
@@ -49,17 +49,17 @@
     &__journey-text {
         @include body-text;
         padding: 1rem .5rem;
-            @include desktop {
-                padding: 2rem 6rem;
-            }
+        @include desktop {
+            padding: 2rem 6rem;
+        }
     }
 
     &__why {
         padding: 2rem;
         @include outer-borders;
-            @include tablet {
-                padding: 6rem;
-            }
+        @include tablet {
+            padding: 6rem;
+        }
     } 
     
     &__why-title {
@@ -70,14 +70,14 @@
         @include body-text;
         text-align: justify;
         padding: 0 1rem;
-            @include desktop {
-                padding: 2rem 3rem;
-            }
+        @include desktop {
+            padding: 2rem 3rem;
+        }
     }
 
     &__values {
         padding: 2rem;
-        @include outer-borders
+        @include outer-borders;
     } 
     
     &__values-title {
@@ -99,21 +99,21 @@
         align-items: center;
         font-family: $c9c-main-font;
         color: white;
-        background-color: $triadic-color-2;
+        background-color: $triadic-color-2; 
         padding: .5rem 1rem;
         margin: 1rem;
         border-radius: 1000px;
-            @include desktop {
-                font-size: 2rem;
-            }
+        @include desktop {
+            font-size: 2rem;
+        }
     } 
     
     &__values-icons {
         height: 30px;
         padding: .5rem;
-            @include desktop {
-                height: 50px;
-            }
+        @include desktop {
+            height: 50px;
+        }
     }
 
     &__services {
@@ -127,22 +127,21 @@
     &__services-text {
         @include body-text;
         padding: 1rem;
-            @include tablet {
-                text-align: justify;
-                padding: 1rem;
-                    @include desktop {
-                        padding: 4rem;
-                    }
+        @include tablet {
+            text-align: justify;
+            padding: 1rem;
+            @include desktop {
+                padding: 4rem;
             }
+        }
     }
 
     &__fun-facts {
         @include moving-background;
         padding: 2rem;
-            @include tablet {
-                padding: 6rem;
-            }
-        
+        @include tablet {
+            padding: 6rem;
+        }
     } 
     
     &__fun-facts-title {
@@ -152,33 +151,32 @@
     &__fun-facts-text {
         @include body-text;
         text-align: justify;
-            @include desktop {
-                padding: 2rem 3rem;
-                margin: 0 auto;
-                max-width: 70%;
-            }
+        @include desktop {
+            padding: 2rem 3rem;
+            margin: 0 auto;
+            max-width: 70%;
+        }
     }
     
     &__graphic {
         width: 80%;
         @include color-borders;
         @include box-shadow;
-            @include tablet {
-                width: 40%;
-            }
+        @include tablet {
+            width: 40%;
+        }
     }
 
     &__container {
         @include flex-column-center;
-            @include tablet {
-                flex-direction: row-reverse;
-            }
-    } .container-2 {
-        @include tablet{
+        @include tablet {
+            flex-direction: row-reverse;
+        }
+    } 
+    
+    .container-2 {
+        @include tablet {
             flex-direction: row;
         }
     }
-
 }
-
-

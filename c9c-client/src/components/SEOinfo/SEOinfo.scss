@@ -39,8 +39,7 @@
     }
 
     &__services-title {
-        @include heading-text;
-        color: $c9c-off-white;
+        @include heading-text;;
         padding: 1rem;
         text-align: center;
         @include tablet {
@@ -60,7 +59,7 @@
     &__services-item {
         @include flex-column-center;
         @include box-shadow;
-        background-color: $c9c-off-white;
+        background-color: var(--background-color);
         margin: 1rem;
         padding: 1rem;
         border-radius: 10px;

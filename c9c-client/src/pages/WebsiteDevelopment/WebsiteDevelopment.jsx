@@ -4,12 +4,29 @@ import WebDevelopmentInfo from '../../components/WebDevelopmentInfo/WebDevelopme
 import LetsConnect from '../../components/LetsConnect/LetsConnect'; 
 
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 import websiteGraphic from '../../assets/images/c9c-3d-graphic.webp';
-import c9cLogo from '../../assets/images/c9c-logo-black.png';
+import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
+import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
 
 const WebsiteDevelopment = () => {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        const checkTheme = () => {
+            const currentTheme = document.body.classList.contains('dark-theme');
+            setIsDarkMode(currentTheme);
+        };
+
+        checkTheme(); // Initial check when component mounts
+
+        const observer = new MutationObserver(checkTheme);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        return () => observer.disconnect();
+    }, []);
+
     const schemaData = {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -36,14 +53,12 @@ const WebsiteDevelopment = () => {
                 <meta name="keywords" content="Penticton website developer, website Penticton, Okanagan website developer, website Okanagan, web development, website support, technical support, website updates, Cloud9 Calm Co." />
                 <link rel="canonical" href="https://www.cloud9calm.com/website-development" />
                 
-                {/* Open Graph (OG) tags */}
                 <meta property="og:title" content="Website Development Services | Cloud9 Calm Co." />
                 <meta property="og:description" content="Empower your online presence with Cloud9 Calm Co.'s dedicated web development support services. We specialize in ensuring the seamless operation of your website, tackling technical challenges, implementing updates, and enhancing functionality." />
                 <meta property="og:image" content="https://www.cloud9calm.com/path/to/c9c-logo-white.png" />
                 <meta property="og:url" content="https://www.cloud9calm.com/website-development" />
                 <meta property="og:type" content="website" />
                 
-                {/* Twitter Card tags */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Website Development Services | Cloud9 Calm Co." />
                 <meta name="twitter:description" content="Empower your online presence with Cloud9 Calm Co.'s dedicated web development support services. We specialize in ensuring the seamless operation of your website, tackling technical challenges, implementing updates, and enhancing functionality." />
@@ -58,8 +73,8 @@ const WebsiteDevelopment = () => {
                 <div className='webdev__top-section'>
                     <img 
                         className='webdev__logo'
-                        src={c9cLogo}
-                        alt="Cloud9 Calm Logo in white" />
+                        src={isDarkMode ? c9cLogoWhite : c9cLogoBlack}
+                        alt="Cloud9 Calm Logo" />
                     <h3 className='webdev__sub-title'>
                         Empower your online presence with my dedicated web development support services. I specialize in ensuring the seamless operation of your website, tackling technical challenges, implementing updates, and enhancing functionality.
                     </h3>

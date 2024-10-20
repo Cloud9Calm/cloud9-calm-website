@@ -3,8 +3,8 @@
 @import '../../styles/partials/variables.scss';
 
 .ecom {
-  background-color: $c9c-off-white;
-  color: $c9c-off-black;
+  background-color: var(--background-color);
+  color: var(--text-color);
 
   &__title {
     @include heading-text;
@@ -14,27 +14,27 @@
   } 
   
   &__top-section {
-      @include flex-column-center;
-      padding: 2rem;
-      @include tablet {
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 4rem 2rem;
-      }
+    @include flex-column-center;
+    padding: 2rem;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 4rem 2rem;
+    }
   } 
   
   &__logo {
-        width: 20%;
-        margin: 0 2rem;
+    width: 20%;
+    margin: 0 2rem;
   } 
   
   &__sub-title {
-        @include body-text;
-        text-align: center;
+    @include body-text;
+    text-align: center;
   } 
   
   &__graphic {
-      width: 100%;
+    width: 100%;
   }
 }
 
@@ -48,7 +48,7 @@
   display: none;
   overflow: hidden;
   white-space: nowrap;
-  background-color: $c9c-off-white;
+  background-color: var(--background-color);
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -58,7 +58,7 @@
 
 .ecom__info-section {
   display: inline-block;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--text-color);
   padding: 1rem;
   white-space: normal;
   @include tablet {
@@ -66,7 +66,7 @@
     flex-direction: row;
     align-items: center;
     animation: slide 20s linear infinite;
-    border-left: 1px solid black;
+    border-left: 1px solid var(--text-color);
     border-bottom: none;
   }
 }

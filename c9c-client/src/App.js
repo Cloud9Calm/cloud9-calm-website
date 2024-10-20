@@ -63,7 +63,7 @@ function AppContent() {
         <Route path="/about" element={<About />} />
         <Route path="/website-development" element={<WebsiteDevelopment />} />
         <Route path="/ecommerce-support" element={<EcommerceSupport />} />
-        <Route path="/seo" element={<SEO />} />
+        <Route path="/seo-services" element={<SEO />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
