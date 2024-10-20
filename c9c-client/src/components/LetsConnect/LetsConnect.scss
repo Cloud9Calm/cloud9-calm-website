@@ -1,0 +1,29 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.connect {
+    &__cta {
+        @include flex-column-center;
+        padding: 2rem;
+    }  
+    
+    &__cta-title {
+        @include heading-text;
+    }  
+    
+    &__cta-text {
+        @include body-text;
+        max-width: 50%;
+        text-align: center;
+    }  
+    
+    &__cta-icon {
+        height: 100px;
+    } 
+    
+    &__cta-link {
+        @include buttons;
+
+    }
+}

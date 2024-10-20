@@ -2,137 +2,81 @@
 @import '../../styles/partials/mixins.scss';
 @import '../../styles/partials/variables.scss';
 
-
 .webdev {
-    background-color: $c9c-main-color;
-    margin: 0;
-
-    &__header {
-        @include flex-column-center;
-        font-family: $c9c-main-font;
-        background-color: $c9c-off-white;
-        padding: 1rem;
-            @include tablet {
-                flex-direction: row;
-                justify-content: space-around;
-                padding: 1rem 2rem
-            }
-    }
-
-    &__header-title {
-        color: $c9c-main-color;
-    }
-
-    &__header-menu-item {
-        a {
-            text-decoration: none;
-        }
-        list-style-type: none;
-            @include tablet {
-                padding: 0 1rem;
-            }
-    }
+    background-color: var(--background-color);
+    color: var(--text-color);
 
     &__title {
-        font-family: $c9c-main-font;
-        color: $c9c-main-color;
-        font-size: 1.5rem;
-        text-align: justify;
-        line-height: 2.5rem;
-        text-transform: uppercase;
-        @include outer-borders;
-        background-color: $c9c-off-white;
-        padding: 4rem;
+        @include heading-text;
+        padding: 2rem;
         margin: 0;
-            @include tablet {
-                font-size: 2rem;
-                padding: 8rem 2rem;
-                text-align: left;
-            }
     }
 
     &__top-section {
         @include flex-column-center;
-        background-color: $c9c-main-color;
-        @include outer-borders;
         padding: 2rem;
-            @include tablet {
-                flex-direction: row;
-                justify-content: space-around;
-                padding: 8rem 2rem;
-            }
-    }
-
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 4rem 2rem;
+        }
+    } 
+    
     &__logo {
-        height: 100px;
+        width: 20%;
         margin: 0 2rem;
-    }
-
+    } 
+    
     &__sub-title {
-        font-family: $c9c-secondary-fonts;
-        color: $c9c-off-white;
-        font-size: 1.5rem;
-        font-weight: 300;
-        line-height: 2rem;
-        text-align: justify;
-            @include tablet {
-                text-align: left;
-            }   
-    }   
-
+        @include body-text;
+    } 
+    
     &__graphic {
         width: 100%;
+            @include tablet {
+                display: none;
+            }
     }
-
 }
 
-//animations
 @keyframes slide {
     100% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
-  }
-  
-  .webdev__info {
-    display: flex;
-    flex-direction: column;
+}
+
+.webdev__info {
+    display: none;
     overflow: hidden; 
     white-space: nowrap;
-    background-color: $c9c-off-white;
-        @include tablet {
-            flex-direction: row;
-            align-items: center;
-        }
-  }
-  
-  .webdev__info-section {
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.webdev__info-section {
     display: inline-block; 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--text-color);
     padding: 1rem;
-    white-space: normal;  
-        @include tablet {
+    white-space: normal;
+    @include tablet {
         display: flex;
         flex-direction: row;
         align-items: center;
         animation: slide 20s linear infinite;
-        border-left: 1px solid black; 
+        border-left: 1px solid var(--text-color); 
         border-bottom: none;
-        }
-  }
-  
-  .webdev__info-title {
-    font-family: $c9c-main-font;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin: .5rem;
-  }
-  
-  .webdev__info-desc {
-    font-family: $c9c-secondary-fonts;
-    color: $c9c-secondary-color;
-    font-size: 1rem;
-    margin: .5rem;
-    line-height: 1.5rem;
+    }
+}
+
+.webdev__info-title {
+    @include heading-text;
+}
+
+.webdev__info-desc {
+    @include body-text;
         @include tablet {
-        width: 30rem; 
+            width: 30rem;
         }
-  }
+}

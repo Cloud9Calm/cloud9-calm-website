@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+        "title": "Custom SEO Strategy and Development",
+        "description": "Boost your site's visibility with a comprehensive SEO strategy tailored to your business. I offer detailed keyword analysis, competitor research, and content recommendations that ensure your site ranks higher in search engines. With a focus on long-term growth, I implement on-page and technical SEO practices that drive sustained organic traffic.",
+        "price": "$50 per hour"
+    },
+    {
+        "title": "Monthly SEO Optimization",
+        "description": "Keep your site optimized and competitive with ongoing monthly SEO updates. I continuously track performance metrics, refine your strategy, and optimize your content to adapt to search engine algorithm changes. This service includes keyword ranking updates, technical audits, and content optimization, all aimed at improving your search engine rankings over time.",
+        "price": "$200 per month"
+    }
+  ]
+}

@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
 import '../Header/Header.scss';
+import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
-const Header = () => {
+import LightModeIcon from '../../assets/icons/lightmode.svg';
+import DarkModeIcon from '../../assets/icons/darkmode.svg';
+
+const Header = ({ toggleTheme, theme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,56 +18,54 @@ const Header = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const options = {
-      root: null,
-      threshold: 0.6,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    }, options);
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
     };
   }, []);
 
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="header__logo">
-        <h2 className="header__title">Cloud9 Calm Co.</h2>
+      <Link className="header__title" to="/">Cloud9 Calm Co.</Link>
       </div>
+
       <nav className="header__menu">
         <ul className="header__menu-list">
-          <li className={`header__menu-item ${activeSection === 'home' ? 'active' : ''}`}>
-            <a href="#home">Home</a>
+          <li className="header__menu-item">
+            <Link to="/">Home</Link>
           </li>
-          <li className={`header__menu-item ${activeSection === 'about' ? 'active' : ''}`}>
-            <a href="#about">About</a>
+
+          <li className="header__menu-item">
+            <Link to="/about">About</Link>
           </li>
-          <li className={`header__menu-item ${activeSection === 'services' ? 'active' : ''}`}>
-            <a href="#services">Services</a>
+
+          <li className="header__menu-item header__menu-item--dropdown">
+            <span className="header__dropdown-label">Services <span className="header__arrow"></span></span>
+            <ul className="header__dropdown">
+              <li className="header__dropdown-item">
+                <Link to="/website-development">Website Development</Link>
+              </li>
+              <li className="header__dropdown-item">
+                <Link to="/ecommerce-support">eCommerce Support</Link>
+              </li>
+              <li className="header__dropdown-item">
+                <Link to="/seo-services">SEO</Link>
+              </li>
+            </ul>
           </li>
-          <li className={`header__menu-item ${activeSection === 'contact' ? 'active' : ''}`}>
-            <a href="#contact">Contact</a>
+
+          <li className="header__menu-item">
+            <Link to="/contact">Contact</Link>
+          </li>
+
+          <li className="header__menu-item">
+            <button onClick={toggleTheme} className="header__button">
+              {theme === 'light' ? (
+                <img src={DarkModeIcon} className="header__theme-icon" alt="Switch to Dark Mode" />
+              ) : (
+                <img src={LightModeIcon} className="header__theme-icon" alt="Switch to Light Mode" />
+              )}
+            </button>
           </li>
         </ul>
       </nav>

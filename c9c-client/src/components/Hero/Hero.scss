@@ -3,27 +3,32 @@
 @import '../../styles/partials/variables.scss';
 
 .hero {
-    @include outer-borders;
     @include flex-column-center;
-    background: radial-gradient(circle,#4489c8 10%,$c9c-off-white 80%, $c9c-off-white 100%);
+    color: var(--text-color);
+    text-align: center;
+    background: radial-gradient(circle, #4489c8 10%, var(--background-color) 80%, var(--background-color) 100%);
     padding: 2rem;
     margin: 0;
 
-
     &__logo {
         width: 70vw;
-    }
-
-    &__title {
-        font-family: $c9c-main-font;
-        color: $c9c-main-color;
-        font-size: 1rem;
-        text-align: justify;
-        margin: 2rem;
-        width: 80vw;
-            @include tablet {
-                font-size: 2rem;
-                margin: 8rem;
+            @include desktop {
+                width: 40vw;
             }
+    } 
+    
+    &__title {
+        @include heading-text;
+    } 
+    
+    &__info {
+        @include body-text;
+        @include tablet {
+            max-width: 60%;
+        }
+    } 
+    
+    &__cta-button {
+        @include buttons;
     }
 }

@@ -1,58 +1,129 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import '../EcommerceSupport/EcommerceSupport.scss';
-import ecommerceGraphic from '../../assets/images/c9c-ecommerce-support-img.png';
+import './EcommerceSupport.scss'; 
+import EcommerceInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo'; 
+import LetsConnect from '../../components/LetsConnect/LetsConnect';
 import services from '../../data/ecommerce-support-services.json'; 
+import { Helmet } from 'react-helmet';
+import { useState, useEffect } from 'react';
+import ecommerceGraphic from '../../assets/images/c9c-3d-ecommerce.webp';
+import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import { Link } from 'react-router-dom';
-import EcommerceSupportInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo';
-import Contact from '../../components/Contact/Contact';
+import { motion } from 'framer-motion';
 
+
+const scrollVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const EcommerceSupport = () => {
-  return (
-    <>
-      <Helmet>
-        <title>Ecommerce Support Services | Cloud9 Calm Co.</title>
-        <meta name="description" content="Enhance your online store with Cloud9 Calm Co.'s comprehensive eCommerce support services. I focus on optimizing your eCommerce platform, managing technical issues, implementing updates, and improving functionality to drive sales and enhance the customer experience." />
-        <meta name="keywords" content="Penticton website developer, website Penticton, Okangan website developer,, eCommerce support, online store optimization, technical support, website updates, Cloud9 Calm Co." />
-        <link rel="canonical" href="https://www.cloud9calm.com/ecommerce-support" />
-      </Helmet>
-      <main className='webdev'>
-        <header className='webdev__header'>
-          <h2 className='webdev__header-title'>
-            Cloud9 Calm Co.
-          </h2>
-          <Link to='/' className='webdev__header-menu-item'>Home</Link>
-        </header>
-        <h2 className='webdev__title'>More information on Ecommerce Support</h2>
-        <div className='webdev__top-section'>
-          <img 
-            className='webdev__logo'
-            src={c9cLogoWhite}
-            alt="Cloud9 Calm Logo in white" />
-          <h3 className='webdev__sub-title'>
-            Enhance your online store with my comprehensive eCommerce support services. I focus on optimizing your eCommerce platform, managing technical issues, implementing updates, and improving functionality to drive sales and enhance the customer experience.
-          </h3>
-        </div>
-        <img
-          className='webdev__graphic'
-          src={ecommerceGraphic}
-          alt="Graphic of two people working on a computer"
-        />
-        <div className='webdev__info'>
-          {services.map((service, index) => (
-            <div key={index} className='webdev__info-section'>
-              <h4 className='webdev__info-title'>{service.title}</h4>
-              <p className='webdev__info-desc'>{service.description}</p>
-            </div>
-          ))}
-        </div>
-        <EcommerceSupportInfo />
-        <Contact />
-      </main>
-    </>
-  );
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        const checkTheme = () => {
+            const currentTheme = document.body.classList.contains('dark-theme');
+            setIsDarkMode(currentTheme);
+        };
+
+        checkTheme();
+
+        const observer = new MutationObserver(checkTheme);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        return () => observer.disconnect();
+    }, []);
+
+    const schemaData = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Cloud9 Calm Co. | eCommerce Services",
+        "description": "Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store.",
+        "url": "https://www.cloud9calm.com/ecommerce-support",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Cloud9 Calm Co.",
+            "logo": "https://www.cloud9calm.com/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png",
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61559123841203",
+                "https://x.com/cloud9calmco",
+                "https://www.linkedin.com/company/102845546"
+            ]
+        }
+    };
+
+    return (
+        <>
+            <Helmet>
+                <title>Cloud9 Calm Co. | eCommerce Services</title>
+                <meta name="description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
+                <meta name="keywords" content="Penticton eCommerce support, Okanagan eCommerce support, Naramata Shopify support, eCommerce solutions, online store updates, Shopify expert Penticton, local eCommerce developer, BC eCommerce support, Cloud9 Calm Co., small business eCommerce, website maintenance Okanagan, Shopify setup and integration, Naramata eCommerce services" />               
+               <link rel="canonical" href="https://www.cloud9calm.com/ecommerce-support" />
+                
+                <meta property="og:title" content="Cloud9 Calm Co. | eCommerce Services" />
+                <meta property="og:description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
+                <meta property="og:image" content="https://www.cloud9calm.com/path/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png" />
+                <meta property="og:url" content="https://www.cloud9calm.com/ecommerce-support" />
+                <meta property="og:type" content="website" />
+                
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Cloud9 Calm Co. | eCommerce Services" />
+                <meta name="twitter:description" content="Maximize your eCommerce potential with Cloud9 Calm Co.'s dedicated support services. We specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store." />
+                <meta name="twitter:image" content="https://www.cloud9calm.com/path/static/media/c9c-logo-white.bbb962e17ff69fa4080b.png" />
+                
+                <script type="application/ld+json">
+                    {JSON.stringify(schemaData)}
+                </script>
+            </Helmet>
+            <motion.main 
+                className='ecom'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={scrollVariant}
+            >
+                <motion.h2 
+                    className='ecom__title'
+                    variants={scrollVariant}
+                >
+                    More information on eCommerce Support
+                </motion.h2>
+                <motion.div 
+                    className='ecom__top-section'
+                    variants={scrollVariant}
+                >
+                    <img 
+                        className='ecom__logo'
+                        src={isDarkMode ? c9cLogoWhite : c9cLogoBlack}
+                        alt="Cloud9 Calm Logo" />
+                    <h3 className='ecom__sub-title'>
+                        Maximize your eCommerce potential with my dedicated eCommerce support services. I specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store.
+                    </h3>
+                </motion.div>
+                <motion.img
+                    className='ecom__graphic'
+                    src={ecommerceGraphic}
+                    alt="Graphic of people managing an online store"
+                    variants={scrollVariant}
+                />
+                <motion.div 
+                    className='ecom__info'
+                    variants={scrollVariant}
+                >
+                    {services.map((service, index) => (
+                        <motion.div 
+                            key={index} 
+                            className='ecom__info-section'
+                            variants={scrollVariant}
+                        >
+                            <h4 className='ecom__info-title'>{service.title}</h4>
+                            <p className='ecom__info-desc'>{service.description}</p>
+                        </motion.div>
+                    ))}
+                </motion.div>
+                <EcommerceInfo />
+                <LetsConnect />
+            </motion.main>
+        </>
+    );
 }
 
 export default EcommerceSupport;

@@ -4,113 +4,114 @@
 
 .services {
     @include flex-column-center;
-    background-color: $c9c-main-color;
-    font-family: $c9c-main-font;
-    color: $c9c-off-white;
-    text-align: justify;
-    @include outer-borders;
+    padding: 1rem;
+    color: var(--text-color);
+    @include moving-background;
         @include tablet {
             padding: 2rem;
-        }
-
+    } 
+    
     &__title {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        margin: 2rem;
-            @include tablet {
-                font-size: 2rem;
-            }   
-    }
-
+        @include heading-text;
+    } 
+    
     &__sub-title {
-        font-size: 1rem;
-        line-height: 2rem;
-        font-family: $c9c-secondary-fonts;
-        max-width: 80%;
-            @include tablet {
-                font-size: 1.5rem;
-                max-width: 70%;
-            }   
-    }
-
+        @include body-text;
+        padding: 1rem;
+        text-align: center;
+        @include desktop {
+            max-width: 50%;
+        }
+    } 
+    
     &__cards-container {
         @include flex-column-center;
-        margin: 1rem;
+        padding: 1rem;
         @include tablet {
             justify-content: space-around;
+                @include desktop {
+                    flex-direction: row;
+                    align-items: center;
+                }
         }
-    }
-
+    } 
+    
     &__card-1,
-    &__card-2 {
+    &__card-2,
+    &__card-3 {
         @include flex-column-center;
-        text-align: justify;
         margin: 3rem 0;
-            @include tablet {
-                flex-direction: row;
-                align-items: center;
-            }
-    }
-
-        &__card-2 {
-            @include tablet {
-                flex-direction: row-reverse
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+            @include desktop {
+                flex-direction: column;
+                justify-content: flex-start;
+                max-width: 30%;
+                margin: 0;
             }
         }
-
-
+    } 
+    
+    &__card-2 {
+        @include tablet {
+            flex-direction: row-reverse;
+            text-align: right;
+                @include desktop {
+                    flex-direction: column;
+                }
+        }
+    } 
+    
     &__cards-upper-section {
         @include flex-column-center;
         align-items: center;
-            @include tablet {
-                max-width: 60%;
-                flex-direction: column-reverse;
-            }
-    }
-
+        @include tablet {
+            max-width: 60%;
+            flex-direction: column-reverse;
+        }
+    } 
+    
     &__graphics {
         width: 80%;
         @include color-borders;
-        padding: 0;
-            @include tablet {
-                width: 100%;
+        @include box-shadow;
+        @include tablet {
+            width: 70%;
+            @include desktop {
+                width: 90%;
             }
-       
-    }
-
+        }
+    } 
+    
     &__cards-title {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 1.5rem;
-            @include tablet {
-                font-size: 2rem;      
-                margin: .5rem;
+        @include heading-text;
+            @include desktop {
+                text-align: center;
             }
-
-    }
-
+    } 
+    
     &__cards-lower-section {
         @include flex-column-center;
-            @include tablet {
-                max-width: 50%;
-            }
-
-    }
-
-    &__cards-description {
-        font-size: 1rem;
-        font-family: $c9c-secondary-fonts;
-        line-height: 2rem;
-        max-width: 60%;
-            @include tablet {
-                max-width: 80%;
-            }
+        @include tablet {
+            max-width: 50%;
+                @include desktop {
+                    justify-content: space-between;
+                    max-width: 90%;
+                }
+        }
+    } 
     
-    }
-
+    &__cards-description {
+        @include body-text;
+        text-align: center;
+            @include desktop {
+                text-align: justify;
+                width: 80%;
+            }
+    } 
+    
     &__learn-more {
         @include buttons;
-        height: 20px;
-        margin: 0;
     }
 }

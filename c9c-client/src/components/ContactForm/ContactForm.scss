@@ -1,0 +1,117 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.contact-form {
+    @include flex-column-center;
+    @include moving-background;
+    margin: 0;
+    padding: 0;
+
+    &__title {
+        @include heading-text;
+    }
+
+    &__container {
+        background-color: var(--background-color);
+        @include flex-column-center;
+        @include box-shadow;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        width: 80%;
+        @include tablet {
+            width: 60%;
+        }
+        @include desktop {
+            max-width: 40%;
+        }
+    }
+
+    &__name-email {
+        @include flex-column-center;
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__inputs {
+        @include body-text;
+        @include flex-column-center;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        
+
+        textarea {
+            @include color-borders; 
+            color: var(--text-color); 
+            padding: 1rem;
+            width: 80%;
+            height: 100px;
+            resize: auto;
+            overflow: auto;
+        }
+    }
+
+    &__name,
+    &__email,
+    &__website,
+    &__inquiry {
+        @include body-text;
+        width: 90%;
+        @include tablet {
+            width: 80%;
+        }
+        @include desktop {
+            max-width: 70%;
+        }
+    }
+
+    &__icon {
+        width: 100px;
+    }
+
+    &__button {
+        @include buttons;
+        width: 80%;
+    }   
+}
+
+.contact-form__inputs input[name="name"],
+.contact-form__inputs input[name="email"],
+.contact-form__inputs input[name="website"] {
+    @include color-borders;
+    padding: .5rem;
+    color: var(--text-color)
+}
+
+.contact-form__suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--background-color);
+    border-radius: 10px;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 0.5rem;
+        cursor: pointer;
+
+        &:hover {
+            background: var(--text-color);
+            color: var(--background-color); 
+            transform: scale(1.05); 
+            transition: transform 0.3s ease, color 0.3s ease; 
+        }
+    }
+}
+
+.response {
+    @include body-text;
+}

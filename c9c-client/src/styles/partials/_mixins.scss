@@ -19,20 +19,17 @@
   align-items: center;
 }
 
-@mixin outer-borders {
-  border-top: 2px solid black;
-}
 
 @mixin color-borders {
   border: 2px solid; 
   border-image-slice: 1;
   border-image-source: linear-gradient(to top right, $analogous-color-2, $analogous-color-1);
-  padding: 20px;
   background-color: transparent;
 }
 
 @mixin cards {
   @include flex-column-center;
+  @include box-shadow;
         padding: 1rem;
         margin: 1rem;
         width: 14rem;
@@ -50,12 +47,80 @@
 
 @mixin buttons {
   @include color-borders;
+  @include box-shadow;
         font-family: $c9c-main-font;
-        background-color: transparent;
-        padding: 1rem;
         text-transform: uppercase;
-        color: white;
+        text-align: center;
+        padding: 1rem;
         margin: 1rem;
+        color: var(--text-color);
         cursor: pointer;
         @include hover;
+}
+
+@mixin box-shadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+@mixin heading-text {
+  font-family: $c9c-main-font;
+  font-size: 1rem;
+    @include tablet {
+      font-size: 1.5rem;
+        @include desktop {
+          font-size: 2rem;
+        }
+    }
+}
+
+@mixin body-text {
+  font-family: $c9c-secondary-fonts;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 100;
+    @include tablet {
+      font-size: 1rem;
+      line-height: 1.5rem;
+        @include desktop {
+          font-size: 1.25rem;
+          line-height: 2rem;
+          padding: 1rem;
+        }
+    }
+}
+
+@mixin moving-background {
+  background: radial-gradient(circle at 20% 40%, $analogous-color-2, transparent 60%), 
+      radial-gradient(circle at 80% 60%, $analogous-color-1, transparent 60%),
+      linear-gradient(135deg, $analogous-color-2, $analogous-color-1, $analogous-color-2);
+      background-size: 200% 200%;
+      animation: gradientAnimation 10s ease infinite; 
+      ;
+
+      @keyframes gradientAnimation {
+      0% {
+      background-position: 0% 50%;
+      }
+      50% {
+      background-position: 100% 50%;
+      }
+      100% {
+      background-position: 0% 50%;
+      }
+  }
+}
+
+@mixin light-theme {
+  --background-color: #f5f5f5;
+  --text-color: #080808;
+  --border-color: black;
+  --link-color: var(--text-color);
+}
+
+@mixin dark-theme {
+  --background-color: #080808;
+  --text-color: #f5f5f5;
+  --border-color: #f5f5f5;
+  --link-color: var(--text-color);
 }

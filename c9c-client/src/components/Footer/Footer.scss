@@ -7,56 +7,53 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include outer-borders;
+    ;
 
     &__info {
-        margin: 1rem;
-      
-    }
-
-    &__title {
+        margin: 1rem; 
+    } &__title {
         font-family: $c9c-main-font;
         font-size: 1rem
-    }
-
-    &__sub-title,
-    &__copywrite {
+    } &__sub-title {
         font-family: $c9c-secondary-fonts;  
         font-size: .75rem;
-
+        padding: .5rem;
     }
 
     &__socials {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-  &__Linkedin,
-  &__Instagram,
-  &__Facebook,
-  &__GitHub,
-  &__Shopify {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 1rem;
-    justify-content: center;
-        @include tablet {
-            justify-content: start;
-
-        }
-
-  } 
-
-    &__social-icons {
+        justify-content: space-evenly;
+            @include desktop {
+                justify-content: flex-start;
+            }
+    } &__Linkedin,
+      &__Instagram,
+      &__Facebook,
+      &__GitHub,
+      &__Shopify {
+            @include tablet {
+                justify-content: start;
+                    @include desktop {
+                        padding: 0 2rem;
+                    }
+            }
+    } &__social-icons {
         width: 25px;
-    }
-
-    &__social-titles {
+    } &__social-titles {
         font-family: $c9c-main-font;
         font-size:.75rem;
         margin: 0 1rem;
         @include hover;
+    }
+
+    &__policies {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } &__copyright,
+      &__policy {
+        padding: 1rem;
+        font-family: $c9c-main-font;
     }
 }

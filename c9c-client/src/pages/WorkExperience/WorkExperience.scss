@@ -1,0 +1,32 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+
+.work {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+    &__title {
+        @include heading-text;
+        padding: 2rem;
+        text-align: center;
+            @include tablet {
+                text-align: left;
+            }
+    }
+
+    &__desc {
+        @include body-text;
+        padding: 2rem;
+        text-align: center;
+            @include tablet {
+                text-align: left;
+                    @include desktop {
+                        max-width: 70%;
+                        margin: 0 auto;
+                        padding: 2rem
+                    }
+            }
+    }
+}

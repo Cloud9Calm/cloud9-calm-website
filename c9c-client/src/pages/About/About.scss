@@ -1,0 +1,180 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.about {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    &__intro {
+        @include flex-column-center;
+        @include box-shadow;
+        max-width: 80%;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 0 auto;
+    } 
+    
+    &__intro-title {
+        @include heading-text;
+        @include desktop {
+            padding: 2rem;
+        }
+    } 
+    
+    &__prof-img {
+        max-width: 50%;
+        border-radius: 1000px;
+            @include desktop {
+                max-width: 30%;
+            }
+    } 
+    
+    &__intro-mission {
+        @include body-text;
+        text-align: center;
+        @include desktop {
+            padding: 4rem;
+        }
+    }
+
+    &__journey {
+        padding: 2rem;
+        @include desktop {
+            margin: 2rem 0;
+        }
+    } 
+    
+    &__journey-title {
+        @include heading-text;
+    } 
+    
+    &__journey-text {
+        @include body-text;
+        padding: 1rem .5rem;
+        @include desktop {
+            padding: 2rem 6rem;
+        }
+    }
+
+    &__why {
+        padding: 2rem;
+        ;
+        @include tablet {
+            padding: 6rem;
+        }
+    } 
+    
+    &__why-title {
+        @include heading-text;
+    } 
+    
+    &__why-text {
+        @include body-text;
+        text-align: justify;
+        padding: 0 1rem;
+        @include desktop {
+            padding: 2rem 3rem;
+        }
+    }
+
+    &__values {
+        padding: 2rem;
+    } 
+    
+    &__values-title {
+        @include heading-text;
+    } 
+    
+    &__values-list {
+        @include flex-column-center;
+        align-items: center;
+        justify-content: space-evenly;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    } 
+    
+    &__values-item {
+        @include body-text;
+        display: flex;
+        align-items: center;
+        color: white;
+        background-color: $triadic-color-2; 
+        border-radius: 1000px;
+       
+    } 
+    
+    &__values-icons {
+        height: 20px;
+        padding: .5rem;
+        @include desktop {
+            height: 30px;
+        }
+    }
+
+    &__services {
+        padding: 2rem;
+    }   
+    
+    &__services-title {
+        @include heading-text;
+    }   
+    
+    &__services-text {
+        @include body-text;
+        padding: 1rem;
+        @include tablet {
+            text-align: justify;
+            padding: 1rem;
+            @include desktop {
+                padding: 4rem;
+            }
+        }
+    }
+
+    &__fun-facts {
+        @include moving-background;
+        padding: 2rem;
+        @include tablet {
+            padding: 6rem;
+        }
+    } 
+    
+    &__fun-facts-title {
+        @include heading-text;
+    } 
+    
+    &__fun-facts-text {
+        @include body-text;
+        text-align: justify;
+        @include desktop {
+            padding: 2rem 3rem;
+            margin: 0 auto;
+            max-width: 70%;
+        }
+    }
+    
+    &__graphic {
+        width: 80%;
+        @include color-borders;
+        @include box-shadow;
+        @include tablet {
+            width: 40%;
+        }
+    }
+
+    &__container {
+        @include flex-column-center;
+        @include tablet {
+            flex-direction: row-reverse;
+        }
+    } 
+    
+    .container-2 {
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+}

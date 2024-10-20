@@ -4,47 +4,61 @@
 
 .contact {
     @include flex-column-center;
+    color: $c9c-off-white;
     background-color: $c9c-off-white;
-    @include outer-borders;
+    color: $c9c-off-black;
+    text-align: center;
 
     &__title {
-        font-size: 2rem;
-        font-family: $c9c-main-font;
-        color: $c9c-secondary-color;
-        text-transform: uppercase;
-        margin: 3rem;
-        text-align: justify;
-    }
+        @include heading-text;
+    } 
 
     &__sub-title,
     &__sub-title-2 {
-        font-family: $c9c-secondary-fonts;
-        color: $c9c-secondary-color;
-        margin: 0
-    }
-
-    &__profile {
-        @include color-borders;
+       @include body-text;
+    } 
+    
+    &__icon {
         padding: 0;
         margin: 1rem;
-        width: 60%;
+        width: 20%;
             @include tablet {
-                width: 40%;
+                max-width: 30%;
             }
-        
-    }
-
+    } 
+    
     &__description {
-        font-family: $c9c-secondary-fonts;
-        line-height: 2rem;
-        color: $c9c-secondary-color;
-        width: 80%;
-        text-align: justify;
-        margin: 1rem;
-    }
-
+        @include body-text;
+        padding: 1rem;
+        width: 50%;
+            @include desktop {
+                padding: 2rem;
+                max-width: 40%;
+                text-align: justify;
+            }
+    } 
+    
     &__booking {
         @include buttons;
-        color: $c9c-main-color;
+        color: $c9c-off-black;
+    }
+
+
+    &__pricing {
+        ;
+        padding: 1rem;
+        @include flex-column-center;
+    } 
+    
+    &__pricing-note {
+        @include body-text;
+        text-align: center;
+        max-width: 60%;
+    } 
+    
+    &__meet {
+        margin: 2rem;
+        @include buttons;
+        color: $c9c-off-black;
     }
 }

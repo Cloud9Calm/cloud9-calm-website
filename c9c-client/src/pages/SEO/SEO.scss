@@ -1,0 +1,92 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.seo {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    &__title {
+      @include heading-text;
+      padding: 2rem;
+      margin: 0;
+      ;
+    } 
+    
+    &__top-section {
+      @include flex-column-center;
+      padding: 2rem;
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 4rem 2rem;
+      }
+    } 
+    
+    &__logo {
+      width: 20%;
+      margin: 0 2rem;
+    } 
+    
+    &__sub-title {
+      @include body-text;
+      text-align: center;
+    } 
+    
+      &__graphic {
+        width: 100%;
+            @include tablet {
+                display: none;
+            }
+    }
+}
+
+@keyframes slide {
+  100% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.seo__info {
+  display: none;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--background-color);
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.seo__info-section {
+  display: inline-block;
+  border-bottom: 1px solid var(--text-color);
+  padding: 1rem;
+  white-space: normal;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: slide 20s linear infinite;
+    border-left: 1px solid var(--text-color);
+    border-bottom: none;
+  }
+}
+
+.seo__info-title {
+  font-family: $c9c-main-font;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: .5rem;
+}
+
+.seo__info-desc {
+  font-family: $c9c-secondary-fonts;
+  color: var(--text-color);
+  font-size: 1rem;
+  margin: .5rem;
+  line-height: 1.5rem;
+  @include tablet {
+    width: 30rem;
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../styles/partials/typeography.scss';
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/variables.scss';
+
+.contact-page {
+    ;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    &__title {
+        @include heading-text;
+        padding: 1rem;
+    }   
+}
