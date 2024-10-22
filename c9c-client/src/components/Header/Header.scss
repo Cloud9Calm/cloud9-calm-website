@@ -33,17 +33,15 @@
     }
 
     &__menu-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+       @include flex-column-center;
         padding: 0;
-
-        @include tablet {
+            @include tablet {           
             flex-direction: row;
         }
     }
 
     &__menu-item {
+        padding: .5rem;
         position: relative; 
         a, .header__dropdown-label {
             text-decoration: none;

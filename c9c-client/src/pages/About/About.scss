@@ -23,10 +23,10 @@
     } 
     
     &__prof-img {
-        max-width: 50%;
+        width: 200px;
         border-radius: 1000px;
             @include desktop {
-                max-width: 30%;
+                width: 350px;
             }
     } 
     
@@ -59,9 +59,8 @@
 
     &__why {
         padding: 2rem;
-        ;
         @include tablet {
-            padding: 6rem;
+            padding: 4rem;
         }
     } 
     
@@ -103,6 +102,8 @@
         color: white;
         background-color: $triadic-color-2; 
         border-radius: 1000px;
+        padding: .5rem;
+        margin: .5rem;  
        
     } 
     
@@ -157,7 +158,8 @@
     }
     
     &__graphic {
-        width: 80%;
+        width: 40%;
+       margin: 2rem;
         @include color-borders;
         @include box-shadow;
         @include tablet {
