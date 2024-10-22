@@ -6,56 +6,57 @@
     &__description {
         @include body-text;
         padding: 1rem;
-        @include desktop {
-            width: 60%;
-            padding: 4rem;
-            text-align: justify;
-        }
-    }
-
+        max-width: 80%;
+        text-align: center;
+            @include desktop {
+                width: 60%;
+                padding: 4rem;
+                text-align: justify;
+            }
+    } 
+    
     &__img {
-        width: 50%;
-        border-radius: 50%;
-        padding: 1rem;
-        @include tablet {
-            height: 325px;
-            width: 30%;
+            width: 50%;
+            border-radius: 1000px;
+            padding: 1rem;
+            @include tablet {
+                width: 30%;
         }
-    }
+    
+    } 
 
     &__section {
         @include flex-column-center;
-        ;
-        @include desktop {
-            flex-direction: row-reverse;
-            padding: 4rem;
-        }
-    }
-
+            @include desktop {
+                flex-direction: row-reverse;
+                padding: 4rem;
+            }
+    } 
+    
     &__services {
         @include moving-background;
         margin: 0 auto;
         padding: 2rem;
-    }
-
+    } 
+    
     &__services-title {
-        @include heading-text;;
+        @include heading-text;
         padding: 1rem;
         text-align: center;
-        @include tablet {
-            padding: 2rem;
-        }
-    }
-
-    &__services-list {
+            @include tablet {
+                padding: 2rem;
+            }
+    } 
+    
+    &__services-list{
         @include flex-column-center;
-        @include desktop {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-    }
-
+            @include tablet {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+    }  
+    
     &__services-item {
         @include flex-column-center;
         @include box-shadow;
@@ -64,29 +65,35 @@
         padding: 1rem;
         border-radius: 10px;
         width: 80%;
-        @include desktop {
-            justify-content: center;
-            width: 35%;
-        }
-    }
-
+            @include tablet {
+                justify-content: center;
+                width: 35%;
+            }
+    } 
+    
     &__services-logo {
-        width: 20%;
+        width: 100px;  
         padding: 1rem;
-    }
-
+            @include tablet {
+                width: 150px;
+                    @include desktop {
+                        width: 200px;
+                    }
+            }
+    } 
+    
     &__services-item-title {
         @include heading-text;
         padding: 0;
         margin: 0;
         text-align: center;
-    }
-
+    } 
+    
     &__services-item-desc {
         @include body-text;
         text-align: center;
-    }
-
+    } 
+    
     &__services-item-price {
         padding: 0;
         margin: 0;
