@@ -4,13 +4,12 @@ import './About.scss';
 import LetsConnect from '../../components/LetsConnect/LetsConnect';
 
 import erinCronieProfile from '../../assets/images/erin-cronie-website-profile.png';
-import computerCloud from '../../assets/images/c9c-cloud-computer.webp';
-import bundle from '../../assets/images/bundles.webp';
 
 import quote from '../../assets/icons/quote.svg';
 import person from '../../assets/icons/personSearch.svg';
 import target from '../../assets/icons/target.svg';
 import engineering from '../../assets/icons/engineering.svg';
+import cloud from '../../assets/icons/cloud.svg';   
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -106,9 +105,9 @@ const About = () => {
                         is to provide custom, stress-free web solutions to help you grow.
                     </p>
                     <img 
-                        src={computerCloud} 
-                        alt="3D computer and cloud" 
-                        className='about__graphic'    
+                        src={cloud} 
+                        alt="Cloud icon"
+                        className='about__why-icon'    
                     />
                 </div>
             </motion.div>
@@ -158,11 +157,6 @@ const About = () => {
                         support, I provide tailored solutions to meet your business needs.
                         Let’s take your brand to the next level together.
                     </p>
-                    <img 
-                        src={bundle} 
-                        alt="3D shopping cart and computer" 
-                        className="about__graphic"    
-                    />
                 </div>
             </motion.div>
 

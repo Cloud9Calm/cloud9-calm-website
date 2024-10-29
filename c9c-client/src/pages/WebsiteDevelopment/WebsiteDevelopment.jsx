@@ -1,15 +1,16 @@
 import '../WebsiteDevelopment/WebsiteDevelopment.scss';
-import services from '../../data/website-development-info.json'; 
+
 import WebDevelopmentInfo from '../../components/WebDevelopmentInfo/WebDevelopmentInfo';
 import LetsConnect from '../../components/LetsConnect/LetsConnect'; 
 
 import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-import websiteGraphic from '../../assets/images/c9c-3d-graphic.webp';
+import services from '../../data/website-development-info.json'; 
+
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import { motion } from 'framer-motion';
 
 const scrollVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -99,12 +100,7 @@ const WebsiteDevelopment = () => {
                         Empower your online presence with my dedicated web development support services. I specialize in ensuring the seamless operation of your website, tackling technical challenges, implementing updates, and enhancing functionality.
                     </h3>
                 </motion.div>
-                <motion.img
-                    className='webdev__graphic'
-                    src={websiteGraphic}
-                    alt="Graphic of two people working on a computer"
-                    variants={scrollVariant}
-                />
+        
                 <motion.div 
                     className='webdev__info'
                     variants={scrollVariant}

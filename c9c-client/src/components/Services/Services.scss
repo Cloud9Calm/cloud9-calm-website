@@ -74,13 +74,7 @@
     } 
     
     &__graphics {
-      width: 100px;
-        @include tablet {
-            width: 200px;
-                @include desktop {
-                    width: 175px;
-                }
-        }
+      @include icon-sizing;
     } 
     
     &__cards-title {
