@@ -1,13 +1,16 @@
 import './EcommerceSupport.scss'; 
-import EcommerceInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo'; 
-import LetsConnect from '../../components/LetsConnect/LetsConnect';
-import services from '../../data/ecommerce-support-services.json'; 
+
 import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
-import ecommerceGraphic from '../../assets/images/c9c-3d-ecommerce.webp';
+import { motion } from 'framer-motion';
+
+import EcommerceInfo from '../../components/EcommerceSupportInfo/EcommerceSupportInfo'; 
+import LetsConnect from '../../components/LetsConnect/LetsConnect';
+
+import services from '../../data/ecommerce-support-services.json'; 
+
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import { motion } from 'framer-motion';
 
 
 const scrollVariant = {
@@ -98,12 +101,7 @@ const EcommerceSupport = () => {
                         Maximize your eCommerce potential with my dedicated eCommerce support services. I specialize in managing your eCommerce platform, optimizing sales funnels, and ensuring smooth operations for your online store.
                     </h3>
                 </motion.div>
-                <motion.img
-                    className='ecom__graphic'
-                    src={ecommerceGraphic}
-                    alt="Graphic of people managing an online store"
-                    variants={scrollVariant}
-                />
+        
                 <motion.div 
                     className='ecom__info'
                     variants={scrollVariant}

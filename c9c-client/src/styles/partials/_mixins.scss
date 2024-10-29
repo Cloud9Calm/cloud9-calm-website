@@ -124,3 +124,15 @@
   --border-color: #f5f5f5;
   --link-color: var(--text-color);
 }
+
+@mixin icon-sizing {
+  width: 100px;
+
+  @include tablet {
+    width: 200px;
+  }
+
+  @include desktop {
+    width: 175px;
+  }
+}

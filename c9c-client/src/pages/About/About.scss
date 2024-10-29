@@ -77,6 +77,12 @@
         }
     }
 
+    &__why-icon {
+        fill: pink; 
+        @include icon-sizing;
+        padding: 2rem; 
+    }
+
     &__values {
         padding: 2rem;
     } 

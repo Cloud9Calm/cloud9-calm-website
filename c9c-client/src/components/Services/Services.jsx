@@ -1,8 +1,8 @@
 import './Services.scss';
 import { Link } from 'react-router-dom';
-import website from '../../assets/images/c9c-3d-graphic.webp';
-import ecommerce from '../../assets/images/c9c-3d-ecommerce.webp';
-import seo from '../../assets/images/c9c-3d-seo.webp';
+import website from '../../assets/icons/website.svg';
+import ecommerce from '../../assets/icons/shopping-cart.svg';
+import seo from '../../assets/icons/seo-analytics.svg';
 import '../../pages/WebsiteDevelopment/WebsiteDevelopment';
 
 const Services = () => {
@@ -16,7 +16,7 @@ const Services = () => {
 
                 <div className='services__card-1 s-cards'>
                     <div className='services__cards-upper-section'>
-                        <img className='services__graphics' src={website} alt="Graphic of a laptop with notebook and pen" />
+                        <img className='services__graphics' src={website} alt="Website icon" />
                         <h3 className='services__cards-title'>Web Development</h3>
                     </div>
                     <div className='services__cards-lower-section'>
@@ -27,7 +27,7 @@ const Services = () => {
 
                 <div className='services__card-2 s-cards'>
                     <div className='services__cards-upper-section'>
-                        <img className='services__graphics' src={ecommerce} alt="Graphic of a cell phone and shopping cart" />
+                        <img className='services__graphics' src={ecommerce} alt="Shopping cart icon" />
                         <h3 className='services__cards-title'>eCommerce Support</h3>
                     </div>
                     <div className='services__cards-lower-section'>
@@ -38,7 +38,7 @@ const Services = () => {
 
                 <div className='services__card-3 s-cards'>
                     <div className='services__cards-upper-section'>
-                        <img className='services__graphics' src={seo} alt="Graphic of a cell phone and shopping cart" />
+                        <img className='services__graphics' src={seo} alt="SEO analytics icon" />
                         <h3 className='services__cards-title'>SEO</h3>
                     </div>
                     <div className='services__cards-lower-section'>

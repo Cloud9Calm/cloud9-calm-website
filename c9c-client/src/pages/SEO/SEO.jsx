@@ -4,12 +4,12 @@ import LetsConnect from '../../components/LetsConnect/LetsConnect';
 
 import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
-import seoGraphic from '../../assets/images/c9c-3d-seo.webp';
+import { motion } from 'framer-motion';
+
 import services from '../../data/seo-info.json'; 
 
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import { motion } from 'framer-motion';
 
 const scrollVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -98,12 +98,7 @@ const SEO = () => {
                         Maximize your SEO potential with my dedicated SEO support services. I specialize in managing your SEO strategy, optimizing search engine rankings, and ensuring smooth operations for your online presence.
                     </h3>
                 </motion.div>
-                <motion.img
-                    className='seo__graphic'
-                    src={seoGraphic}
-                    alt="Graphic of SEO services"
-                    variants={scrollVariant}
-                />
+
                 <motion.div 
                     className='seo__info'
                     variants={scrollVariant}

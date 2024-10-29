@@ -44,6 +44,7 @@
         @include tablet {
             flex-direction: row;
             align-items: center;
+            justify-content: space-evenly;
             @include desktop {
                 flex-direction: column;
                 justify-content: flex-start;
@@ -73,15 +74,7 @@
     } 
     
     &__graphics {
-        width: 80%;
-        @include color-borders;
-        @include box-shadow;
-        @include tablet {
-            width: 70%;
-            @include desktop {
-                width: 90%;
-            }
-        }
+      @include icon-sizing;
     } 
     
     &__cards-title {
