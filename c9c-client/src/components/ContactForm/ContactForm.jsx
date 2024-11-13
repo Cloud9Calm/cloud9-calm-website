@@ -2,7 +2,6 @@ import './ContactForm.scss';
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import ReCAPTCHA from 'react-google-recaptcha';
 
 import email from '../../assets/icons/email.svg'; 
 
@@ -132,13 +131,7 @@ const ContactForm = () => {
             onChange={handleChange} 
             required 
           />
-        </div>
-
-        <ReCAPTCHA
-          sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-          onChange={handleRecaptchaChange}
-        />
-       
+        </div>       
         <button 
           type="submit"
           className='contact-form__button'
