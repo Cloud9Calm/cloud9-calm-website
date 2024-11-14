@@ -67,7 +67,10 @@
         width: 80%;
             @include tablet {
                 justify-content: center;
-                width: 35%;
+                width: 55%;
+                    @include desktop {
+                        width: 25%;
+                    }
             }
     } 
     
