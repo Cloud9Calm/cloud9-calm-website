@@ -20,8 +20,12 @@ const Services = () => {
                         <h3 className='services__cards-title'>Web Development</h3>
                     </div>
                     <div className='services__cards-lower-section'>
-                        <p className='services__cards-description'>My web development service transforms your vision into a dynamic online presence, leveraging cutting-edge technology to create responsive, visually appealing websites that deliver exceptional user experiences and support your business objectives.</p>
-                        <Link to='/website-development' className='services__learn-more'>Learn more about Website Development→</Link> 
+                        <div>
+                            <p className='services__cards-description'>My web development service transforms your vision into a dynamic online presence, leveraging cutting-edge technology to create responsive, visually appealing websites that deliver exceptional user experiences and support your business objectives.</p>
+                        </div>
+                        <div className='services__button-section'>
+                            <Link to='/website-development' className='services__learn-more'>Learn more about Website Development→</Link> 
+                        </div>
                     </div>
                 </div>
 
@@ -31,9 +35,13 @@ const Services = () => {
                         <h3 className='services__cards-title'>eCommerce Support</h3>
                     </div>
                     <div className='services__cards-lower-section'>
-                    <p className='services__cards-description'>My eCommerce support service is all about turning your online store vision into reality. I focus on creating responsive, user-friendly websites that provide a seamless shopping experience, helping you meet your business goals and grow your customer base.</p>                       
-                     <Link to='ecommerce-support' className='services__learn-more'>Learn more about eCommerce Support→</Link> 
-                    </div>
+                        <div>
+                            <p className='services__cards-description'>My eCommerce support service is all about turning your online store vision into reality. I focus on creating responsive, user-friendly websites that provide a seamless shopping experience, helping you meet your business goals and grow your customer base.</p>                       
+                        </div>
+                     <div className='services__button-section'>
+                        <Link to='ecommerce-support' className='services__learn-more'>Learn more about eCommerce Support→</Link> 
+                     </div>
+                   </div>
                 </div>
 
                 <div className='services__card-3 s-cards'>
@@ -42,8 +50,12 @@ const Services = () => {
                         <h3 className='services__cards-title'>SEO</h3>
                     </div>
                     <div className='services__cards-lower-section'>
-                        <p className='services__cards-description'>My SEO support service focuses on enhancing your website's visibility and driving organic traffic. I utilize proven strategies like keyword optimization, content refinement, and technical SEO to ensure your site ranks higher on search engines, helping your business attract more qualified leads and achieve long-term success.</p>                        
-                        <Link to='seo' className='services__learn-more'>Learn more About SEO →</Link> 
+                        <div>
+                            <p className='services__cards-description'>My SEO support service focuses on enhancing your website's visibility and driving organic traffic. I utilize proven strategies like keyword optimization, content refinement, and technical SEO to ensure your site ranks higher on search engines, helping your business attract more qualified leads and achieve long-term success.</p>                        
+                        </div>
+                        <div className='services__button-section'>
+                            <Link to='seo' className='services__learn-more'>Learn more About SEO →</Link> 
+                        </div>
                     </div>
                 </div>
             </div>

@@ -26,12 +26,17 @@
     
     &__cards-container {
         @include flex-column-center;
-        padding: 1rem;
+        background-color: $c9c-off-white;
+        border-radius: 50px;
+        color: black;
+        box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .2);
         @include tablet {
             justify-content: space-around;
                 @include desktop {
                     flex-direction: row;
-                    align-items: center;
+                    align-items: flex-start;
+                    max-width: 60%;
+                    padding: 2rem;
                 }
         }
     } 
@@ -48,7 +53,7 @@
             @include desktop {
                 flex-direction: column;
                 justify-content: flex-start;
-                max-width: 30%;
+                max-width: 60%;
                 margin: 0;
             }
         }
@@ -62,7 +67,12 @@
                     flex-direction: column;
                 }
         }
-    } 
+    }
+    
+    &__card-1,
+    &__card-2 {
+        border-right: 1px solid black;
+    }
     
     &__cards-upper-section {
         @include flex-column-center;
@@ -74,7 +84,7 @@
     } 
     
     &__graphics {
-      @include icon-sizing;
+      width: 75px;
     } 
     
     &__cards-title {
@@ -85,12 +95,14 @@
     } 
     
     &__cards-lower-section {
-        @include flex-column-center;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
         @include tablet {
-            max-width: 50%;
+            width: 50%;
                 @include desktop {
-                    justify-content: space-between;
-                    max-width: 90%;
+                    height: 70vh;
+                    width: 90%;
                 }
         }
     } 
@@ -98,13 +110,19 @@
     &__cards-description {
         @include body-text;
         text-align: center;
-            @include desktop {
-                text-align: justify;
-                width: 80%;
-            }
+        padding: 1rem;
+        @include desktop {
+            width: 100%;
+            padding: 0;
+        }    
     } 
-    
-    &__learn-more {
+
+    &__button-section {
         @include buttons;
     }
+
+    &__learn-more {
+        color: black !important;
+    }   
+
 }
