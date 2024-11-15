@@ -28,7 +28,6 @@
         @include flex-column-center;
         background-color: var(--background-color);
         border-radius: 50px;
-        color: black;
         box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .2);
         @include tablet {
             justify-content: space-around;
@@ -73,7 +72,7 @@
     &__card-1,
     &__card-2 {
         @include desktop {
-            border-right: 1px solid black;
+            border-right: 1px solid var(--text-color);
         }
     }
     
@@ -122,9 +121,5 @@
     &__button-section {
         @include buttons;
     }
-
-    &__learn-more {
-        color: black !important;
-    }   
 
 }
