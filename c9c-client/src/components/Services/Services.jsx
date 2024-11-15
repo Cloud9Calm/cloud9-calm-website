@@ -16,8 +16,8 @@ const Services = () => {
 
                 <div className='services__card-1 s-cards'>
                     <div className='services__cards-upper-section'>
-                        <img className='services__graphics' src={website} alt="Website icon" />
                         <h3 className='services__cards-title'>Web Development</h3>
+                        <img className='services__graphics' src={website} alt="Website icon" />
                     </div>
                     <div className='services__cards-lower-section'>
                         <div>
@@ -31,8 +31,8 @@ const Services = () => {
 
                 <div className='services__card-2 s-cards'>
                     <div className='services__cards-upper-section'>
-                        <img className='services__graphics' src={ecommerce} alt="Shopping cart icon" />
                         <h3 className='services__cards-title'>eCommerce Support</h3>
+                        <img className='services__graphics' src={ecommerce} alt="Shopping cart icon" />
                     </div>
                     <div className='services__cards-lower-section'>
                         <div>
@@ -46,8 +46,8 @@ const Services = () => {
 
                 <div className='services__card-3 s-cards'>
                     <div className='services__cards-upper-section'>
-                        <img className='services__graphics' src={seo} alt="SEO analytics icon" />
                         <h3 className='services__cards-title'>SEO</h3>
+                        <img className='services__graphics' src={seo} alt="SEO analytics icon" />
                     </div>
                     <div className='services__cards-lower-section'>
                         <div>
