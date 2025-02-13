@@ -1,5 +1,6 @@
 import './Services.scss';
 import { Link } from 'react-router-dom';
+import home from '../../assets/icons/home.svg';
 import website from '../../assets/icons/website.svg';
 import ecommerce from '../../assets/icons/shopping-cart.svg';
 import seo from '../../assets/icons/seo-analytics.svg';
@@ -14,10 +15,24 @@ const Services = () => {
             
             <div className='services__cards-container'>
 
-                <div className='services__card-1 s-cards'>
+            <div className='services__card-1 s-cards'>
                     <div className='services__cards-upper-section'>
+                    <img className='services__graphics' src={home} alt="Shopping cart icon" />
+                        <h3 className='services__cards-title'>Website Hosting</h3>
+                    </div>
+                    <div className='services__cards-lower-section'>
+                        <div>
+                        <p className='services__cards-description'>My website hosting service ensures your site runs smoothly, securely, and with minimal downtime. I provide reliable, high-performance hosting tailored to your needs, so you can focus on growing your business while I handle the technical side.</p>                        </div>
+                     <div className='services__button-section'>
+                     <Link to="https://cloud9calmhosting.com/" target='_blank' className="services__learn-more">Learn More About Hosting →</Link>                     
+                    </div>
+                   </div>
+                </div>
+
+                <div className='services__card-2 s-cards'>
+                    <div className='services__cards-upper-section'>
+                    <img className='services__graphics' src={website} alt="Website icon" />
                         <h3 className='services__cards-title'>Web Development</h3>
-                        <img className='services__graphics' src={website} alt="Website icon" />
                     </div>
                     <div className='services__cards-lower-section'>
                         <div>
@@ -29,10 +44,10 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='services__card-2 s-cards'>
+                <div className='services__card-3 s-cards'>
                     <div className='services__cards-upper-section'>
+                    <img className='services__graphics' src={ecommerce} alt="Shopping cart icon" />
                         <h3 className='services__cards-title'>eCommerce Support</h3>
-                        <img className='services__graphics' src={ecommerce} alt="Shopping cart icon" />
                     </div>
                     <div className='services__cards-lower-section'>
                         <div>
@@ -44,10 +59,10 @@ const Services = () => {
                    </div>
                 </div>
 
-                <div className='services__card-3 s-cards'>
+                <div className='services__card-4 s-cards'>
                     <div className='services__cards-upper-section'>
+                    <img className='services__graphics' src={seo} alt="SEO analytics icon" />
                         <h3 className='services__cards-title'>SEO</h3>
-                        <img className='services__graphics' src={seo} alt="SEO analytics icon" />
                     </div>
                     <div className='services__cards-lower-section'>
                         <div>
@@ -58,6 +73,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
+            
             </div>
     </section>
     );
