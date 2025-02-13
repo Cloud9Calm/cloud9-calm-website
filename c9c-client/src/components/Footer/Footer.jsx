@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
 
           <div className='footer__policies'>
-            <p className='footer__copyright'>Copyright Cloud9 Calm Co. 2024</p>
+            <p className='footer__copyright'>Copyright Cloud9 Calm Co. 2025</p>
          
             <Link to="/privacy-policy" className='footer__policy'>Privacy Policies</Link>
           </div>
