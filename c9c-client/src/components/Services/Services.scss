@@ -26,16 +26,13 @@
     
     &__cards-container {
         @include flex-column-center;
-        background-color: var(--background-color);
-        border-radius: 50px;
-        box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .2);
         @include tablet {
             justify-content: space-around;
             width: 700px;
                 @include desktop {
                     flex-direction: row;
-                    align-items: flex-start;
-                    width: 1200px;
+                    flex-wrap: wrap;
+                    width: 80vw;
                     padding: 2rem;
                 }
         }
@@ -43,45 +40,31 @@
     
     &__card-1,
     &__card-2,
-    &__card-3 {
+    &__card-3,
+    &__card-4 {
+        background-color: var(--background-color);
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .2);
         @include flex-column-center;
-        margin: 3rem 0;
+        margin: 2rem;
+        padding: 1rem;
         @include tablet {
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
             @include desktop {
                 flex-direction: column;
-                justify-content: flex-start;
-                width: 60%;
-                margin: 0;
+                width: 40%;
             }
         }
     } 
     
-    &__card-2 {
-        @include tablet {
-            flex-direction: row-reverse;
-            text-align: right;
-                @include desktop {
-                    flex-direction: column;
-                }
-        }
-    }
-    
-    &__card-1,
-    &__card-2 {
-        @include desktop {
-            border-right: 1px solid var(--text-color);
-        }
-    }
     
     &__cards-upper-section {
         @include flex-column-center;
         align-items: center;
         @include tablet {
             max-width: 60%;
-            flex-direction: column-reverse;
         }
     } 
     
@@ -103,7 +86,6 @@
         @include tablet {
             width: 50%;
                 @include desktop {
-                    height: 500px;
                     width: 90%;
                 }
         }
