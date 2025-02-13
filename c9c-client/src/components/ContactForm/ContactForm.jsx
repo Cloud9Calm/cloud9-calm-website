@@ -1,7 +1,7 @@
 import './ContactForm.scss';
-
 import React, { useState } from 'react';
 import axios from 'axios';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import email from '../../assets/icons/email.svg'; 
 
@@ -10,6 +10,10 @@ const ContactForm = () => {
   const [emailSuggestions, setEmailSuggestions] = useState([]);
   const [responseMessage, setResponseMessage] = useState('');
   const [recaptchaToken, setRecaptchaToken] = useState('');
+
+  const recaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+  console.log("reCAPTCHA Site Key:", recaptchaSiteKey);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,13 +26,8 @@ const ContactForm = () => {
 
   const generateEmailSuggestions = (input) => {
     const emailDomains = [
-      'gmail.com',
-      'yahoo.com',
-      'hotmail.com',
-      'outlook.com',
-      'icloud.com',
-      'aol.com',
-      'mail.com'
+      'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com',
+      'icloud.com', 'aol.com', 'mail.com'
     ];
     if (input.includes('@')) {
       setEmailSuggestions([]);
@@ -43,10 +42,13 @@ const ContactForm = () => {
     setEmailSuggestions([]);
   };
 
+  const handleRecaptchaChange = (token) => {
+    setRecaptchaToken(token);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
-
+    
     if (!recaptchaToken) {
       setResponseMessage('Please complete the reCAPTCHA.');
       return;
@@ -54,30 +56,21 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post('/api/contact', { ...formData, recaptchaToken });
-      console.log('API Response:', response.data);
       setResponseMessage('Your message has been sent successfully!');
       setFormData({ name: '', website: '', inquiry: '', email: '' }); 
-      setRecaptchaToken(''); 
+      setRecaptchaToken('');
     } catch (error) {
       console.error('Error sending form data:', error);
       setResponseMessage('There was an error sending your message. Please try again later.');
     }
   };
-
-  const handleRecaptchaChange = (token) => {
-    setRecaptchaToken(token);
-  };
-
   return (
     <section className="contact-form">
       <h2 className="contact-form__title">Contact Me Today!</h2>
- 
+
       <form onSubmit={handleSubmit} className='contact-form__container'>
-        <img 
-          className='contact-form__icon'
-          src={email} 
-          alt="Email icon"
-        />
+        <img className='contact-form__icon' src={email} alt="Email icon" />
+
         <div className='contact-form__name-email'>
           <div className='contact-form__inputs'>
             <input 
@@ -101,10 +94,7 @@ const ContactForm = () => {
             {emailSuggestions.length > 0 && (
               <ul className='contact-form__suggestions'>
                 {emailSuggestions.map((suggestion, index) => (
-                  <li 
-                    key={index} 
-                    onClick={() => handleSuggestionClick(suggestion)}
-                  >
+                  <li key={index} onClick={() => handleSuggestionClick(suggestion)}>
                     {suggestion}
                   </li>
                 ))}
@@ -112,6 +102,7 @@ const ContactForm = () => {
             )}
           </div>
         </div>
+
         <div className='contact-form__inputs'>
           <label className='contact-form__website'>If you already have a website, please let me know</label>
           <input 
@@ -131,11 +122,16 @@ const ContactForm = () => {
             onChange={handleChange} 
             required 
           />
-        </div>       
-        <button 
-          type="submit"
-          className='contact-form__button'
-        >
+        </div>  
+
+        {/* Google reCAPTCHA */}
+        <ReCAPTCHA
+          sitekey={recaptchaSiteKey} 
+          onChange={handleRecaptchaChange}
+        />
+        
+
+        <button type="submit" className='contact-form__button'>
           Send
         </button>
       </form>

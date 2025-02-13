@@ -43,10 +43,13 @@ const Header = ({ toggleTheme, theme }) => {
             <span className="header__dropdown-label">Services <span className="header__arrow"></span></span>
             <ul className="header__dropdown">
               <li className="header__dropdown-item">
-                <Link to="/website-development">Website Development</Link>
+              <li className="header__dropdown-item">
+                <Link to="https://cloud9calmhosting.com/" target="_blank">Hosting</Link>
+              </li>
+                <Link to="/website-development">Development</Link>
               </li>
               <li className="header__dropdown-item">
-                <Link to="/ecommerce-support">eCommerce Support</Link>
+                <Link to="/ecommerce-support">eCommerce</Link>
               </li>
               <li className="header__dropdown-item">
                 <Link to="/seo-services">SEO</Link>
