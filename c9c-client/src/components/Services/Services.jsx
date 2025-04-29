@@ -69,7 +69,7 @@ const Services = () => {
                             <p className='services__cards-description'>My SEO support service focuses on enhancing your website's visibility and driving organic traffic. I utilize proven strategies like keyword optimization, content refinement, and technical SEO to ensure your site ranks higher on search engines, helping your business attract more qualified leads and achieve long-term success.</p>                        
                         </div>
                         <div className='services__button-section'>
-                            <Link to='seo' className='services__learn-more'>Learn more About SEO →</Link> 
+                            <Link to='seo-services' className='services__learn-more'>Learn more About SEO →</Link> 
                         </div>
                     </div>
                 </div>

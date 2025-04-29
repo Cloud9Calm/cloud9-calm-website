@@ -2,23 +2,19 @@
     "services": [
         {
             "title": "Shopify Setup and Integration",
-            "description": "Get your online store up and running with expert Shopify setup and integration. I handle everything from initial store configuration to advanced customization, ensuring a seamless process from start to finish. Whether you're starting from scratch or migrating from another platform, I'll make sure your Shopify store is optimized for performance and ready to attract customers.",
-            "price": "$75-$100 per hour"
+            "description": "Get your online store up and running with expert Shopify setup and integration. I handle everything from initial store configuration to advanced customization, ensuring a seamless process from start to finish. Whether you're starting from scratch or migrating from another platform, I'll make sure your Shopify store is optimized for performance and ready to attract customers."
         },
         {
             "title": "SEO Optimization",
-            "description": "Improve your search engine rankings with tailored SEO strategies that drive organic traffic to your site. I conduct comprehensive keyword research, optimize your site's content and structure, and implement best practices to ensure your store ranks higher in search results. My goal is to increase your visibility and attract more potential customers to your online store.",
-            "price": "$50 per hour"
+            "description": "Improve your search engine rankings with tailored SEO strategies that drive organic traffic to your site. I conduct comprehensive keyword research, optimize your site's content and structure, and implement best practices to ensure your store ranks higher in search results. My goal is to increase your visibility and attract more potential customers to your online store."
         },
         {
             "title": "Site Launch and Updates",
-            "description": "From initial launch to regular updates, I ensure your site remains current and competitive. I handle everything from pre-launch checklists and final testing to post-launch monitoring and updates. My services include content updates, feature enhancements, and security patches to keep your site running smoothly and efficiently.",
-            "price": "$75 per hour"
+            "description": "From initial launch to regular updates, I ensure your site remains current and competitive. I handle everything from pre-launch checklists and final testing to post-launch monitoring and updates. My services include content updates, feature enhancements, and security patches to keep your site running smoothly and efficiently."
         },
         {
             "title": "App and Theme Suggestions",
-            "description": "Enhance your site’s functionality with personalized app and theme recommendations. Based on your business needs and goals, I suggest and implement the best apps and themes that improve user experience, streamline operations, and boost sales. From finding the perfect theme to integrating powerful apps, I ensure your site is equipped with the right tools for success.",
-            "price": "$50 per hour"
+            "description": "Enhance your site’s functionality with personalized app and theme recommendations. Based on your business needs and goals, I suggest and implement the best apps and themes that improve user experience, streamline operations, and boost sales. From finding the perfect theme to integrating powerful apps, I ensure your site is equipped with the right tools for success."
         }
     ]
 }
