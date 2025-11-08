@@ -1,6 +1,32 @@
 {
     "clients": [
         {
+  "companyName": "Naramata Vineyard BnB",
+  "website": "https://www.naramatavineyardbnb.ca/",
+  "jobTask": "Designed and developed a fully custom Next.js website for Naramata Vineyard BnB, including domain setup, managed hosting, and deployment via Heroku. Built with a focus on fast performance, responsive design, and SEO to highlight the property’s wine-country experience while keeping content updates and booking inquiries simple for the owners."
+},
+        {
+    "companyName": "Little Engine Wines",
+    "website": "https://littleenginewines.com/",
+    "jobTask": "Act as the current website developer and digital support lead for Little Engine Wines, maintaining and optimizing their WordPress platform to ensure peak performance and a polished user experience. Responsibilities include site updates, troubleshooting, and implementing SEO and UX enhancements to align with the brand’s premium identity and elevate online engagement for their wine club and visitors."
+},
+        {
+    "companyName": "Rent SOPM Property Management",
+    "website": "https://rentsopm.com/",
+    "jobTask": "Serve as the current website developer and technical manager for Rent SOPM, overseeing ongoing updates, performance optimization, and SEO improvements. While the original site was pre-existing, I’ve enhanced its functionality, improved load times, refined UI consistency, and implemented strategic content updates to support stronger visibility and lead generation across the Okanagan property management market."
+},
+        {
+    "companyName": "Wild Care Garden Design",
+    "website": "https://wildcaregardendesign.ca/",
+    "jobTask": "Developed a custom WordPress website for Wild Care Garden Design, hosted on my managed WordPress platform. The project focused on showcasing sustainable landscape design services through a clean, nature-inspired layout with responsive functionality and SEO optimization. Implemented speed enhancements, contact integrations, and analytics tracking to support both performance and lead generation."
+},
+
+         {
+            "companyName": "Mastering Menopause Naturally",
+            "website": "https://masteringmenopausenaturally.ca/",
+            "jobTask": "Designed and developed a custom WordPress website for Mastering Menopause Naturally, hosted on my managed WordPress platform. The site was built to highlight holistic wellness services and educational resources, featuring optimized layouts, responsive design, and SEO best practices to improve visibility and user engagement. Integrated performance enhancements and analytics tools to ensure a seamless, high-performing user experience."        
+        },
+        {
             "companyName": "Backlash Beauty Bar",
             "website": "https://backlashbeautybar.com/",
             "jobTask": "Updated their existing website, which had not been refreshed for several years. This involved a comprehensive update of all services offered to ensure the information was current and accurate. Additionally, I added new stock images to enhance the website's visual appeal and better represent the brand's identity. Finally, I implemented SEO strategies to improve the website's search engine visibility, aiming to drive more organic traffic and increase online presence."
@@ -27,6 +53,7 @@
         {
             "companyName": "Shop Cloud9 Calm",
             "website": "https://www.shopcloud9calm.com/",
-            "jobTask": "Developed a Shopify store to sell merchandise, focusing on creating a seamless shopping experience and optimizing the platform for eCommerce success. This involved customizing the store layout, integrating product management, and ensuring a user-friendly interface for customers."        }
+            "jobTask": "Developed a Shopify store to sell merchandise, focusing on creating a seamless shopping experience and optimizing the platform for eCommerce success. This involved customizing the store layout, integrating product management, and ensuring a user-friendly interface for customers."        
+        }
     ]
 }
