@@ -19,10 +19,9 @@ const Clients = () => {
             >
               <h3 className="clients__name">{client.companyName}</h3>
 
-              {/* keep your portfolio blurb */}
               <p className="clients__job-task">{client.jobTask}</p>
 
-              {/* swap URL text for a CTA */}
+        
               {hasLink && (
                 <a
                   href={client.website}

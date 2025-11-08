@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import './WorkExperience.scss';
 import Clients from '../../components/Clients/Clients';
+import HeroImage from '../../assets/images/image-39c6ee89-4d57-4771-bc39-5330e240279f.png';
 
 const WorkExperience = () => {
   const schemaData = {
@@ -72,27 +73,41 @@ const WorkExperience = () => {
         </script>
       </Helmet>
 
-      <main className="work" aria-labelledby="work-title">
-        <section className="work__intro">
-          <h1 id="work-title" className="work__title">
-            Work Experience & Recent Projects
-          </h1>
-          <p className="work__desc">
-            I partner with service-based businesses, creatives, and local brands
-            to design, refine, and maintain websites that actually work.
-            From custom WordPress builds and technical retainers to SEO and performance
-            tuning, each project is built to be fast, clean, and easy for real humans to use.
-            Here’s a look at some of the clients who trust me as their go-to web developer.
-          </p>
-        </section>
+  <main className="work" aria-labelledby="work-title">
+  <section className="work__hero" aria-label="Cloud9 Calm Co. portfolio hero">
+    <img
+      src={HeroImage}
+      alt="Cloud9 Calm Co. web design and development portfolio"
+      className="work__hero-image"
+    />
+    <div className="work__hero-overlay">
+      <h1 className="work__hero-title">Web Development Portfolio</h1>
+      <p className="work__hero-subtitle">
+        Custom websites, technical retainers, and SEO-focused builds for brands across the Okanagan and beyond.
+      </p>
+    </div>
+  </section>
 
-        <section
-          className="work__clients"
-          aria-label="Client projects and portfolio"
-        >
-          <Clients />
-        </section>
-      </main>
+  <section className="work__intro">
+    <h2 id="work-title" className="work__title">
+      Work Experience & Recent Projects
+    </h2>
+    <p className="work__desc">
+      I partner with service-based businesses, creatives, and local brands
+      to design, refine, and maintain websites that actually work. From custom
+      WordPress builds and Next.js projects to performance tuning and ongoing
+      support, each collaboration is built to be fast, clean, and easy for real
+      humans to use.
+    </p>
+  </section>
+
+  <section
+    className="work__clients"
+    aria-label="Client projects and portfolio"
+  >
+    <Clients />
+  </section>
+</main>
     </>
   );
 };

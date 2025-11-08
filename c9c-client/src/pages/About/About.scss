@@ -3,186 +3,213 @@
 @import '../../styles/partials/variables.scss';
 
 .about {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow: hidden;
+
+  /* HERO */
+  &__hero {
+    @include page-hero(380px, #fff, 75%, 1.1, rgba(0, 0, 0, 0.08));
+  }
+
+  /* INTRO */
+  &__intro {
+    @include flex-column-center;
+    @include box-shadow;
+    max-width: 80%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 auto 2.5rem;
     background-color: var(--background-color);
-    color: var(--text-color);
+  }
 
-    &__intro {
-        @include flex-column-center;
-        @include box-shadow;
-        max-width: 80%;
-        border-radius: 10px;
-        padding: 1rem;
-        margin: 0 auto;
-    } 
-    
-    &__intro-title {
-        @include heading-text;
-        @include desktop {
-            padding: 2rem;
-        }
-    } 
-    
-    &__prof-img {
-        width: 200px;
-        border-radius: 1000px;
-            @include desktop {
-                width: 350px;
-            }
-    } 
-    
-    &__intro-mission {
-        @include body-text;
-        text-align: center;
-        @include desktop {
-            padding: 4rem;
-        }
-    }
+  &__intro-title {
+    @include heading-text;
 
-    &__journey {
-        padding: 2rem;
-        @include desktop {
-            margin: 2rem 0;
-        }
-    } 
-    
-    &__journey-title {
-        @include heading-text;
-    } 
-    
-    &__journey-text {
-        @include body-text;
-        padding: 1rem .5rem;
-        @include desktop {
-            padding: 2rem 6rem;
-        }
+    @include desktop {
+      padding: 2rem;
     }
+  }
 
-    &__why {
-        padding: 2rem;
-        @include tablet {
-            padding: 4rem;
-        }
-    } 
-    
-    &__why-title {
-        @include heading-text;
-    } 
-    
-    &__why-text {
-        @include body-text;
-        text-align: justify;
-        padding: 0 1rem;
-        @include desktop {
-            padding: 2rem 3rem;
-        }
-    }
+  &__prof-img {
+    width: 200px;
+    border-radius: 1000px;
 
-    &__why-icon {
-        fill: pink; 
-        @include icon-sizing;
-        padding: 2rem; 
+    @include desktop {
+      width: 350px;
     }
+  }
 
-    &__values {
-        padding: 2rem;
-    } 
-    
-    &__values-title {
-        @include heading-text;
-    } 
-    
-    &__values-list {
-        @include flex-column-center;
-        align-items: center;
-        justify-content: space-evenly;
-        @include tablet {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-    } 
-    
-    &__values-item {
-        @include body-text;
-        display: flex;
-        align-items: center;
-        color: white;
-        background-color: $triadic-color-2; 
-        border-radius: 1000px;
-        padding: .5rem;
-        margin: .5rem;  
-       
-    } 
-    
-    &__values-icons {
-        height: 20px;
-        padding: .5rem;
-        @include desktop {
-            height: 30px;
-        }
-    }
+  &__intro-mission {
+    @include body-text;
+    text-align: center;
 
-    &__services {
-        padding: 2rem;
-    }   
-    
-    &__services-title {
-        @include heading-text;
-    }   
-    
-    &__services-text {
-        @include body-text;
-        padding: 1rem;
-        @include tablet {
-            text-align: justify;
-            padding: 1rem;
-            @include desktop {
-                padding: 4rem;
-            }
-        }
+    @include desktop {
+      padding: 4rem;
     }
+  }
 
-    &__fun-facts {
-        @include moving-background;
-        padding: 2rem;
-        @include tablet {
-            padding: 6rem;
-        }
-    } 
-    
-    &__fun-facts-title {
-        @include heading-text;
-    } 
-    
-    &__fun-facts-text {
-        @include body-text;
-        text-align: justify;
-        @include desktop {
-            padding: 2rem 3rem;
-            margin: 0 auto;
-            max-width: 70%;
-        }
-    }
-    
-    &__graphic {
-        width: 40%;
-       margin: 2rem;
-        @include color-borders;
-        @include box-shadow;
-        @include tablet {
-            width: 40%;
-        }
-    }
+  /* JOURNEY */
+  &__journey {
+    padding: 2rem;
 
-    &__container {
-        @include flex-column-center;
-        @include tablet {
-            flex-direction: row-reverse;
-        }
-    } 
-    
-    .container-2 {
-        @include tablet {
-            flex-direction: row;
-        }
+    @include desktop {
+      margin: 2rem 0;
     }
+  }
+
+  &__journey-title {
+    @include heading-text;
+  }
+
+  &__journey-text {
+    @include body-text;
+    padding: 1rem 0.5rem;
+
+    @include desktop {
+      padding: 2rem 6rem;
+    }
+  }
+
+  /* WHY */
+  &__why {
+    padding: 2rem;
+
+    @include tablet {
+      padding: 4rem;
+    }
+  }
+
+  &__why-title {
+    @include heading-text;
+  }
+
+  &__why-text {
+    @include body-text;
+    text-align: justify;
+    padding: 0 1rem;
+
+    @include desktop {
+      padding: 2rem 3rem;
+    }
+  }
+
+  &__why-icon {
+    fill: pink;
+    @include icon-sizing;
+    padding: 2rem;
+  }
+
+  /* VALUES */
+  &__values {
+    padding: 2rem;
+  }
+
+  &__values-title {
+    @include heading-text;
+  }
+
+  &__values-list {
+    @include flex-column-center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__values-item {
+    @include body-text;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: $triadic-color-2;
+    border-radius: 1000px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  &__values-icons {
+    height: 20px;
+    padding: 0.5rem;
+
+    @include desktop {
+      height: 30px;
+    }
+  }
+
+  /* SERVICES */
+  &__services {
+    padding: 2rem;
+  }
+
+  &__services-title {
+    @include heading-text;
+  }
+
+  &__services-text {
+    @include body-text;
+    padding: 1rem;
+
+    @include tablet {
+      text-align: justify;
+
+      @include desktop {
+        padding: 4rem;
+      }
+    }
+  }
+
+  /* FUN FACTS */
+  &__fun-facts {
+    @include moving-background;
+    padding: 2rem;
+
+    @include tablet {
+      padding: 6rem;
+    }
+  }
+
+  &__fun-facts-title {
+    @include heading-text;
+  }
+
+  &__fun-facts-text {
+    @include body-text;
+    text-align: justify;
+
+    @include desktop {
+      padding: 2rem 3rem;
+      margin: 0 auto;
+      max-width: 70%;
+    }
+  }
+
+  /* GRAPHIC + CONTAINERS */
+  &__graphic {
+    width: 40%;
+    margin: 2rem;
+    @include color-borders;
+    @include box-shadow;
+
+    @include tablet {
+      width: 40%;
+    }
+  }
+
+  &__container {
+    @include flex-column-center;
+
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .container-2 {
+    @include tablet {
+      flex-direction: row;
+    }
+  }
 }

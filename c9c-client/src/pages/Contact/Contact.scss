@@ -3,12 +3,75 @@
 @import '../../styles/partials/variables.scss';
 
 .contact-page {
-    ;
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    &__title {
-        @include heading-text;
-        padding: 1rem;
-    }   
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  /* 🩵 HERO — wired directly to page-hero mixin */
+  &__hero {
+    @include page-hero(
+      $height: 400px,
+      $text-color: #fff,
+      $brightness: 75%,
+      $saturation: 1.1,
+      $shadow-color: rgba(0, 0, 0, 0.12),
+      $focus-y: 40%
+    );
+  }
+
+  /* These selectors extend what the mixin already outputs */
+  &__hero-title {
+    // mixin already includes @include heading-text;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+
+  &__hero-subtitle {
+    // mixin already includes @include body-text;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  /* ☁️ Title below hero */
+  &__title {
+    @include heading-text;
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: $analogous-color-2;
+      margin: 0.75rem auto 0;
+      border-radius: 999px;
+    }
+  }
+
+  /* 💬 FAQ + ✉️ Form sections */
+  &__faq,
+  &__form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  &__faq {
+    @include box-shadow;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  &__form {
+    margin-bottom: 4rem;
+  }
 }
