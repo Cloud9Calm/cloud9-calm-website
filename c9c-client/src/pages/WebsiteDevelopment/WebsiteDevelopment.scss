@@ -2,81 +2,94 @@
 @import '../../styles/partials/mixins.scss';
 @import '../../styles/partials/variables.scss';
 
+
 .webdev {
-    background-color: var(--background-color);
-    color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 
-    &__title {
-        @include heading-text;
-        padding: 2rem;
-        margin: 0;
-    }
+  /* ---------- HERO ---------- */
+  &__hero {
+    @include page-hero;
 
-    &__top-section {
-        @include flex-column-center;
-        padding: 2rem;
-        @include tablet {
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 4rem 2rem;
-        }
-    } 
-    
-    &__logo {
-        width: 20%;
-        margin: 0 2rem;
-    } 
-    
-    &__sub-title {
-        @include body-text;
-    } 
-    
-    &__graphic {
-        width: 100%;
-            @include tablet {
-                display: none;
-            }
-    }
-}
+  }
 
-@keyframes slide {
-    100% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
+  /* ---------- PAGE INTRO ---------- */
+  &__title {
+    @include heading-text;
+    padding: 2rem;
+    margin: 0;
+  }
 
-.webdev__info {
-    display: none;
-    overflow: hidden; 
-    white-space: nowrap;
+  &__top-section {
+    @include flex-column-center;
+    padding: 2rem;
+
     @include tablet {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 4rem 2rem;
     }
-}
+  }
 
-.webdev__info-section {
-    display: inline-block; 
+  &__logo {
+    width: 20%;
+    margin: 0 2rem;
+  }
+
+  &__sub-title {
+    @include body-text;
+  }
+
+  &__graphic {
+    width: 100%;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  /* ---------- MARQUEE ROW ---------- */
+  &__info {
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__info-section {
+    display: inline-block;
     border-bottom: 1px solid var(--text-color);
     padding: 1rem;
     white-space: normal;
+
     @include tablet {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        animation: slide 20s linear infinite;
-        border-left: 1px solid var(--text-color); 
-        border-bottom: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: slide 20s linear infinite;
+      border-left: 1px solid var(--text-color);
+      border-bottom: none;
     }
-}
+  }
 
-.webdev__info-title {
+  &__info-title {
     @include heading-text;
+  }
+
+  &__info-desc {
+    @include body-text;
+    @include tablet {
+      width: 30rem;
+    }
+  }
 }
 
-.webdev__info-desc {
-    @include body-text;
-        @include tablet {
-            width: 30rem;
-        }
+/* ---------- ANIMATIONS ---------- */
+@keyframes slide {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(-100%); }
 }

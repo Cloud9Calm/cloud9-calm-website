@@ -9,7 +9,7 @@
 
   /* --- Hero Section --- */
   &__hero {
-    @include page-hero(380px, #fff, 75%, 1.1, rgba(0, 0, 0, 0.08));
+    @include page-hero;
   }
 
   /* --- Intro Section --- */
