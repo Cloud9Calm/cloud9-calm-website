@@ -6,6 +6,12 @@
     background-color: var(--background-color);
     color: var(--text-color);
 
+      &__hero {
+    @include page-hero;
+
+  }
+
+
     &__title {
       @include heading-text;
       padding: 2rem;
