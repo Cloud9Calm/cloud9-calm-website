@@ -11,7 +11,7 @@ import services from '../../data/website-development-info.json';
 
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import HeroImage from '../../assets/images/website-dev-hero.jpg';
+import HeroImage from '../../assets/images/3e548acf-8432-475b-a913-e172b72f2d9d.jpeg';
 
 const scrollVariant = {
   hidden: { opacity: 0, y: 50 },

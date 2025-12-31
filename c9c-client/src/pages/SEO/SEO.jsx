@@ -10,7 +10,7 @@ import services from '../../data/seo-info.json';
 
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import HeroImage from '../../assets/images/seo-hero.jpg';
+import HeroImage from '../../assets/images/5658f9a3-1033-4879-9975-800a05b4f6d3.jpeg';
 
 const scrollVariant = {
   hidden: { opacity: 0, y: 50 },

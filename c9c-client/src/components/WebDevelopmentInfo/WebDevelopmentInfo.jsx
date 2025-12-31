@@ -2,7 +2,7 @@ import './WebDevelopmentInfo.scss';
 
 import services from '../../data/website-development-services.json';
 
-import erinCronie from '../../assets/images/erin-cronie-back-2.jpg';
+import erinCronie from '../../assets/images/cb85d2c8-380e-482f-bfd0-dc882513cde5.jpeg';
 import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
 
 

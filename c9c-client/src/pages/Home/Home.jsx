@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero/Hero';
 import Services from '../../components/Services/Services';
 
-import erinCronieProfile from '../../assets/images/193EDB14-9BDD-4D4E-BB09-5341617E0CB4_1_105_c.jpeg';
+import erinCronieProfile from '../../assets/images/41c4d20e-f0d2-4986-848c-a831a76e1cc9.jpeg';
 import c9cProject from '../../assets/images/c9c-project-nvvr.png';
 import erinCronieComp from '../../assets/images/4A57D74A-51A0-4301-8BB7-36EE01779EE0_1_105_c.jpeg'
 

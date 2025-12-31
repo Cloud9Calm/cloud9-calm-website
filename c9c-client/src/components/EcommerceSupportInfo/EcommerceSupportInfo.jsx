@@ -2,7 +2,7 @@ import './EcommerceSupportInfo.scss';
 
 import services from '../../data/ecommerce-service-info.json';
 
-import erinCronie from '../../assets/images/erin-cronie-back.jpg';
+import erinCronie from '../../assets/images/25b2382b-1b6a-4bf6-a219-63d2effae287.jpeg';
 import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
 
 

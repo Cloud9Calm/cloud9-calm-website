@@ -2,7 +2,7 @@ import './SEOinfo.scss';
 
 import services from '../../data/seo-services.json';
 
-import erinCronie from '../../assets/images/erin-cronie-developer-2.jpg';
+import erinCronie from '../../assets/images/ae8aac37-555b-4d32-ad7a-540005c2a2d0.jpeg';
 import c9cLogo from '../../assets/images/cloud9-calm-logo.png';
 
 const SEOinfo = () => {

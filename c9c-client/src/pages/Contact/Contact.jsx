@@ -2,7 +2,7 @@ import './Contact.scss';
 import ContactForm from '../../components/ContactForm/ContactForm'; 
 import FAQ from '../../components/FAQ/FAQ'; 
 import { motion } from 'framer-motion';
-import HeroImage from '../../assets/images/image-236b2112-cb52-4cbe-8592-ab5782061ff3.png';
+import HeroImage from '../../assets/images/5aa876f2-605e-4ee0-8407-e174194c0f72.jpeg';
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 50 },

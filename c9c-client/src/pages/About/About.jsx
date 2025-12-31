@@ -2,9 +2,9 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import './About.scss';
 import LetsConnect from '../../components/LetsConnect/LetsConnect';
-import HeroImage from '../../assets/images/image-e997b590-56b3-45bf-9031-d373394ad3b7.png';
+import HeroImage from '../../assets/images/41204f67-e0a6-4909-92e1-4eb1da1a46cf.jpeg';
 
-import erinCronieProfile from '../../assets/images/erin-cronie-website-profile.png';
+import erinCronieProfile from '../../assets/images/8f557f0e-ef8c-4aa4-9b4c-713aecd57e86.jpeg';
 
 import quote from '../../assets/icons/quote.svg';
 import person from '../../assets/icons/personSearch.svg';

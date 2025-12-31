@@ -11,7 +11,7 @@ import services from '../../data/ecommerce-support-services.json';
 
 import c9cLogoBlack from '../../assets/images/c9c-logo-black.png';
 import c9cLogoWhite from '../../assets/images/c9c-logo-white.png';
-import HeroImage from '../../assets/images/ecom-hero.jpg';
+import HeroImage from '../../assets/images/2afb314a-8a5d-473a-99b3-a0507a44172a.jpeg';
 
 const scrollVariant = {
   hidden: { opacity: 0, y: 50 },
