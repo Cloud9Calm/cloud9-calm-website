@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero/Hero';
 import Services from '../../components/Services/Services';
 
-import erinCronieProfile from '../../assets/images/erin-cronie-website-profile.png';
+import erinCronieProfile from '../../assets/images/193EDB14-9BDD-4D4E-BB09-5341617E0CB4_1_105_c.jpeg';
 import c9cProject from '../../assets/images/c9c-project-nvvr.png';
-import erinCronieComp from '../../assets/images/erin-cronie-developer-2.jpg'
+import erinCronieComp from '../../assets/images/4A57D74A-51A0-4301-8BB7-36EE01779EE0_1_105_c.jpeg'
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 50 },

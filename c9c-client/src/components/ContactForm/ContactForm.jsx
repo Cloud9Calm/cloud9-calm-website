@@ -10,8 +10,7 @@ const ContactForm = () => {
   const [responseMessage, setResponseMessage] = useState('');
   const [recaptchaToken, setRecaptchaToken] = useState('');
 
-  // ✅ Load your site key from .env, or use Google's test key for local dev
-  const recaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI';
+  const recaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
   console.log('reCAPTCHA Site Key:', recaptchaSiteKey);
 
   const handleChange = (e) => {

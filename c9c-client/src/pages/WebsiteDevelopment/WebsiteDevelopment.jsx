@@ -98,19 +98,19 @@ const WebsiteDevelopment = () => {
         variants={scrollVariant}
       >
 
-        <section className="work__hero" aria-label="Website development services hero">
-          <img
-            src={HeroImage}
-            alt="Cloud9 Calm Co. website development services"
-            className="work__hero-image"
-          />
-          <div className="work__hero-overlay">
-            <h1 className="work__hero-title">Web Development Services</h1>
-            <p className="work__hero-subtitle">
-              Custom websites, technical retainers, and SEO-focused builds for brands across the Okanagan and beyond.
-            </p>
-          </div>
-        </section>
+  <section className="webdev__hero" aria-label="Website development services hero">
+  <img
+    src={HeroImage}
+    alt="Cloud9 Calm Co. website development services"
+    className="webdev__hero-image"
+  />
+  <div className="webdev__hero-overlay">
+    <h1 className="webdev__hero-title">Web Development Services</h1>
+    <p className="webdev__hero-subtitle">
+      Custom websites, technical retainers, and SEO-focused builds for brands across the Okanagan and beyond.
+    </p>
+  </div>
+</section>
 
         <motion.h2 className="webdev__title" variants={scrollVariant}>
           More information on Website Development
