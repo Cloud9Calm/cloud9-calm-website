@@ -9,7 +9,6 @@
   padding: 0;
   overflow: hidden;
 
-  /* 🩵 HERO — wired directly to page-hero mixin */
   &__hero {
     @include page-hero(
       $height: 400px,
@@ -21,23 +20,19 @@
     );
   }
 
-  /* These selectors extend what the mixin already outputs */
   &__hero-title {
-    // mixin already includes @include heading-text;
     margin-bottom: 0.5rem;
     text-align: center;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   }
 
   &__hero-subtitle {
-    // mixin already includes @include body-text;
     max-width: 640px;
     margin: 0 auto;
     text-align: center;
     color: rgba(255, 255, 255, 0.95);
   }
 
-  /* ☁️ Title below hero */
   &__title {
     @include heading-text;
     text-align: center;
@@ -56,18 +51,12 @@
     }
   }
 
-  /* 💬 FAQ + ✉️ Form sections */
-  &__faq,
-  &__form {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
-
   &__faq {
     @include box-shadow;
+    max-width: 900px;
     border-radius: 12px;
-    margin-bottom: 2rem;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
     background-color: rgba(255, 255, 255, 0.02);
   }
 
