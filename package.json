@@ -17,12 +17,11 @@
   },
   "scripts": {
     "start": "node c9c-server/src/server.js",
-    "build": "cd c9c-client && npm run build",
+    "build": "rm -rf c9c-client/node_modules && rm -rf c9c-client/package-lock.json && npm install --prefix c9c-client && npm run build --prefix c9c-client",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "heroku-postbuild": "npm install --prefix c9c-client && npm run build --prefix c9c-client && npm install --prefix c9c-server"
+    "deploy": "gh-pages -d build"
   },
   "engines": {
     "node": "18.18.2",
