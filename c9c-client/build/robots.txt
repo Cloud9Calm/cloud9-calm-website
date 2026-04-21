@@ -1,3 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /policy
+Disallow: /404
+
+Sitemap: https://www.cloud9calm.com/sitemap.xml
